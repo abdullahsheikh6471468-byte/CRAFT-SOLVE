@@ -1,30 +1,68 @@
-window.addEventListener('load', function() {
+(function() {
     const preloader = document.getElementById('preloader');
     const heroElements = document.querySelectorAll('.hero-word, .pop-in, .hero-visual-stage, .hero-sweep, .btn');
 
-    if (preloader) {
-        setTimeout(function() {
-            preloader.classList.add('hidden');
-
-            heroElements.forEach(function(el) {
-                el.style.animation = 'none';
-                el.offsetHeight;
-                el.style.animation = null;
-            });
-        }, 350);
-    } else {
+    function replayHeroAnimations() {
         heroElements.forEach(function(el) {
             el.style.animation = 'none';
             el.offsetHeight;
             el.style.animation = null;
         });
     }
-});
 
-setTimeout(function() {
-    const preloader = document.getElementById('preloader');
-    if (preloader) preloader.classList.add('hidden');
-}, 2500);
+    if (!preloader) {
+        replayHeroAnimations();
+        return;
+    }
+
+    const MIN_DISPLAY_TIME = 500;  // preloader kam se kam itni der screen par rahy (flash na ho)
+    const MAX_WAIT_TIME = 8000;    // safety fallback: kisi image ky slow/fail hony par b itni der ky baad hide hojaye
+    const startTime = Date.now();
+    let hidden = false;
+
+    function hidePreloader() {
+        if (hidden) return;
+        hidden = true;
+        const elapsed = Date.now() - startTime;
+        const remaining = Math.max(0, MIN_DISPLAY_TIME - elapsed);
+
+        setTimeout(function() {
+            preloader.classList.add('hidden');
+            replayHeroAnimations();
+        }, remaining);
+    }
+
+    // Page ki tamam <img> collect karo taky unky load hony ka intezar kiya ja sakay,
+    // is tarah images preloader ky peechy hi load ho jayengi aur user ko baad me
+    // "pop-in" hoty huay nazar nahi aayengi.
+    const imgElements = Array.from(document.images || []);
+    const total = imgElements.length;
+
+    if (total === 0) {
+        hidePreloader();
+        return;
+    }
+
+    let loadedCount = 0;
+    function onOneDone() {
+        loadedCount++;
+        if (loadedCount >= total) {
+            hidePreloader();
+        }
+    }
+
+    imgElements.forEach(function(img) {
+        if (img.complete && img.naturalWidth !== 0) {
+            onOneDone();
+        } else {
+            img.addEventListener('load', onOneDone, { once: true });
+            img.addEventListener('error', onOneDone, { once: true });
+        }
+    });
+
+    // Absolute safety net — agar network bohat slow ho ya koi image fail ho jaye
+    setTimeout(hidePreloader, MAX_WAIT_TIME);
+})();
 
 document.addEventListener('DOMContentLoaded', function() {
 
