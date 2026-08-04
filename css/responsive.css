@@ -12,13 +12,14 @@
   .work-hero-card { grid-column: span 2; }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
   .section { padding: 90px 0; }
-  .cta-band { padding: 54px 30px; }
+  .cta-band { padding: 53px 29px; }
 
-  /* --- Nav: drop "Let's Talk" to its own right-aligned row --- */
+    /* --- Nav: drop "Let's Talk" to its own right-aligned row --- */
   .nav-inner { flex-wrap: wrap; row-gap: 14px; }
-.navbar .btn-sm { order: 3; flex-basis: 100%; display: flex; justify-content: flex-end; padding: 4px 9px; font-size: 12.5px; }
+.navbar .btn-sm { order: 3; flex-basis: 100%; display: flex; justify-content: flex-end; padding: 1px 6px; font-size: 12.5px; }
   .hamburger { order: 2; }
 .navbar { position: absolute; }
+
   /* --- Hero: rebuilt mobile stacking order (brand -> robot -> copy -> pills/actions/stats) --- */
   .hero { height: auto; min-height: auto; padding-top: 128px; padding-bottom: 46px; }
   .hero-grid { grid-template-columns: 1fr; gap: 0; }
