@@ -15,23 +15,8 @@
         return;
     }
 
-    // Shutter panels: preloader ky background ko vertical strips me tor kar
-    // taky hide hoty waqt eik shutter/blinds jesa staggered upward effect bane.
-    const PANEL_COUNT = 7;
-    const PANEL_DELAY_STEP = 0.055; // seconds, har panel ka delay isi hisaab se barhta hai
-    const shutter = document.createElement('div');
-    shutter.className = 'preloader-shutter';
-    for (let i = 0; i < PANEL_COUNT; i++) {
-        const panel = document.createElement('div');
-        panel.className = 'preloader-panel';
-        panel.style.transitionDelay = (i * PANEL_DELAY_STEP) + 's';
-        shutter.appendChild(panel);
-    }
-    preloader.insertBefore(shutter, preloader.firstChild);
-
     const MIN_DISPLAY_TIME = 500;  // preloader kam se kam itni der screen par rahy (flash na ho)
     const MAX_WAIT_TIME = 8000;    // safety fallback: kisi image ky slow/fail hony par b itni der ky baad hide hojaye
-    const SHUTTER_TOTAL_TIME = 650 + (PANEL_COUNT - 1) * PANEL_DELAY_STEP * 1000; // last panel ky mukammal hony tak ka waqt
     const startTime = Date.now();
     let hidden = false;
 
@@ -44,10 +29,6 @@
         setTimeout(function() {
             preloader.classList.add('hidden');
             replayHeroAnimations();
-            // shutter animation mukammal hony ky baad preloader ko DOM interaction se hata do
-            setTimeout(function() {
-                preloader.style.display = 'none';
-            }, SHUTTER_TOTAL_TIME);
         }, remaining);
     }
 

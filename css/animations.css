@@ -61,59 +61,24 @@
     position: fixed;
     inset: 0;
     z-index: 9999;
-    background: transparent;
+    background: var(--ink);
     display: flex;
     align-items: center;
     justify-content: center;
-<<<<<<< HEAD
-    transform: translateY(0);
-    transition: transform 0.7s cubic-bezier(0.65, 0, 0.35, 1), visibility 0.7s ease;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
 .preloader.hidden {
-    transform: translateY(-100%);
+    opacity: 0;
     visibility: hidden;
-=======
-}
-
-.preloader.hidden {
->>>>>>> 7908a32 (updated)
     pointer-events: none;
 }
 
-.preloader-shutter {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    z-index: 0;
-}
-
-.preloader-panel {
-    flex: 1 1 0;
-    height: 100%;
-    background: var(--ink);
-    transform: translateY(0);
-    transition: transform 0.65s cubic-bezier(0.76, 0, 0.24, 1);
-    will-change: transform;
-}
-
-.preloader.hidden .preloader-panel {
-    transform: translateY(-100%);
-}
-
 .preloader-inner {
-    position: relative;
-    z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 22px;
-    transition: opacity 0.25s ease, transform 0.25s ease;
-}
-
-.preloader.hidden .preloader-inner {
-    opacity: 0;
-    transform: scale(0.92);
 }
 
 .preloader-logo {
