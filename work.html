@@ -57,51 +57,583 @@
     <div class="blob blob-2"></div>
   </div>
   <div class="container" style="position:relative;z-index:2;">
-    <h1>Our project showcase is compiling.</h1>
-    <p class="lede mx-auto" style="text-align:center;margin-top:16px;">We're finishing our first client case studies. This page is built to display them properly the moment they're ready.</p>
+    <h1>A growing library of real work.</h1>
+    <p class="lede mx-auto" style="text-align:center;margin-top:16px;">Websites, dashboards, apps, games, and design — filter by discipline or browse it all below.</p>
       </div>
 </header>
 
 <section class="section">
   <div class="container">
-    <div class="grid-3">
-      <div class="work-card work-hero-card reveal">
-        <div class="glow"></div>
-        <span class="status-pill">COMING SOON</span>
-        <h3>Featured Case Study</h3>
-        <p>Our first in-depth breakdown of problem, process, and product will land here once the project ships.</p>
+    <div class="work-filters" id="workFilters">
+      <button class="filter-pill active" data-filter="all">All Work</button>
+      <button class="filter-pill" data-filter="web-dev">Web Development</button>
+      <button class="filter-pill" data-filter="ui-ux">UI/UX Design</button>
+      <button class="filter-pill" data-filter="mobile-app">Mobile App Development</button>
+      <button class="filter-pill" data-filter="mobile-game">Mobile Game Development</button>
+      <button class="filter-pill" data-filter="graphic-design">Graphic Designing</button>
+      <button class="filter-pill" data-filter="dashboard">Dashboard Development</button>
+    </div>
+    <div class="work-section" data-section="web-dev">
+      <div class="work-section-heading">
+        <h3>Web Development</h3>
+        <span class="line"></span>
+        <span class="count">5 projects</span>
       </div>
-      <div class="work-card reveal">
-        <div class="glow"></div>
-        <span class="status-pill">FUTURE PROJECT</span>
-        <h3>Web &amp; App Builds</h3>
-        <p>Full-stack products from recent engagements, added as they launch.</p>
+      <div class="work-grid">
+      <div class="work-tile reveal" data-modal-target="modal-yaadgar" data-cats="web-dev" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="work-tile-img">
+          <img src="images/work/yaadgar/poster.jpg" alt="Yaadgar Events Planner">
+          <span class="status-pill status-pill-live">LIVE</span>
+        </div>
+        <div class="work-tile-body">
+          <h3>Yaadgar Events Planner</h3>
+          <p>A premium event-planning site with a full booking flow, live gallery, and WhatsApp-integrated reviews.</p>
+          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+        </div>
       </div>
-      <div class="work-card reveal">
-        <div class="glow"></div>
-        <span class="status-pill">FUTURE PROJECT</span>
-        <h3>Brand &amp; Design Work</h3>
-        <p>Identity systems and visual design pieces from client collaborations.</p>
+      <div class="work-tile reveal" data-modal-target="modal-quosar" data-cats="web-dev" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="work-tile-img">
+          <img src="images/work/quosar/poster.jpg" alt="Quosar Beauty Saloon">
+          
+        </div>
+        <div class="work-tile-body">
+          <h3>Quosar Beauty Saloon</h3>
+          <p>A dark, editorial salon booking site for hair, skin, and bridal services in Lahore.</p>
+          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+        </div>
       </div>
-      <div class="work-card reveal">
-        <div class="glow"></div>
-        <span class="status-pill">CASE STUDY</span>
-        <h3>Process Breakdown</h3>
-        <p>A walkthrough of discovery, design, and build for a real project.</p>
+      <div class="work-tile reveal" data-modal-target="modal-fitwithabdullah" data-cats="web-dev" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="work-tile-img">
+          <img src="images/work/fitwithabdullah/poster.jpg" alt="FitWithAbdullah">
+          
+        </div>
+        <div class="work-tile-body">
+          <h3>FitWithAbdullah</h3>
+          <p>A dark fitness-coaching site with personalized Pakistani diet plans and workout programs.</p>
+          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+        </div>
       </div>
-      <div class="work-card reveal">
-        <div class="glow"></div>
-        <span class="status-pill">VIDEO</span>
-        <h3>Project Walkthroughs</h3>
-        <p>Short video demos showing finished products in action.</p>
+      <div class="work-tile reveal" data-modal-target="modal-sentinel" data-cats="web-dev" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="work-tile-img">
+          <img src="images/work/sentinel/poster.jpg" alt="Sentinel">
+          
+        </div>
+        <div class="work-tile-body">
+          <h3>Sentinel</h3>
+          <p>A browser-based security monitoring app with real-time unauthorized-access alarm audio.</p>
+          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+        </div>
       </div>
-      <div class="work-card reveal">
-        <div class="glow"></div>
-        <span class="status-pill">DETAILS</span>
-        <h3>Project Details</h3>
-        <p>Scope, timeline, and tools used, laid out for every future entry.</p>
+      <div class="work-tile reveal" data-modal-target="modal-visionattend" data-cats="web-dev" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="work-tile-img">
+          <img src="images/work/visionattend/poster.jpg" alt="VisionAttend AI">
+          
+        </div>
+        <div class="work-tile-body">
+          <h3>VisionAttend AI</h3>
+          <p>A facial-recognition attendance system with a clean admin sign-in portal.</p>
+          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+        </div>
+      </div>
       </div>
     </div>
+    <div class="work-section" data-section="dashboard">
+      <div class="work-section-heading">
+        <h3>Dashboard Development</h3>
+        <span class="line"></span>
+        <span class="count">6 projects</span>
+      </div>
+      <div class="work-grid">
+      <div class="work-tile reveal" data-modal-target="modal-mediflow" data-cats="dashboard" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="work-tile-img">
+          <img src="images/work/mediflow/poster.jpg" alt="MediFlow">
+          
+        </div>
+        <div class="work-tile-body">
+          <h3>MediFlow</h3>
+          <p>A hospital emergency management dashboard covering patients, doctors, beds, and live analytics.</p>
+          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+        </div>
+      </div>
+      <div class="work-tile reveal" data-modal-target="modal-ashford" data-cats="dashboard" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="work-tile-img">
+          <img src="images/work/ashford/poster.jpg" alt="Ashford University">
+          
+        </div>
+        <div class="work-tile-body">
+          <h3>Ashford University</h3>
+          <p>Executive registrar console for university admissions &amp; records.</p>
+          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+        </div>
+      </div>
+      <div class="work-tile reveal" data-modal-target="modal-epicure" data-cats="dashboard" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="work-tile-img">
+          <img src="images/work/epicure/poster.jpg" alt="Epicure Slate">
+          
+        </div>
+        <div class="work-tile-body">
+          <h3>Epicure Slate</h3>
+          <p>Gourmet restaurant ops console with a live kitchen display system.</p>
+          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+        </div>
+      </div>
+      <div class="work-tile reveal" data-modal-target="modal-skyfleet" data-cats="dashboard" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="work-tile-img">
+          <img src="images/work/skyfleet/poster.jpg" alt="SkyFleet Dynamics">
+          
+        </div>
+        <div class="work-tile-body">
+          <h3>SkyFleet Dynamics</h3>
+          <p>Live fleet telemetry and GPS logistics command center.</p>
+          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+        </div>
+      </div>
+      <div class="work-tile reveal" data-modal-target="modal-sterling" data-cats="dashboard" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="work-tile-img">
+          <img src="images/work/sterling/poster.jpg" alt="Sterling Capital">
+          
+        </div>
+        <div class="work-tile-body">
+          <h3>Sterling Capital</h3>
+          <p>Wealth management console with live AUM and account rails.</p>
+          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+        </div>
+      </div>
+      <div class="work-tile reveal" data-modal-target="modal-verdant" data-cats="dashboard" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="work-tile-img">
+          <img src="images/work/verdant/poster.jpg" alt="Verdant Eco">
+          
+        </div>
+        <div class="work-tile-body">
+          <h3>Verdant Eco</h3>
+          <p>Smart-greenhouse environmental analytics dashboard.</p>
+          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="work-section" data-section="mobile-app">
+      <div class="work-section-heading">
+        <h3>Mobile App Development</h3>
+        <span class="line"></span>
+        <span class="count">7 apps</span>
+      </div>
+      <div class="work-grid">
+      <div class="work-tile reveal" data-modal-target="modal-app-dawaclock" data-cats="mobile-app" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="work-tile-img">
+          <img src="images/work/apps/dawaclock-poster.jpg" alt="DawaClock">
+          
+        </div>
+        <div class="work-tile-body">
+          <h3>DawaClock</h3>
+          <p>Medicine reminder &amp; refill tracker for elderly and chronic patients.</p>
+          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+        </div>
+      </div>
+      <div class="work-tile reveal" data-modal-target="modal-app-toolcanopy" data-cats="mobile-app" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="work-tile-img">
+          <img src="images/work/apps/toolcanopy-poster.jpg" alt="ToolCanopy">
+          
+        </div>
+        <div class="work-tile-body">
+          <h3>ToolCanopy</h3>
+          <p>Peer-to-peer equipment marketplace for engineering students.</p>
+          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+        </div>
+      </div>
+      <div class="work-tile reveal" data-modal-target="modal-app-sathwork" data-cats="mobile-app" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="work-tile-img">
+          <img src="images/work/apps/sathwork-poster.jpg" alt="SathWork">
+          
+        </div>
+        <div class="work-tile-body">
+          <h3>SathWork</h3>
+          <p>Tinder-style swipe matcher for students &amp; indie creators.</p>
+          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+        </div>
+      </div>
+      <div class="work-tile reveal" data-modal-target="modal-app-chornasha" data-cats="mobile-app" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="work-tile-img">
+          <img src="images/work/apps/chornasha-poster.jpg" alt="Chornasha">
+          
+        </div>
+        <div class="work-tile-body">
+          <h3>Chornasha</h3>
+          <p>Sobriety &amp; addiction-recovery companion.</p>
+          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+        </div>
+      </div>
+      <div class="work-tile reveal" data-modal-target="modal-app-togseo" data-cats="mobile-app" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="work-tile-img">
+          <img src="images/work/apps/togseo-poster.jpg" alt="Togseo">
+          
+        </div>
+        <div class="work-tile-body">
+          <h3>Togseo</h3>
+          <p>Guided sewing &amp; tailoring companion.</p>
+          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+        </div>
+      </div>
+      <div class="work-tile reveal" data-modal-target="modal-app-devboard" data-cats="mobile-app" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="work-tile-img">
+          <img src="images/work/apps/devboard-poster.jpg" alt="DevBoard">
+          
+        </div>
+        <div class="work-tile-body">
+          <h3>DevBoard</h3>
+          <p>Terminal-styled mobile server monitoring dashboard.</p>
+          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+        </div>
+      </div>
+      <div class="work-tile reveal" data-modal-target="modal-app-quickkaam" data-cats="mobile-app" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="work-tile-img">
+          <img src="images/work/apps/quickkaam-poster.jpg" alt="Quick Kaam">
+          
+        </div>
+        <div class="work-tile-body">
+          <h3>Quick Kaam</h3>
+          <p>Local service marketplace for Lahore, Pakistan.</p>
+          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="work-section" data-section="mobile-game">
+      <div class="work-section-heading">
+        <h3>Mobile Game Development</h3>
+        <span class="line"></span>
+        <span class="count">4 games</span>
+      </div>
+      <div class="work-grid">
+      <div class="work-tile reveal" data-modal-target="modal-zombie-shooter" data-cats="mobile-game" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="work-tile-img">
+          <img src="images/work/placeholder/zombie-shooter-poster.jpg" alt="Zombie Shooter">
+          
+        </div>
+        <div class="work-tile-body">
+          <h3>Zombie Shooter</h3>
+          <p>Top-down Android zombie survival shooter — 30 levels + boss fight.</p>
+          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+        </div>
+      </div>
+      <div class="work-tile reveal" data-modal-target="modal-hopscotch-hollow" data-cats="mobile-game" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="work-tile-img">
+          <img src="images/work/placeholder/hopscotch-hollow-poster.jpg" alt="Hopscotch Hollow">
+          
+        </div>
+        <div class="work-tile-body">
+          <h3>Hopscotch Hollow</h3>
+          <p>2D platformer adventure across 6 worlds, 36 levels, with an upgrade economy.</p>
+          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+        </div>
+      </div>
+      <div class="work-tile reveal" data-modal-target="modal-escape-game" data-cats="mobile-game" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="work-tile-img">
+          <img src="images/work/escape-game/poster.jpg" alt="Escape">
+          
+        </div>
+        <div class="work-tile-body">
+          <h3>Escape</h3>
+          <p>A tile-based maze escape game — find the key, avoid the guards, beat the clock.</p>
+          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+        </div>
+      </div>
+      <div class="work-tile reveal" data-modal-target="modal-speedrush" data-cats="mobile-game" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="work-tile-img">
+          <img src="images/work/speedrush/poster.jpg" alt="SpeedRush 2D">
+          
+        </div>
+        <div class="work-tile-body">
+          <h3>SpeedRush 2D</h3>
+          <p>A top-down 2D racing game — 5-lap circuits, rival AI cars, and a live speedometer HUD.</p>
+          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="work-section" data-section="ui-ux">
+      <div class="work-section-heading">
+        <h3>UI/UX Design</h3>
+        <span class="line"></span>
+        <span class="count">13 concepts</span>
+      </div>
+      <div class="work-grid">
+      <div class="work-tile reveal" data-modal-target="modal-uiux-airpods" data-cats="ui-ux" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="work-tile-img">
+          <img src="images/work/uiux/airpods-final.jpg" alt="AirPods Pro Landing">
+          
+        </div>
+        <div class="work-tile-body">
+          <h3>AirPods Pro Landing</h3>
+          <p>Apple product landing page exploration.</p>
+          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+        </div>
+      </div>
+      <div class="work-tile reveal" data-modal-target="modal-uiux-chatbot" data-cats="ui-ux" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="work-tile-img">
+          <img src="images/work/uiux/chatbot-final.jpg" alt="Chatly — AI Chatbot SaaS">
+          
+        </div>
+        <div class="work-tile-body">
+          <h3>Chatly — AI Chatbot SaaS</h3>
+          <p>AI chatbot SaaS marketing homepage.</p>
+          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+        </div>
+      </div>
+      <div class="work-tile reveal" data-modal-target="modal-uiux-gaming" data-cats="ui-ux" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="work-tile-img">
+          <img src="images/work/uiux/gaming-final.jpg" alt="PlayZone Gaming Hub">
+          
+        </div>
+        <div class="work-tile-body">
+          <h3>PlayZone Gaming Hub</h3>
+          <p>Gaming platform &amp; tournament hub homepage.</p>
+          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+        </div>
+      </div>
+      <div class="work-tile reveal" data-modal-target="modal-uiux-lamp" data-cats="ui-ux" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="work-tile-img">
+          <img src="images/work/uiux/lamp-final.jpg" alt="Lumiere Lighting Store">
+          
+        </div>
+        <div class="work-tile-body">
+          <h3>Lumiere Lighting Store</h3>
+          <p>Modern lighting e-commerce landing page.</p>
+          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+        </div>
+      </div>
+      <div class="work-tile reveal" data-modal-target="modal-uiux-course" data-cats="ui-ux" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="work-tile-img">
+          <img src="images/work/uiux/course-final.jpg" alt="Online Course Dashboard">
+          
+        </div>
+        <div class="work-tile-body">
+          <h3>Online Course Dashboard</h3>
+          <p>Student learning dashboard UI.</p>
+          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+        </div>
+      </div>
+      <div class="work-tile reveal" data-modal-target="modal-uiux-crockery" data-cats="ui-ux" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="work-tile-img">
+          <img src="images/work/uiux/crockery-final.jpg" alt="Crockery &amp; Homeware Store">
+          
+        </div>
+        <div class="work-tile-body">
+          <h3>Crockery &amp; Homeware Store</h3>
+          <p>Homeware e-commerce landing page.</p>
+          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+        </div>
+      </div>
+      <div class="work-tile reveal" data-modal-target="modal-uiux-deleivery" data-cats="ui-ux" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="work-tile-img">
+          <img src="images/work/uiux/deleivery-final.jpg" alt="Food Delivery App">
+          
+        </div>
+        <div class="work-tile-body">
+          <h3>Food Delivery App</h3>
+          <p>Food delivery mobile app UI.</p>
+          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+        </div>
+      </div>
+      <div class="work-tile reveal" data-modal-target="modal-uiux-furniture" data-cats="ui-ux" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="work-tile-img">
+          <img src="images/work/uiux/furniture-final.jpg" alt="Furniture Store Landing">
+          
+        </div>
+        <div class="work-tile-body">
+          <h3>Furniture Store Landing</h3>
+          <p>Furniture e-commerce landing page.</p>
+          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+        </div>
+      </div>
+      <div class="work-tile reveal" data-modal-target="modal-uiux-laptop" data-cats="ui-ux" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="work-tile-img">
+          <img src="images/work/uiux/laptop-final.jpg" alt="Laptop Marketplace">
+          
+        </div>
+        <div class="work-tile-body">
+          <h3>Laptop Marketplace</h3>
+          <p>Laptop resale marketplace UI.</p>
+          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+        </div>
+      </div>
+      <div class="work-tile reveal" data-modal-target="modal-uiux-mirror" data-cats="ui-ux" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="work-tile-img">
+          <img src="images/work/uiux/mirror-final.jpg" alt="Smart Mirror Product Page">
+          
+        </div>
+        <div class="work-tile-body">
+          <h3>Smart Mirror Product Page</h3>
+          <p>Smart mirror product landing page.</p>
+          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+        </div>
+      </div>
+      <div class="work-tile reveal" data-modal-target="modal-uiux-mob-repair" data-cats="ui-ux" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="work-tile-img">
+          <img src="images/work/uiux/mob-repair-final.jpg" alt="Mobile Repair Service">
+          
+        </div>
+        <div class="work-tile-body">
+          <h3>Mobile Repair Service</h3>
+          <p>Mobile repair service booking UI.</p>
+          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+        </div>
+      </div>
+      <div class="work-tile reveal" data-modal-target="modal-uiux-parada" data-cats="ui-ux" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="work-tile-img">
+          <img src="images/work/uiux/parada-final.jpg" alt="Parada Fashion Store">
+          
+        </div>
+        <div class="work-tile-body">
+          <h3>Parada Fashion Store</h3>
+          <p>Fashion e-commerce landing page.</p>
+          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+        </div>
+      </div>
+      <div class="work-tile reveal" data-modal-target="modal-uiux-saas-animation" data-cats="ui-ux" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="work-tile-img">
+          <img src="images/work/uiux/saas-animation-final.jpg" alt="SaaS Animation Landing">
+          
+        </div>
+        <div class="work-tile-body">
+          <h3>SaaS Animation Landing</h3>
+          <p>Animated SaaS product landing page.</p>
+          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="work-section" data-section="graphic-design">
+      <div class="work-section-heading">
+        <h3>Graphic Designing</h3>
+        <span class="line"></span>
+        <span class="count">11 pieces</span>
+      </div>
+      <div class="work-grid">
+      <div class="work-tile reveal" data-modal-target="modal-graphic-fitlife" data-cats="graphic-design" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="work-tile-img">
+          <img src="images/work/graphic/fitlife.jpg" alt="FitLife — Fitness App Banner">
+          
+        </div>
+        <div class="work-tile-body">
+          <h3>FitLife — Fitness App Banner</h3>
+          <p>Web banner ad for a fitness app.</p>
+          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+        </div>
+      </div>
+      <div class="work-tile reveal" data-modal-target="modal-graphic-luxora" data-cats="graphic-design" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="work-tile-img">
+          <img src="images/work/graphic/luxora.jpg" alt="Luxora Furniture — Promo Banner">
+          
+        </div>
+        <div class="work-tile-body">
+          <h3>Luxora Furniture — Promo Banner</h3>
+          <p>E-commerce sale banner for a furniture brand.</p>
+          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+        </div>
+      </div>
+      <div class="work-tile reveal" data-modal-target="modal-graphic-glamour" data-cats="graphic-design" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="work-tile-img">
+          <img src="images/work/graphic/glamour.jpg" alt="Glamour Beauty Salon — Flyer">
+          
+        </div>
+        <div class="work-tile-body">
+          <h3>Glamour Beauty Salon — Flyer</h3>
+          <p>Print/social flyer for a beauty salon.</p>
+          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+        </div>
+      </div>
+      <div class="work-tile reveal" data-modal-target="modal-graphic-spicehouse" data-cats="graphic-design" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="work-tile-img">
+          <img src="images/work/graphic/spicehouse.jpg" alt="Spice House — Brand Identity">
+          
+        </div>
+        <div class="work-tile-body">
+          <h3>Spice House — Brand Identity</h3>
+          <p>Restaurant logo &amp; brand mark system.</p>
+          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+        </div>
+      </div>
+      <div class="work-tile reveal" data-modal-target="modal-graphic-visionmedia" data-cats="graphic-design" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="work-tile-img">
+          <img src="images/work/graphic/visionmedia.jpg" alt="Vision Media — Brand Identity">
+          
+        </div>
+        <div class="work-tile-body">
+          <h3>Vision Media — Brand Identity</h3>
+          <p>Creative agency logo &amp; brand mark system.</p>
+          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+        </div>
+      </div>
+      <div class="work-tile reveal" data-modal-target="modal-graphic-messi" data-cats="graphic-design" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="work-tile-img">
+          <img src="images/work/graphic/messi.jpg" alt="Messi — Magazine Cover">
+          
+        </div>
+        <div class="work-tile-body">
+          <h3>Messi — Magazine Cover</h3>
+          <p>Editorial sports magazine cover poster.</p>
+          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+        </div>
+      </div>
+      <div class="work-tile reveal" data-modal-target="modal-graphic-focus" data-cats="graphic-design" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="work-tile-img">
+          <img src="images/work/graphic/focus.jpg" alt="Focus — Film Poster">
+          
+        </div>
+        <div class="work-tile-body">
+          <h3>Focus — Film Poster</h3>
+          <p>Cinematic teaser poster for a short film.</p>
+          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+        </div>
+      </div>
+      <div class="work-tile reveal" data-modal-target="modal-graphic-galaxys24" data-cats="graphic-design" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="work-tile-img">
+          <img src="images/work/graphic/galaxys24.jpg" alt="Samsung Galaxy S24 Ultra — Product Poster">
+          
+        </div>
+        <div class="work-tile-body">
+          <h3>Samsung Galaxy S24 Ultra — Product Poster</h3>
+          <p>Tech product launch poster.</p>
+          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+        </div>
+      </div>
+      <div class="work-tile reveal" data-modal-target="modal-graphic-musicfest" data-cats="graphic-design" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="work-tile-img">
+          <img src="images/work/graphic/musicfest.jpg" alt="Music Festival — Event Poster">
+          
+        </div>
+        <div class="work-tile-body">
+          <h3>Music Festival — Event Poster</h3>
+          <p>Multi-day music festival event poster.</p>
+          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+        </div>
+      </div>
+      <div class="work-tile reveal" data-modal-target="modal-graphic-aitools" data-cats="graphic-design" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="work-tile-img">
+          <img src="images/work/graphic/aitools.jpg" alt="AI Tools Review — YouTube Thumbnail">
+          
+        </div>
+        <div class="work-tile-body">
+          <h3>AI Tools Review — YouTube Thumbnail</h3>
+          <p>YouTube thumbnail for a tech review video.</p>
+          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+        </div>
+      </div>
+      <div class="work-tile reveal" data-modal-target="modal-graphic-photoshop" data-cats="graphic-design" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="work-tile-img">
+          <img src="images/work/graphic/photoshop.jpg" alt="Photoshop Tutorial — YouTube Thumbnail">
+          
+        </div>
+        <div class="work-tile-body">
+          <h3>Photoshop Tutorial — YouTube Thumbnail</h3>
+          <p>YouTube thumbnail for a design tutorial.</p>
+          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+        </div>
+      </div>
+      </div>
+    </div>
+    <p class="work-empty" id="workEmpty" style="display:none;">No projects in this category yet — more work is being added here as it ships.</p>
   </div>
 </section>
 
@@ -140,7 +672,6 @@
           <a class="social-icon" href="https://linkedin.com/company/craftsolve" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M6.94 8.5H3.56V20H6.94V8.5ZM5.25 7A2 2 0 1 0 5.25 3 2 2 0 0 0 5.25 7ZM20.4 20H17V13.9C17 12.3 16.4 11.3 15 11.3C13.9 11.3 13.3 12 13 12.7C12.9 13 12.9 13.4 12.9 13.8V20H9.5S9.6 9.4 9.5 8.5H12.9V10C13.3 9.3 14.2 8.3 16 8.3C18.2 8.3 20.4 9.7 20.4 13.2V20Z"/></svg></a>
           <a class="social-icon" href="https://www.instagram.com/craft.solve?igsh=MTNzZjlxMzJ3bjUyeg==" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2Zm-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm5.25-1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5Z"/></svg></a>
           <a class="social-icon" href="https://www.facebook.com/share/192Q8X9ZMj/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.25-1.5 1.55-1.5H16.7V3.6C16.4 3.55 15.4 3.47 14.24 3.47c-2.42 0-4.08 1.48-4.08 4.2v2.22H7.4v3.1h2.76V21h3.34Z"/></svg></a>
-          <a class="social-icon" href="https://github.com/abduu-codes/craftsolve" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.54 2.87 8.39 6.84 9.75.5.1.68-.22.68-.49 0-.24-.01-1.04-.01-1.89-2.78.62-3.37-1.21-3.37-1.21-.46-1.19-1.11-1.51-1.11-1.51-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.32.1-2.75 0 0 .84-.27 2.75 1.05a9.28 9.28 0 0 1 5 0c1.91-1.32 2.75-1.05 2.75-1.05.55 1.43.2 2.49.1 2.75.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"/></svg></a>
           <a class="social-icon" href="https://wa.me/923354673607" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.4 14.2c-.2.6-1.3 1.2-1.9 1.3-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-3-1.3-5-4.3-5.1-4.5-.2-.2-1.2-1.6-1.2-3.1 0-1.5.8-2.2 1-2.5.2-.3.5-.4.7-.4h.5c.2 0 .4 0 .6.4.2.5.7 1.8.8 1.9.1.1.1.3 0 .5-.1.2-.1.3-.3.5l-.4.5c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.4.1.6-.1l.6-.7c.2-.3.4-.2.6-.1l1.7.8c.2.1.4.2.4.4.1.2.1.9-.1 1.5Z"/></svg></a>
         </div>
       </div>
@@ -172,6 +703,1359 @@
   </div>
 </footer>
 
+
+<div class="project-modal-overlay" id="modalOverlay"></div>
+
+<div class="project-modal" id="modal-yaadgar" role="dialog" aria-modal="true" aria-label="Yaadgar Events Planner case study">
+  <button class="project-modal-close" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div class="project-modal-inner layout-landscape">
+    <div class="pm-media">
+      <video controls preload="metadata" poster="images/work/yaadgar/poster.jpg" src="videos/yaadgar-demo.mp4"></video>
+    </div>
+    <div class="pm-body">
+      <div class="pm-info">
+        <h2>Yaadgar Events Planner</h2>
+        <p class="pm-tagline">"Har Lamha Baniye Yaadgar" — a Pakistani event-planning studio's client-facing site.</p>
+        <p class="pm-desc">A dark, editorial-style booking site covering everything from mehndi setups to birthdays — a filterable decoration gallery with live pricing, a category-based events browser, a booking form with WhatsApp handoff, and a review system that opens a pre-filled WhatsApp message on submit.</p>
+        <ul class="pm-meta">
+          <li><span>Role</span>Design &amp; full-stack build</li>
+          <li><span>Stack</span>HTML5, CSS3, JavaScript, PHP, MySQL</li>
+          <li><span>Features</span>Booking flow, gallery filters, WhatsApp integration</li>
+        </ul>
+        <a class="pm-live-link" href="https://yaadgar.infinityfree.me/?i=1" target="_blank" rel="noopener">
+          Visit Live Site
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
+      <div class="pm-shots">
+        <img class="shot shot-1" src="images/work/yaadgar/shot-1.jpg" alt="Yaadgar Events Planner home page">
+        <img class="shot shot-2" src="images/work/yaadgar/shot-2.jpg" alt="Yaadgar Events Planner decoration gallery">
+        <img class="shot shot-3" src="images/work/yaadgar/shot-3.jpg" alt="Yaadgar Events Planner about page">
+        <img class="shot shot-4" src="images/work/yaadgar/shot-4.jpg" alt="Yaadgar Events Planner booking form">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="project-modal" id="modal-quosar" role="dialog" aria-modal="true" aria-label="Quosar Beauty Saloon case study">
+  <button class="project-modal-close" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div class="project-modal-inner layout-landscape">
+    <div class="pm-media">
+      <video controls preload="metadata" poster="images/work/quosar/poster.jpg" src="videos/quosar-demo.mp4"></video>
+    </div>
+    <div class="pm-body">
+      <div class="pm-info">
+        <h2>Quosar Beauty Saloon</h2>
+        <p class="pm-tagline">Elevated Beauty, Effortlessly — a premium salon website for a Lahore beauty studio.</p>
+        <p class="pm-desc">A dark, editorial salon website for hair, skin, and bridal services. Visitors browse services and bridal packages with live pricing, meet the team on an Experts page, and book a slot straight through a one-tap WhatsApp flow — no forms, no back-and-forth.</p>
+        <ul class="pm-meta">
+          <li><span>Role</span>Design &amp; front-end build</li>
+          <li><span>Stack</span>HTML5, CSS3, JavaScript</li>
+          <li><span>Features</span>WhatsApp booking, service &amp; pricing cards, bridal packages, expert profiles</li>
+        </ul>
+      </div>
+      <div class="pm-shots">
+        <img class="shot shot-1" src="images/work/quosar/shot-2.jpg" alt="Quosar service pricing cards">
+        <img class="shot shot-2" src="images/work/quosar/shot-3.jpg" alt="Quosar WhatsApp booking CTA">
+        <img class="shot shot-3" src="images/work/quosar/shot-4.jpg" alt="Quosar expert team profiles">
+        <img class="shot shot-4" src="images/work/quosar/poster.jpg" alt="Quosar salon website hero">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="project-modal" id="modal-fitwithabdullah" role="dialog" aria-modal="true" aria-label="FitWithAbdullah case study">
+  <button class="project-modal-close" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div class="project-modal-inner layout-landscape">
+    <div class="pm-media">
+      <video controls preload="metadata" poster="images/work/fitwithabdullah/poster.jpg" src="videos/fitwithabdullah-demo.mp4"></video>
+    </div>
+    <div class="pm-body">
+      <div class="pm-info">
+        <h2>FitWithAbdullah</h2>
+        <p class="pm-tagline">Best version of yourself — a coaching site for beginner-friendly fitness transformation.</p>
+        <p class="pm-desc">A dark, high-contrast coaching website helping beginners build muscle, lose fat, and build consistency with personalized Pakistani diet plans and workout programs — a 5-step diet planner, a WhatsApp-integrated contact form, and live stat counters that build trust.</p>
+        <ul class="pm-meta">
+          <li><span>Role</span>Design &amp; front-end build</li>
+          <li><span>Stack</span>HTML5, CSS3, JavaScript</li>
+          <li><span>Features</span>5-step diet planner, WhatsApp contact form, stat counters</li>
+        </ul>
+      </div>
+      <div class="pm-shots">
+        <img class="shot shot-1" src="images/work/fitwithabdullah/poster.jpg" alt="FitWithAbdullah homepage hero">
+        <img class="shot shot-2" src="images/work/fitwithabdullah/shot-3.jpg" alt="FitWithAbdullah homepage — become the best version">
+        <img class="shot shot-3" src="images/work/fitwithabdullah/shot-2.jpg" alt="FitWithAbdullah Pakistani diet planner">
+        <img class="shot shot-4" src="images/work/fitwithabdullah/shot-1.jpg" alt="FitWithAbdullah Talk With Me contact page">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="project-modal" id="modal-sentinel" role="dialog" aria-modal="true" aria-label="Sentinel case study">
+  <button class="project-modal-close" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div class="project-modal-inner layout-landscape">
+    <div class="pm-media">
+      <video controls preload="metadata" poster="images/work/sentinel/poster.jpg" src="videos/sentinel-demo.mp4"></video>
+    </div>
+    <div class="pm-body">
+      <div class="pm-info">
+        <h2>Sentinel</h2>
+        <p class="pm-tagline">A lightweight browser security monitor with an audible intrusion alarm.</p>
+        <p class="pm-desc">A minimal, dark security web app that plays an audible alarm the moment an unauthorized person is detected on camera — a live camera feed, real-time AI status and detection counters, one-click controls to register faces and start monitoring, and a running activity log of every detection event.</p>
+        <ul class="pm-meta">
+          <li><span>Role</span>Design &amp; front-end build</li>
+          <li><span>Stack</span>HTML5, CSS3, JavaScript, Web Audio API</li>
+          <li><span>Features</span>Live detection stats, audio alarm, activity log, session-based consent</li>
+        </ul>
+      </div>
+      <div class="pm-shots">
+        <img class="shot shot-1" src="images/work/sentinel/shot-2.jpg" alt="Sentinel dashboard — monitoring active">
+        <img class="shot shot-2" src="images/work/sentinel/shot-3.jpg" alt="Sentinel dashboard — idle state">
+        <img class="shot shot-3" src="images/work/sentinel/shot-1.jpg" alt="Sentinel activity log">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="project-modal" id="modal-visionattend" role="dialog" aria-modal="true" aria-label="VisionAttend AI case study">
+  <button class="project-modal-close" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div class="project-modal-inner layout-landscape">
+    <div class="pm-media">
+      <video controls preload="metadata" poster="images/work/visionattend/poster.jpg" src="videos/visionattend-demo.mp4"></video>
+    </div>
+    <div class="pm-body">
+      <div class="pm-info">
+        <h2>VisionAttend AI</h2>
+        <p class="pm-tagline">AI-powered facial recognition attendance for schools &amp; offices.</p>
+        <p class="pm-desc">A clean, focused admin portal for an AI attendance system — secure sign-in gates access to a student roster, live facial-recognition check-ins, and configurable attendance rules (start time and grace period) that automatically mark students Early, On Time, or Late.</p>
+        <ul class="pm-meta">
+          <li><span>Role</span>Design &amp; front-end build</li>
+          <li><span>Stack</span>HTML5, CSS3, JavaScript, Python (recognition backend)</li>
+          <li><span>Features</span>Facial-recognition check-in, student roster, admin authentication, configurable attendance rules</li>
+        </ul>
+      </div>
+      <div class="pm-shots">
+        <img class="shot shot-1" src="images/work/visionattend/shot-1.jpg" alt="VisionAttend AI sign-in portal">
+        <img class="shot shot-2" src="images/work/visionattend/shot-2.jpg" alt="VisionAttend AI student roster">
+        <img class="shot shot-3" src="images/work/visionattend/shot-3.jpg" alt="VisionAttend AI add student form">
+        <img class="shot shot-4" src="images/work/visionattend/shot-4.jpg" alt="VisionAttend AI attendance dashboard">
+        <img class="shot shot-5" src="images/work/visionattend/shot-5.jpg" alt="VisionAttend AI attendance rules settings">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="project-modal" id="modal-mediflow" role="dialog" aria-modal="true" aria-label="MediFlow case study">
+  <button class="project-modal-close" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div class="project-modal-inner layout-landscape">
+    <div class="pm-media">
+      <video controls preload="metadata" poster="images/work/mediflow/poster.jpg" src="videos/mediflow-demo.mp4"></video>
+    </div>
+    <div class="pm-body">
+      <div class="pm-info">
+        <h2>MediFlow</h2>
+        <p class="pm-tagline">Hospital Emergency Management &amp; Analytics Platform.</p>
+        <p class="pm-desc">A role-based hospital dashboard for admins, doctors, and receptionists — patient admission and tracking, doctor availability, bed occupancy, ambulance logs, and live analytics charts for admissions, critical-vs-stable patients, and department workload, plus exportable reports.</p>
+        <ul class="pm-meta">
+          <li><span>Role</span>Design &amp; full-stack build</li>
+          <li><span>Stack</span>HTML5, CSS3, JavaScript, Node.js, Express.js, MySQL</li>
+          <li><span>Features</span>Role-based auth (JWT), CRUD modules, Chart.js analytics, PDF/Excel/CSV reports</li>
+        </ul>
+      </div>
+      <div class="pm-shots">
+        <img class="shot shot-1" src="images/work/mediflow/shot-1.jpg" alt="MediFlow dashboard analytics">
+        <img class="shot shot-2" src="images/work/mediflow/shot-2.jpg" alt="MediFlow patient admission">
+        <img class="shot shot-3" src="images/work/mediflow/shot-3.jpg" alt="MediFlow doctors roster">
+        <img class="shot shot-4" src="images/work/mediflow/shot-4.jpg" alt="MediFlow bed occupancy">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="project-modal" id="modal-ashford" role="dialog" aria-modal="true" aria-label="Ashford University case study">
+  <button class="project-modal-close" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div class="project-modal-inner layout-landscape">
+    <div class="pm-media">
+      <video controls preload="metadata" poster="images/work/ashford/poster.jpg" src="videos/ashford-demo.mp4"></video>
+    </div>
+    <div class="pm-body">
+      <div class="pm-info">
+        <h2>Ashford University</h2>
+        <p class="pm-tagline">Executive registrar console for university admissions &amp; records.</p>
+        <p class="pm-desc">A single-page academic administration console for university registrars — a Kanban-based admissions review board, a student roster with GPA and financial-hold tracking, a course catalog, faculty directory, and a bursar module for clearing tuition holds.</p>
+        <ul class="pm-meta">
+          <li><span>Role</span>Design &amp; front-end build</li>
+          <li><span>Stack</span>Vanilla JS, CSS3, Chart.js</li>
+          <li><span>Features</span>Admissions Kanban, transcript &amp; syllabus modals, global search, bursar hold resolution</li>
+        </ul>
+      </div>
+      <div class="pm-shots">
+        <img class="shot shot-1" src="images/work/ashford/poster.jpg" alt="Ashford University dashboard overview">
+        <img class="shot shot-2" src="images/work/ashford/shot-1.jpg" alt="Ashford University dashboard detail view">
+        <img class="shot shot-3" src="images/work/ashford/shot-2.jpg" alt="Ashford University dashboard detail view">
+        <img class="shot shot-4" src="images/work/ashford/shot-3.jpg" alt="Ashford University dashboard detail view">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="project-modal" id="modal-epicure" role="dialog" aria-modal="true" aria-label="Epicure Slate case study">
+  <button class="project-modal-close" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div class="project-modal-inner layout-landscape">
+    <div class="pm-media">
+      <video controls preload="metadata" poster="images/work/epicure/poster.jpg" src="videos/epicure-demo.mp4"></video>
+    </div>
+    <div class="pm-body">
+      <div class="pm-info">
+        <h2>Epicure Slate</h2>
+        <p class="pm-tagline">Gourmet restaurant ops console with a live kitchen display system.</p>
+        <p class="pm-desc">An end-to-end restaurant management console covering live order dispatch, a kitchen display system with station-based ticket bumping, a menu catalog, sales analytics, and customer review replies — with a simulated order chime for a real-time feel.</p>
+        <ul class="pm-meta">
+          <li><span>Role</span>Design &amp; front-end build</li>
+          <li><span>Stack</span>Vanilla JS, Chart.js, Web Audio API</li>
+          <li><span>Features</span>Kanban order board, KDS ticket bumping, thermal-receipt simulation, review replies</li>
+        </ul>
+      </div>
+      <div class="pm-shots">
+        <img class="shot shot-1" src="images/work/epicure/poster.jpg" alt="Epicure Slate dashboard overview">
+        <img class="shot shot-2" src="images/work/epicure/shot-1.jpg" alt="Epicure Slate dashboard detail view">
+        <img class="shot shot-3" src="images/work/epicure/shot-2.jpg" alt="Epicure Slate dashboard detail view">
+        <img class="shot shot-4" src="images/work/epicure/shot-3.jpg" alt="Epicure Slate dashboard detail view">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="project-modal" id="modal-skyfleet" role="dialog" aria-modal="true" aria-label="SkyFleet Dynamics case study">
+  <button class="project-modal-close" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div class="project-modal-inner layout-landscape">
+    <div class="pm-media">
+      <video controls preload="metadata" poster="images/work/skyfleet/poster.jpg" src="videos/skyfleet-demo.mp4"></video>
+    </div>
+    <div class="pm-body">
+      <div class="pm-info">
+        <h2>SkyFleet Dynamics</h2>
+        <p class="pm-tagline">Live fleet telemetry and GPS logistics command center.</p>
+        <p class="pm-desc">A logistics dispatch console for fleet managers — live animated vehicle tracking on an interactive map, a driver roster with safety scores, a maintenance work-order queue, and fuel/CO2 analytics.</p>
+        <ul class="pm-meta">
+          <li><span>Role</span>Design &amp; front-end build</li>
+          <li><span>Stack</span>Vanilla JS, Leaflet.js, Chart.js</li>
+          <li><span>Features</span>Live GPS map simulation, driver duty status, maintenance hub, fuel analytics</li>
+        </ul>
+      </div>
+      <div class="pm-shots">
+        <img class="shot shot-1" src="images/work/skyfleet/poster.jpg" alt="SkyFleet Dynamics dashboard overview">
+        <img class="shot shot-2" src="images/work/skyfleet/shot-1.jpg" alt="SkyFleet Dynamics dashboard detail view">
+        <img class="shot shot-3" src="images/work/skyfleet/shot-2.jpg" alt="SkyFleet Dynamics dashboard detail view">
+        <img class="shot shot-4" src="images/work/skyfleet/shot-3.jpg" alt="SkyFleet Dynamics dashboard detail view">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="project-modal" id="modal-sterling" role="dialog" aria-modal="true" aria-label="Sterling Capital case study">
+  <button class="project-modal-close" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div class="project-modal-inner layout-landscape">
+    <div class="pm-media">
+      <video controls preload="metadata" poster="images/work/sterling/poster.jpg" src="videos/sterling-demo.mp4"></video>
+    </div>
+    <div class="pm-body">
+      <div class="pm-info">
+        <h2>Sterling Capital</h2>
+        <p class="pm-tagline">Wealth management console with live AUM and account rails.</p>
+        <p class="pm-desc">A dark-themed wealth management console for a discretionary desk — an account rail tracking client portfolios by status, live asset-allocation breakdowns, a market watchlist, and one-click CSV export of holdings.</p>
+        <ul class="pm-meta">
+          <li><span>Role</span>Design &amp; front-end build</li>
+          <li><span>Stack</span>Vanilla JS, Chart.js</li>
+          <li><span>Features</span>Account status rail, asset-allocation chart, market watchlist, CSV export</li>
+        </ul>
+      </div>
+      <div class="pm-shots">
+        <img class="shot shot-1" src="images/work/sterling/poster.jpg" alt="Sterling Capital dashboard overview">
+        <img class="shot shot-2" src="images/work/sterling/shot-1.jpg" alt="Sterling Capital dashboard detail view">
+        <img class="shot shot-3" src="images/work/sterling/shot-2.jpg" alt="Sterling Capital dashboard detail view">
+        <img class="shot shot-4" src="images/work/sterling/shot-3.jpg" alt="Sterling Capital dashboard detail view">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="project-modal" id="modal-verdant" role="dialog" aria-modal="true" aria-label="Verdant Eco case study">
+  <button class="project-modal-close" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div class="project-modal-inner layout-landscape">
+    <div class="pm-media">
+      <video controls preload="metadata" poster="images/work/verdant/poster.jpg" src="videos/verdant-demo.mp4"></video>
+    </div>
+    <div class="pm-body">
+      <div class="pm-info">
+        <h2>Verdant Eco</h2>
+        <p class="pm-tagline">Smart-greenhouse environmental analytics dashboard.</p>
+        <p class="pm-desc">A micro-climate monitoring console for a smart greenhouse — live ambient temperature, humidity, soil moisture, and solar self-sufficiency readings, a sensor network view, and energy/ESG reporting.</p>
+        <ul class="pm-meta">
+          <li><span>Role</span>Design &amp; front-end build</li>
+          <li><span>Stack</span>Vanilla JS, Chart.js</li>
+          <li><span>Features</span>Live telemetry ticker, high-contrast mode, sensor network map, ESG reports</li>
+        </ul>
+      </div>
+      <div class="pm-shots">
+        <img class="shot shot-1" src="images/work/verdant/poster.jpg" alt="Verdant Eco dashboard overview">
+        <img class="shot shot-2" src="images/work/verdant/shot-1.jpg" alt="Verdant Eco dashboard detail view">
+        <img class="shot shot-3" src="images/work/verdant/shot-2.jpg" alt="Verdant Eco dashboard detail view">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="project-modal" id="modal-app-dawaclock" role="dialog" aria-modal="true" aria-label="DawaClock case study">
+  <button class="project-modal-close" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div class="project-modal-inner layout-portrait">
+    <div class="pm-media">
+      <video controls preload="metadata" poster="images/work/apps/dawaclock-poster.jpg" src="videos/dawaclock-demo.mp4"></video>
+    </div>
+    <div class="pm-body">
+      <div class="pm-info">
+        <h2>DawaClock</h2>
+        <p class="pm-tagline">Medicine reminder &amp; refill tracker for elderly and chronic patients.</p>
+        <p class="pm-desc">A daily-dose timeline app for elderly and chronic patients — one-tap 'Take' confirmation, a live pill-stock tracker that flags low supply, and an editable caretaker contact list, all wrapped in a warm, high-contrast, large-type interface built for accessibility.</p>
+        <ul class="pm-meta">
+          <li><span>Role</span>Design &amp; Flutter build</li>
+          <li><span>Stack</span>Flutter, Provider</li>
+          <li><span>Data</span>In-memory demo data, no live backend</li>
+        </ul>
+      </div>
+      <div>
+        <div class="app-shots-grid">
+          <img class="lightbox-trigger" src="images/work/apps/dawaclock-ss-1.jpg" alt="DawaClock screenshot 1">
+          <img class="lightbox-trigger" src="images/work/apps/dawaclock-ss-2.jpg" alt="DawaClock screenshot 2">
+          <img class="lightbox-trigger" src="images/work/apps/dawaclock-ss-3.jpg" alt="DawaClock screenshot 3">
+          <img class="lightbox-trigger" src="images/work/apps/dawaclock-ss-4.jpg" alt="DawaClock screenshot 4">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="project-modal" id="modal-app-toolcanopy" role="dialog" aria-modal="true" aria-label="ToolCanopy case study">
+  <button class="project-modal-close" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div class="project-modal-inner layout-portrait">
+    <div class="pm-media">
+      <video controls preload="metadata" poster="images/work/apps/toolcanopy-poster.jpg" src="videos/toolcanopy-demo.mp4"></video>
+    </div>
+    <div class="pm-body">
+      <div class="pm-info">
+        <h2>ToolCanopy</h2>
+        <p class="pm-tagline">Peer-to-peer equipment marketplace for engineering students.</p>
+        <p class="pm-desc">A campus equipment marketplace filtered by university and by degree program, so a Civil Engineering student finds surveying gear instantly instead of digging through unrelated listings. Post an item in minutes, contact sellers directly by call or WhatsApp, and manage your own listings from a personal dashboard.</p>
+        <ul class="pm-meta">
+          <li><span>Role</span>Design &amp; Flutter build</li>
+          <li><span>Stack</span>Flutter, Provider</li>
+          <li><span>Data</span>In-memory demo data, no live backend</li>
+        </ul>
+      </div>
+      <div>
+        <div class="app-shots-grid">
+          <img class="lightbox-trigger" src="images/work/apps/toolcanopy-ss-1.jpg" alt="ToolCanopy screenshot 1">
+          <img class="lightbox-trigger" src="images/work/apps/toolcanopy-ss-2.jpg" alt="ToolCanopy screenshot 2">
+          <img class="lightbox-trigger" src="images/work/apps/toolcanopy-ss-3.jpg" alt="ToolCanopy screenshot 3">
+          <img class="lightbox-trigger" src="images/work/apps/toolcanopy-ss-4.jpg" alt="ToolCanopy screenshot 4">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="project-modal" id="modal-app-sathwork" role="dialog" aria-modal="true" aria-label="SathWork case study">
+  <button class="project-modal-close" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div class="project-modal-inner layout-portrait">
+    <div class="pm-media">
+      <video controls preload="metadata" poster="images/work/apps/sathwork-poster.jpg" src="videos/sathwork-demo.mp4"></video>
+    </div>
+    <div class="pm-body">
+      <div class="pm-info">
+        <h2>SathWork</h2>
+        <p class="pm-tagline">Tinder-style swipe matcher for students &amp; indie creators.</p>
+        <p class="pm-desc">A swipe-to-match platform for finding project teammates — each pitch appears as a swipeable card with open roles, swiping right sends a join request, and matched teams get a shared workspace with chat and progress tracking.</p>
+        <ul class="pm-meta">
+          <li><span>Role</span>Design &amp; Flutter build</li>
+          <li><span>Stack</span>Flutter, Provider</li>
+          <li><span>Data</span>In-memory demo data, no live backend</li>
+        </ul>
+      </div>
+      <div>
+        <div class="app-shots-grid">
+          <img class="lightbox-trigger" src="images/work/apps/sathwork-ss-1.jpg" alt="SathWork screenshot 1">
+          <img class="lightbox-trigger" src="images/work/apps/sathwork-ss-2.jpg" alt="SathWork screenshot 2">
+          <img class="lightbox-trigger" src="images/work/apps/sathwork-ss-3.jpg" alt="SathWork screenshot 3">
+          <img class="lightbox-trigger" src="images/work/apps/sathwork-ss-4.jpg" alt="SathWork screenshot 4">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="project-modal" id="modal-app-chornasha" role="dialog" aria-modal="true" aria-label="Chornasha case study">
+  <button class="project-modal-close" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div class="project-modal-inner layout-portrait">
+    <div class="pm-media">
+      <video controls preload="metadata" poster="images/work/apps/chornasha-poster.jpg" src="videos/chornasha-demo.mp4"></video>
+    </div>
+    <div class="pm-body">
+      <div class="pm-info">
+        <h2>Chornasha</h2>
+        <p class="pm-tagline">Sobriety &amp; addiction-recovery companion.</p>
+        <p class="pm-desc">A structured recovery companion tracking sobriety time to the minute, breaking a 90-day goal into a day-by-day plan with concrete actions, and providing an SOS Craving Toolkit with a real 4-4-4-4 box-breathing visualizer for crisis moments.</p>
+        <ul class="pm-meta">
+          <li><span>Role</span>Design &amp; Flutter build</li>
+          <li><span>Stack</span>Flutter, Provider</li>
+          <li><span>Data</span>In-memory demo data, no live backend</li>
+        </ul>
+      </div>
+      <div>
+        <div class="app-shots-grid">
+          <img class="lightbox-trigger" src="images/work/apps/chornasha-ss-1.jpg" alt="Chornasha screenshot 1">
+          <img class="lightbox-trigger" src="images/work/apps/chornasha-ss-2.jpg" alt="Chornasha screenshot 2">
+          <img class="lightbox-trigger" src="images/work/apps/chornasha-ss-3.jpg" alt="Chornasha screenshot 3">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="project-modal" id="modal-app-togseo" role="dialog" aria-modal="true" aria-label="Togseo case study">
+  <button class="project-modal-close" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div class="project-modal-inner layout-portrait">
+    <div class="pm-media">
+      <video controls preload="metadata" poster="images/work/apps/togseo-poster.jpg" src="videos/togseo-demo.mp4"></video>
+    </div>
+    <div class="pm-body">
+      <div class="pm-info">
+        <h2>Togseo</h2>
+        <p class="pm-tagline">Guided sewing &amp; tailoring companion.</p>
+        <p class="pm-desc">A sewing companion that estimates fabric yield and materials for a custom design, or offers a ready-made pattern library where every pattern includes a full step-by-step stitch guide with pro tips — not just a picture of the finished item.</p>
+        <ul class="pm-meta">
+          <li><span>Role</span>Design &amp; Flutter build</li>
+          <li><span>Stack</span>Flutter, Provider</li>
+          <li><span>Data</span>In-memory demo data, no live backend</li>
+        </ul>
+      </div>
+      <div>
+        <div class="app-shots-grid">
+          <img class="lightbox-trigger" src="images/work/apps/togseo-ss-1.jpg" alt="Togseo screenshot 1">
+          <img class="lightbox-trigger" src="images/work/apps/togseo-ss-2.jpg" alt="Togseo screenshot 2">
+          <img class="lightbox-trigger" src="images/work/apps/togseo-ss-3.jpg" alt="Togseo screenshot 3">
+          <img class="lightbox-trigger" src="images/work/apps/togseo-ss-4.jpg" alt="Togseo screenshot 4">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="project-modal" id="modal-app-devboard" role="dialog" aria-modal="true" aria-label="DevBoard case study">
+  <button class="project-modal-close" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div class="project-modal-inner layout-portrait">
+    <div class="pm-media">
+      <video controls preload="metadata" poster="images/work/apps/devboard-poster.jpg" src="videos/devboard-demo.mp4"></video>
+    </div>
+    <div class="pm-body">
+      <div class="pm-info">
+        <h2>DevBoard</h2>
+        <p class="pm-tagline">Terminal-styled mobile server monitoring dashboard.</p>
+        <p class="pm-desc">A developer-first server monitor styled as a terminal boot sequence — live CPU/memory/uptime per server, a real-time color-coded log stream, and a full error detail screen with stack trace and one-tap copy-log.</p>
+        <ul class="pm-meta">
+          <li><span>Role</span>Design &amp; Flutter build</li>
+          <li><span>Stack</span>Flutter, Provider</li>
+          <li><span>Data</span>In-memory demo data, no live backend</li>
+        </ul>
+      </div>
+      <div>
+        <div class="app-shots-grid">
+          <img class="lightbox-trigger" src="images/work/apps/devboard-ss-1.jpg" alt="DevBoard screenshot 1">
+          <img class="lightbox-trigger" src="images/work/apps/devboard-ss-2.jpg" alt="DevBoard screenshot 2">
+          <img class="lightbox-trigger" src="images/work/apps/devboard-ss-3.jpg" alt="DevBoard screenshot 3">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="project-modal" id="modal-app-quickkaam" role="dialog" aria-modal="true" aria-label="Quick Kaam case study">
+  <button class="project-modal-close" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div class="project-modal-inner layout-portrait">
+    <div class="pm-media">
+      <video controls preload="metadata" poster="images/work/apps/quickkaam-poster.jpg" src="videos/quickkaam-demo.mp4"></video>
+    </div>
+    <div class="pm-body">
+      <div class="pm-info">
+        <h2>Quick Kaam</h2>
+        <p class="pm-tagline">Local service marketplace for Lahore, Pakistan.</p>
+        <p class="pm-desc">A local services marketplace connecting residents with nearby verified electricians, plumbers, tutors, and more — browse by category or area, view provider ratings and pricing, and contact directly by call or WhatsApp with zero booking friction.</p>
+        <ul class="pm-meta">
+          <li><span>Role</span>Design &amp; Flutter build</li>
+          <li><span>Stack</span>Flutter, Provider</li>
+          <li><span>Data</span>In-memory demo data, no live backend</li>
+        </ul>
+      </div>
+      <div>
+        <div class="app-shots-grid">
+          <img class="lightbox-trigger" src="images/work/apps/quickkaam-ss-1.jpg" alt="Quick Kaam screenshot 1">
+          <img class="lightbox-trigger" src="images/work/apps/quickkaam-ss-2.jpg" alt="Quick Kaam screenshot 2">
+          <img class="lightbox-trigger" src="images/work/apps/quickkaam-ss-3.jpg" alt="Quick Kaam screenshot 3">
+          <img class="lightbox-trigger" src="images/work/apps/quickkaam-ss-4.jpg" alt="Quick Kaam screenshot 4">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="project-modal" id="modal-zombie-shooter" role="dialog" aria-modal="true" aria-label="Zombie Shooter case study">
+  <button class="project-modal-close" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div class="project-modal-inner layout-landscape">
+    <div class="pm-media">
+      <video controls preload="metadata" poster="images/work/placeholder/zombie-shooter-poster.jpg" src="videos/zombie-shooter-demo.mp4"></video>
+    </div>
+    <div class="pm-body">
+      <div class="pm-info">
+        <h2>Zombie Shooter</h2>
+        <p class="pm-tagline">Top-down Android zombie survival shooter — 30 levels + boss fight.</p>
+        <p class="pm-desc">A fast, replayable top-down shooter built with MonoGame (C#) — virtual joystick movement, a dedicated fire button, 30 levels of escalating zombie count and toughness, a limited ammo system that forces accuracy, and a teleporting boss encounter with its own health bar. 5 unlockable characters via a steep coin economy.</p>
+        <ul class="pm-meta">
+          <li><span>Role</span>Design &amp; build</li>
+          <li><span>Stack</span>MonoGame (C#), custom 2D engine</li>
+          <li><span>Levels</span>30 standard + 1 boss level</li>
+        </ul>
+      </div>
+      <div class="pm-shots">
+        <img class="shot shot-1" src="images/work/placeholder/zombie-shooter-poster.jpg" alt="Zombie Shooter gameplay">
+        <img class="shot shot-2" src="images/work/placeholder/zombie-shooter-shot-1.jpg" alt="Zombie Shooter gameplay 1">
+        <img class="shot shot-3" src="images/work/placeholder/zombie-shooter-shot-2.jpg" alt="Zombie Shooter gameplay 2">
+        <img class="shot shot-4" src="images/work/placeholder/zombie-shooter-shot-3.jpg" alt="Zombie Shooter gameplay 3">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="project-modal" id="modal-hopscotch-hollow" role="dialog" aria-modal="true" aria-label="Hopscotch Hollow case study">
+  <button class="project-modal-close" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div class="project-modal-inner layout-landscape">
+    <div class="pm-media">
+      <video controls preload="metadata" poster="images/work/placeholder/hopscotch-hollow-poster.jpg" src="videos/hopscotch-hollow-demo.mp4"></video>
+    </div>
+    <div class="pm-body">
+      <div class="pm-info">
+        <h2>Hopscotch Hollow</h2>
+        <p class="pm-tagline">2D platformer adventure across 6 worlds, 36 levels, with an upgrade economy.</p>
+        <p class="pm-desc">A full 2D platformer adventure built with MonoGame (C#) — custom physics with coyote time and jump buffering, 6 themed worlds each ending in a boss fight, enemy patrol AI, and a coin-funded Upgrades screen that permanently boosts speed, jump height, and max hearts. Progress saves to a persistent JSON file.</p>
+        <ul class="pm-meta">
+          <li><span>Role</span>Design &amp; build</li>
+          <li><span>Stack</span>MonoGame (C#), custom physics engine</li>
+          <li><span>Levels</span>6 worlds × 6 levels = 36 total</li>
+        </ul>
+      </div>
+      <div class="pm-shots">
+        <img class="shot shot-1" src="images/work/placeholder/hopscotch-hollow-poster.jpg" alt="Hopscotch Hollow gameplay">
+        <img class="shot shot-2" src="images/work/placeholder/hopscotch-hollow-shot-1.jpg" alt="Hopscotch Hollow gameplay 1">
+        <img class="shot shot-3" src="images/work/placeholder/hopscotch-hollow-shot-2.jpg" alt="Hopscotch Hollow gameplay 2">
+        <img class="shot shot-4" src="images/work/placeholder/hopscotch-hollow-shot-3.jpg" alt="Hopscotch Hollow gameplay 3">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="project-modal" id="modal-escape-game" role="dialog" aria-modal="true" aria-label="Escape case study">
+  <button class="project-modal-close" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div class="project-modal-inner layout-landscape">
+    <div class="pm-media">
+      <video controls preload="metadata" poster="images/work/escape-game/poster.jpg" src="videos/escape-game-demo.mp4"></video>
+    </div>
+    <div class="pm-body">
+      <div class="pm-info">
+        <h2>Escape</h2>
+        <p class="pm-tagline">A top-down tile maze escape game built level by level.</p>
+        <p class="pm-desc">A minimalist top-down maze game — navigate tight corridors, avoid patrolling guards, collect the key, and reach the exit before time runs out. Built with a clean HUD (level, keys, timer) and a tutorial-first onboarding level, with difficulty escalating through locked rooms and an enemy facility.</p>
+        <ul class="pm-meta">
+          <li><span>Role</span>Design &amp; build</li>
+          <li><span>Stack</span>HTML5 Canvas / JavaScript game loop</li>
+          <li><span>Features</span>Tile-based maze generation, patrol AI, key-and-exit objective, level timer</li>
+        </ul>
+      </div>
+      <div class="pm-shots">
+        <img class="shot shot-1" src="images/work/escape-game/poster.jpg" alt="Escape main menu">
+        <img class="shot shot-2" src="images/work/escape-game/shot-2.jpg" alt="Escape Level 1 — Tutorial Escape">
+        <img class="shot shot-3" src="images/work/escape-game/shot-3.jpg" alt="Escape Level 2 — Locked Rooms">
+        <img class="shot shot-4" src="images/work/escape-game/shot-4.jpg" alt="Escape Level 4 — Enemy Facility">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="project-modal" id="modal-speedrush" role="dialog" aria-modal="true" aria-label="SpeedRush 2D case study">
+  <button class="project-modal-close" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div class="project-modal-inner layout-landscape">
+    <div class="pm-media">
+      <video controls preload="metadata" poster="images/work/speedrush/poster.jpg" src="videos/speedrush-demo.mp4"></video>
+    </div>
+    <div class="pm-body">
+      <div class="pm-info">
+        <h2>SpeedRush 2D</h2>
+        <p class="pm-tagline">A fast top-down arcade racer built around tight circuit laps.</p>
+        <p class="pm-desc">A top-down 2D racer — race against rival AI cars around a 5-lap circuit, with a live speedometer, lap counter, position tracker, and a stopwatch timer pushing for a personal best. Sweeping curved track sections and drift-style car sprites keep every lap feeling fast.</p>
+        <ul class="pm-meta">
+          <li><span>Role</span>Design &amp; build</li>
+          <li><span>Stack</span>HTML5 Canvas / JavaScript game loop</li>
+          <li><span>Features</span>5-lap circuit racing, rival AI cars, live speedometer &amp; lap HUD</li>
+        </ul>
+      </div>
+      <div class="pm-shots">
+        <img class="shot shot-1" src="images/work/speedrush/shot-1.jpg" alt="SpeedRush 2D — mid-race pack">
+        <img class="shot shot-2" src="images/work/speedrush/shot-2.jpg" alt="SpeedRush 2D — final lap">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="project-modal" id="modal-uiux-airpods" role="dialog" aria-modal="true" aria-label="AirPods Pro Landing UI/UX case study">
+  <button class="project-modal-close" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div class="project-modal-inner layout-uiux">
+    <div class="pm-media">
+      <img class="lightbox-trigger" src="images/work/uiux/airpods-final.jpg" alt="AirPods Pro Landing final design">
+    </div>
+    <div class="pm-body">
+      <div class="pm-info">
+        <h2>AirPods Pro Landing</h2>
+        <p class="pm-tagline">Apple product landing page exploration.</p>
+        <p class="pm-desc">A minimal, motion-ready product page for AirPods Pro — bold type hierarchy, a hero product shot, and a persistent nav that mirrors Apple's own design language.</p>
+        <ul class="pm-meta">
+          <li><span>Process</span>Low-fidelity wireframe &rarr; final visual design</li>
+          <li><span>Tools</span>Figma, wireframing &amp; visual design</li>
+        </ul>
+        <div class="uiux-pair-row">
+          <div class="uiux-pair-item">
+            <div class="app-shots-heading">Wireframe</div>
+            <img class="lightbox-trigger" src="images/work/uiux/airpods-wire.jpg" alt="AirPods Pro Landing wireframe">
+          </div>
+          <div class="uiux-pair-item">
+            <div class="app-shots-heading">Final Design</div>
+            <img class="lightbox-trigger" src="images/work/uiux/airpods-final.jpg" alt="AirPods Pro Landing final design">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="project-modal" id="modal-uiux-chatbot" role="dialog" aria-modal="true" aria-label="Chatly — AI Chatbot SaaS UI/UX case study">
+  <button class="project-modal-close" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div class="project-modal-inner layout-uiux">
+    <div class="pm-media">
+      <img class="lightbox-trigger" src="images/work/uiux/chatbot-final.jpg" alt="Chatly — AI Chatbot SaaS final design">
+    </div>
+    <div class="pm-body">
+      <div class="pm-info">
+        <h2>Chatly — AI Chatbot SaaS</h2>
+        <p class="pm-tagline">AI chatbot SaaS marketing homepage.</p>
+        <p class="pm-desc">A conversion-focused SaaS landing page for an AI chatbot platform — a live chat-widget preview embedded right in the hero, trust badges, and a clear 'Book a Demo' path.</p>
+        <ul class="pm-meta">
+          <li><span>Process</span>Low-fidelity wireframe &rarr; final visual design</li>
+          <li><span>Tools</span>Figma, wireframing &amp; visual design</li>
+        </ul>
+        <div class="uiux-pair-row">
+          <div class="uiux-pair-item">
+            <div class="app-shots-heading">Wireframe</div>
+            <img class="lightbox-trigger" src="images/work/uiux/chatbot-wire.jpg" alt="Chatly — AI Chatbot SaaS wireframe">
+          </div>
+          <div class="uiux-pair-item">
+            <div class="app-shots-heading">Final Design</div>
+            <img class="lightbox-trigger" src="images/work/uiux/chatbot-final.jpg" alt="Chatly — AI Chatbot SaaS final design">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="project-modal" id="modal-uiux-gaming" role="dialog" aria-modal="true" aria-label="PlayZone Gaming Hub UI/UX case study">
+  <button class="project-modal-close" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div class="project-modal-inner layout-uiux">
+    <div class="pm-media">
+      <img class="lightbox-trigger" src="images/work/uiux/gaming-final.jpg" alt="PlayZone Gaming Hub final design">
+    </div>
+    <div class="pm-body">
+      <div class="pm-info">
+        <h2>PlayZone Gaming Hub</h2>
+        <p class="pm-tagline">Gaming platform &amp; tournament hub homepage.</p>
+        <p class="pm-desc">A high-energy gaming portal hero — bold typography over key art, live stats (players, tournaments, streams), and a featured-games rail styled like a storefront.</p>
+        <ul class="pm-meta">
+          <li><span>Process</span>Low-fidelity wireframe &rarr; final visual design</li>
+          <li><span>Tools</span>Figma, wireframing &amp; visual design</li>
+        </ul>
+        <div class="uiux-pair-row">
+          <div class="uiux-pair-item">
+            <div class="app-shots-heading">Wireframe</div>
+            <img class="lightbox-trigger" src="images/work/uiux/gaming-wire.jpg" alt="PlayZone Gaming Hub wireframe">
+          </div>
+          <div class="uiux-pair-item">
+            <div class="app-shots-heading">Final Design</div>
+            <img class="lightbox-trigger" src="images/work/uiux/gaming-final.jpg" alt="PlayZone Gaming Hub final design">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="project-modal" id="modal-uiux-lamp" role="dialog" aria-modal="true" aria-label="Lumiere Lighting Store UI/UX case study">
+  <button class="project-modal-close" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div class="project-modal-inner layout-uiux">
+    <div class="pm-media">
+      <img class="lightbox-trigger" src="images/work/uiux/lamp-final.jpg" alt="Lumiere Lighting Store final design">
+    </div>
+    <div class="pm-body">
+      <div class="pm-info">
+        <h2>Lumiere Lighting Store</h2>
+        <p class="pm-tagline">Modern lighting e-commerce landing page.</p>
+        <p class="pm-desc">A warm, editorial product page for a modern lighting brand — soft photography, an elegant serif/sans pairing, and a clear 'Shop Collection' path.</p>
+        <ul class="pm-meta">
+          <li><span>Process</span>Low-fidelity wireframe &rarr; final visual design</li>
+          <li><span>Tools</span>Figma, wireframing &amp; visual design</li>
+        </ul>
+        <div class="uiux-pair-row">
+          <div class="uiux-pair-item">
+            <div class="app-shots-heading">Wireframe</div>
+            <img class="lightbox-trigger" src="images/work/uiux/lamp-wire.jpg" alt="Lumiere Lighting Store wireframe">
+          </div>
+          <div class="uiux-pair-item">
+            <div class="app-shots-heading">Final Design</div>
+            <img class="lightbox-trigger" src="images/work/uiux/lamp-final.jpg" alt="Lumiere Lighting Store final design">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="project-modal" id="modal-uiux-course" role="dialog" aria-modal="true" aria-label="Online Course Dashboard UI/UX case study">
+  <button class="project-modal-close" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div class="project-modal-inner layout-uiux">
+    <div class="pm-media">
+      <img class="lightbox-trigger" src="images/work/uiux/course-final.jpg" alt="Online Course Dashboard final design">
+    </div>
+    <div class="pm-body">
+      <div class="pm-info">
+        <h2>Online Course Dashboard</h2>
+        <p class="pm-tagline">Student learning dashboard UI.</p>
+        <p class="pm-desc">A student-facing course dashboard — progress tracking, a lesson sidebar, and quick-resume cards designed to reduce the friction of picking a course back up.</p>
+        <ul class="pm-meta">
+          <li><span>Process</span>Low-fidelity wireframe &rarr; final visual design</li>
+          <li><span>Tools</span>Figma, wireframing &amp; visual design</li>
+        </ul>
+        <div class="uiux-pair-row">
+          <div class="uiux-pair-item">
+            <div class="app-shots-heading">Wireframe</div>
+            <img class="lightbox-trigger" src="images/work/uiux/course-wire.jpg" alt="Online Course Dashboard wireframe">
+          </div>
+          <div class="uiux-pair-item">
+            <div class="app-shots-heading">Final Design</div>
+            <img class="lightbox-trigger" src="images/work/uiux/course-final.jpg" alt="Online Course Dashboard final design">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="project-modal" id="modal-uiux-crockery" role="dialog" aria-modal="true" aria-label="Crockery &amp; Homeware Store UI/UX case study">
+  <button class="project-modal-close" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div class="project-modal-inner layout-uiux">
+    <div class="pm-media">
+      <img class="lightbox-trigger" src="images/work/uiux/crockery-final.jpg" alt="Crockery &amp; Homeware Store final design">
+    </div>
+    <div class="pm-body">
+      <div class="pm-info">
+        <h2>Crockery &amp; Homeware Store</h2>
+        <p class="pm-tagline">Homeware e-commerce landing page.</p>
+        <p class="pm-desc">A clean, product-first homeware storefront — grid-based crockery collections with a soft, neutral palette that lets the product photography carry the design.</p>
+        <ul class="pm-meta">
+          <li><span>Process</span>Low-fidelity wireframe &rarr; final visual design</li>
+          <li><span>Tools</span>Figma, wireframing &amp; visual design</li>
+        </ul>
+        <div class="uiux-pair-row">
+          <div class="uiux-pair-item">
+            <div class="app-shots-heading">Wireframe</div>
+            <img class="lightbox-trigger" src="images/work/uiux/crockery-wire.jpg" alt="Crockery &amp; Homeware Store wireframe">
+          </div>
+          <div class="uiux-pair-item">
+            <div class="app-shots-heading">Final Design</div>
+            <img class="lightbox-trigger" src="images/work/uiux/crockery-final.jpg" alt="Crockery &amp; Homeware Store final design">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="project-modal" id="modal-uiux-deleivery" role="dialog" aria-modal="true" aria-label="Food Delivery App UI/UX case study">
+  <button class="project-modal-close" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div class="project-modal-inner layout-uiux">
+    <div class="pm-media">
+      <img class="lightbox-trigger" src="images/work/uiux/deleivery-final.jpg" alt="Food Delivery App final design">
+    </div>
+    <div class="pm-body">
+      <div class="pm-info">
+        <h2>Food Delivery App</h2>
+        <p class="pm-tagline">Food delivery mobile app UI.</p>
+        <p class="pm-desc">A mobile food-delivery flow — restaurant discovery, cart, and order tracking screens designed around fast, thumb-friendly navigation.</p>
+        <ul class="pm-meta">
+          <li><span>Process</span>Low-fidelity wireframe &rarr; final visual design</li>
+          <li><span>Tools</span>Figma, wireframing &amp; visual design</li>
+        </ul>
+        <div class="uiux-pair-row">
+          <div class="uiux-pair-item">
+            <div class="app-shots-heading">Wireframe</div>
+            <img class="lightbox-trigger" src="images/work/uiux/deleivery-wire.jpg" alt="Food Delivery App wireframe">
+          </div>
+          <div class="uiux-pair-item">
+            <div class="app-shots-heading">Final Design</div>
+            <img class="lightbox-trigger" src="images/work/uiux/deleivery-final.jpg" alt="Food Delivery App final design">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="project-modal" id="modal-uiux-furniture" role="dialog" aria-modal="true" aria-label="Furniture Store Landing UI/UX case study">
+  <button class="project-modal-close" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div class="project-modal-inner layout-uiux">
+    <div class="pm-media">
+      <img class="lightbox-trigger" src="images/work/uiux/furniture-final.jpg" alt="Furniture Store Landing final design">
+    </div>
+    <div class="pm-body">
+      <div class="pm-info">
+        <h2>Furniture Store Landing</h2>
+        <p class="pm-tagline">Furniture e-commerce landing page.</p>
+        <p class="pm-desc">A modern furniture storefront landing page — large lifestyle photography, category navigation, and promotional banners built to drive first-visit conversions.</p>
+        <ul class="pm-meta">
+          <li><span>Process</span>Low-fidelity wireframe &rarr; final visual design</li>
+          <li><span>Tools</span>Figma, wireframing &amp; visual design</li>
+        </ul>
+        <div class="uiux-pair-row">
+          <div class="uiux-pair-item">
+            <div class="app-shots-heading">Wireframe</div>
+            <img class="lightbox-trigger" src="images/work/uiux/furniture-wire.jpg" alt="Furniture Store Landing wireframe">
+          </div>
+          <div class="uiux-pair-item">
+            <div class="app-shots-heading">Final Design</div>
+            <img class="lightbox-trigger" src="images/work/uiux/furniture-final.jpg" alt="Furniture Store Landing final design">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="project-modal" id="modal-uiux-laptop" role="dialog" aria-modal="true" aria-label="Laptop Marketplace UI/UX case study">
+  <button class="project-modal-close" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div class="project-modal-inner layout-uiux">
+    <div class="pm-media">
+      <img class="lightbox-trigger" src="images/work/uiux/laptop-final.jpg" alt="Laptop Marketplace final design">
+    </div>
+    <div class="pm-body">
+      <div class="pm-info">
+        <h2>Laptop Marketplace</h2>
+        <p class="pm-tagline">Laptop resale marketplace UI.</p>
+        <p class="pm-desc">A laptop marketplace listing page — spec-forward product cards, comparison-friendly layout, and a trust-building seller/condition badge system.</p>
+        <ul class="pm-meta">
+          <li><span>Process</span>Low-fidelity wireframe &rarr; final visual design</li>
+          <li><span>Tools</span>Figma, wireframing &amp; visual design</li>
+        </ul>
+        <div class="uiux-pair-row">
+          <div class="uiux-pair-item">
+            <div class="app-shots-heading">Wireframe</div>
+            <img class="lightbox-trigger" src="images/work/uiux/laptop-wire.jpg" alt="Laptop Marketplace wireframe">
+          </div>
+          <div class="uiux-pair-item">
+            <div class="app-shots-heading">Final Design</div>
+            <img class="lightbox-trigger" src="images/work/uiux/laptop-final.jpg" alt="Laptop Marketplace final design">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="project-modal" id="modal-uiux-mirror" role="dialog" aria-modal="true" aria-label="Smart Mirror Product Page UI/UX case study">
+  <button class="project-modal-close" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div class="project-modal-inner layout-uiux">
+    <div class="pm-media">
+      <img class="lightbox-trigger" src="images/work/uiux/mirror-final.jpg" alt="Smart Mirror Product Page final design">
+    </div>
+    <div class="pm-body">
+      <div class="pm-info">
+        <h2>Smart Mirror Product Page</h2>
+        <p class="pm-tagline">Smart mirror product landing page.</p>
+        <p class="pm-desc">A tech-forward product page for a smart mirror — feature callouts over ambient lifestyle photography, positioned as a premium home-tech purchase.</p>
+        <ul class="pm-meta">
+          <li><span>Process</span>Low-fidelity wireframe &rarr; final visual design</li>
+          <li><span>Tools</span>Figma, wireframing &amp; visual design</li>
+        </ul>
+        <div class="uiux-pair-row">
+          <div class="uiux-pair-item">
+            <div class="app-shots-heading">Wireframe</div>
+            <img class="lightbox-trigger" src="images/work/uiux/mirror-wire.jpg" alt="Smart Mirror Product Page wireframe">
+          </div>
+          <div class="uiux-pair-item">
+            <div class="app-shots-heading">Final Design</div>
+            <img class="lightbox-trigger" src="images/work/uiux/mirror-final.jpg" alt="Smart Mirror Product Page final design">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="project-modal" id="modal-uiux-mob-repair" role="dialog" aria-modal="true" aria-label="Mobile Repair Service UI/UX case study">
+  <button class="project-modal-close" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div class="project-modal-inner layout-uiux">
+    <div class="pm-media">
+      <img class="lightbox-trigger" src="images/work/uiux/mob-repair-final.jpg" alt="Mobile Repair Service final design">
+    </div>
+    <div class="pm-body">
+      <div class="pm-info">
+        <h2>Mobile Repair Service</h2>
+        <p class="pm-tagline">Mobile repair service booking UI.</p>
+        <p class="pm-desc">A local mobile-repair service page — service selection, price transparency, and a simple booking CTA designed to convert same-day repair searches.</p>
+        <ul class="pm-meta">
+          <li><span>Process</span>Low-fidelity wireframe &rarr; final visual design</li>
+          <li><span>Tools</span>Figma, wireframing &amp; visual design</li>
+        </ul>
+        <div class="uiux-pair-row">
+          <div class="uiux-pair-item">
+            <div class="app-shots-heading">Wireframe</div>
+            <img class="lightbox-trigger" src="images/work/uiux/mob-repair-wire.jpg" alt="Mobile Repair Service wireframe">
+          </div>
+          <div class="uiux-pair-item">
+            <div class="app-shots-heading">Final Design</div>
+            <img class="lightbox-trigger" src="images/work/uiux/mob-repair-final.jpg" alt="Mobile Repair Service final design">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="project-modal" id="modal-uiux-parada" role="dialog" aria-modal="true" aria-label="Parada Fashion Store UI/UX case study">
+  <button class="project-modal-close" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div class="project-modal-inner layout-uiux">
+    <div class="pm-media">
+      <img class="lightbox-trigger" src="images/work/uiux/parada-final.jpg" alt="Parada Fashion Store final design">
+    </div>
+    <div class="pm-body">
+      <div class="pm-info">
+        <h2>Parada Fashion Store</h2>
+        <p class="pm-tagline">Fashion e-commerce landing page.</p>
+        <p class="pm-desc">A bold, editorial fashion storefront — large lookbook-style imagery and a minimal nav that puts the clothing front and center.</p>
+        <ul class="pm-meta">
+          <li><span>Process</span>Low-fidelity wireframe &rarr; final visual design</li>
+          <li><span>Tools</span>Figma, wireframing &amp; visual design</li>
+        </ul>
+        <div class="uiux-pair-row">
+          <div class="uiux-pair-item">
+            <div class="app-shots-heading">Wireframe</div>
+            <img class="lightbox-trigger" src="images/work/uiux/parada-wire.jpg" alt="Parada Fashion Store wireframe">
+          </div>
+          <div class="uiux-pair-item">
+            <div class="app-shots-heading">Final Design</div>
+            <img class="lightbox-trigger" src="images/work/uiux/parada-final.jpg" alt="Parada Fashion Store final design">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="project-modal" id="modal-uiux-saas-animation" role="dialog" aria-modal="true" aria-label="SaaS Animation Landing UI/UX case study">
+  <button class="project-modal-close" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div class="project-modal-inner layout-uiux">
+    <div class="pm-media">
+      <img class="lightbox-trigger" src="images/work/uiux/saas-animation-final.jpg" alt="SaaS Animation Landing final design">
+    </div>
+    <div class="pm-body">
+      <div class="pm-info">
+        <h2>SaaS Animation Landing</h2>
+        <p class="pm-tagline">Animated SaaS product landing page.</p>
+        <p class="pm-desc">An animation-ready SaaS landing page exploration — layered visual elements and motion cues designed to guide the eye down a single conversion path.</p>
+        <ul class="pm-meta">
+          <li><span>Process</span>Low-fidelity wireframe &rarr; final visual design</li>
+          <li><span>Tools</span>Figma, wireframing &amp; visual design</li>
+        </ul>
+        <div class="uiux-pair-row">
+          <div class="uiux-pair-item">
+            <div class="app-shots-heading">Wireframe</div>
+            <img class="lightbox-trigger" src="images/work/uiux/saas-animation-wire.jpg" alt="SaaS Animation Landing wireframe">
+          </div>
+          <div class="uiux-pair-item">
+            <div class="app-shots-heading">Final Design</div>
+            <img class="lightbox-trigger" src="images/work/uiux/saas-animation-final.jpg" alt="SaaS Animation Landing final design">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="project-modal" id="modal-graphic-fitlife" role="dialog" aria-modal="true" aria-label="FitLife — Fitness App Banner">
+  <button class="project-modal-close" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div class="project-modal-inner layout-landscape">
+    <div class="pm-media pm-media-full">
+      <img class="lightbox-trigger" src="images/work/graphic/fitlife.jpg" alt="FitLife — Fitness App Banner">
+    </div>
+    <div class="pm-body" style="grid-template-columns:1fr;">
+      <div class="pm-info">
+        <h2>FitLife — Fitness App Banner</h2>
+        <p class="pm-tagline">Web banner ad for a fitness app.</p>
+        <p class="pm-desc">A bold fitness-app ad banner — a high-energy lime-and-black palette, a strong headline hierarchy ('Your Goals. Our Plan. Better You.'), and a feature strip plus app-store badges built for paid social placements.</p>
+        <ul class="pm-meta">
+          <li><span>Type</span>Banner</li>
+          <li><span>Tools</span>Adobe Photoshop, Illustrator</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="project-modal" id="modal-graphic-luxora" role="dialog" aria-modal="true" aria-label="Luxora Furniture — Promo Banner">
+  <button class="project-modal-close" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div class="project-modal-inner layout-landscape">
+    <div class="pm-media pm-media-full">
+      <img class="lightbox-trigger" src="images/work/graphic/luxora.jpg" alt="Luxora Furniture — Promo Banner">
+    </div>
+    <div class="pm-body" style="grid-template-columns:1fr;">
+      <div class="pm-info">
+        <h2>Luxora Furniture — Promo Banner</h2>
+        <p class="pm-tagline">E-commerce sale banner for a furniture brand.</p>
+        <p class="pm-desc">An elegant furniture-brand promo banner — warm neutrals, a '30% off' badge, and a real lifestyle interior shot doing the selling, with a clean nav bar for use as a site hero.</p>
+        <ul class="pm-meta">
+          <li><span>Type</span>Banner</li>
+          <li><span>Tools</span>Adobe Photoshop, Illustrator</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="project-modal" id="modal-graphic-glamour" role="dialog" aria-modal="true" aria-label="Glamour Beauty Salon — Flyer">
+  <button class="project-modal-close" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div class="project-modal-inner layout-landscape">
+    <div class="pm-media pm-media-full">
+      <img class="lightbox-trigger" src="images/work/graphic/glamour.jpg" alt="Glamour Beauty Salon — Flyer">
+    </div>
+    <div class="pm-body" style="grid-template-columns:1fr;">
+      <div class="pm-info">
+        <h2>Glamour Beauty Salon — Flyer</h2>
+        <p class="pm-tagline">Print/social flyer for a beauty salon.</p>
+        <p class="pm-desc">A romantic, blush-toned salon flyer — a portrait cut-out hero, a first-visit discount badge, and a clear service and pricing table for print or social use.</p>
+        <ul class="pm-meta">
+          <li><span>Type</span>Flyer</li>
+          <li><span>Tools</span>Adobe Photoshop, Illustrator</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="project-modal" id="modal-graphic-spicehouse" role="dialog" aria-modal="true" aria-label="Spice House — Brand Identity">
+  <button class="project-modal-close" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div class="project-modal-inner layout-landscape">
+    <div class="pm-media pm-media-full">
+      <img class="lightbox-trigger" src="images/work/graphic/spicehouse.jpg" alt="Spice House — Brand Identity">
+    </div>
+    <div class="pm-body" style="grid-template-columns:1fr;">
+      <div class="pm-info">
+        <h2>Spice House — Brand Identity</h2>
+        <p class="pm-tagline">Restaurant logo &amp; brand mark system.</p>
+        <p class="pm-desc">A warm, homely restaurant brand mark — a chili-and-rooftop icon, in black and white variants, mocked up on signage, cards, and a gold-foil wall installation, with a full brand color palette.</p>
+        <ul class="pm-meta">
+          <li><span>Type</span>Logo</li>
+          <li><span>Tools</span>Adobe Photoshop, Illustrator</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="project-modal" id="modal-graphic-visionmedia" role="dialog" aria-modal="true" aria-label="Vision Media — Brand Identity">
+  <button class="project-modal-close" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div class="project-modal-inner layout-landscape">
+    <div class="pm-media pm-media-full">
+      <img class="lightbox-trigger" src="images/work/graphic/visionmedia.jpg" alt="Vision Media — Brand Identity">
+    </div>
+    <div class="pm-body" style="grid-template-columns:1fr;">
+      <div class="pm-info">
+        <h2>Vision Media — Brand Identity</h2>
+        <p class="pm-tagline">Creative agency logo &amp; brand mark system.</p>
+        <p class="pm-desc">A sharp, modern agency brand mark — a bold 'V' monogram in black and purple, shown across dark and light backgrounds, signage, business cards, and office signage.</p>
+        <ul class="pm-meta">
+          <li><span>Type</span>Logo</li>
+          <li><span>Tools</span>Adobe Photoshop, Illustrator</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="project-modal" id="modal-graphic-messi" role="dialog" aria-modal="true" aria-label="Messi — Magazine Cover">
+  <button class="project-modal-close" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div class="project-modal-inner layout-landscape">
+    <div class="pm-media pm-media-full">
+      <img class="lightbox-trigger" src="images/work/graphic/messi.jpg" alt="Messi — Magazine Cover">
+    </div>
+    <div class="pm-body" style="grid-template-columns:1fr;">
+      <div class="pm-info">
+        <h2>Messi — Magazine Cover</h2>
+        <p class="pm-tagline">Editorial sports magazine cover poster.</p>
+        <p class="pm-desc">A dramatic editorial sports cover — full-bleed photography, oversized serif masthead, and a stat-driven sidebar in the style of a major sports magazine feature.</p>
+        <ul class="pm-meta">
+          <li><span>Type</span>Poster</li>
+          <li><span>Tools</span>Adobe Photoshop, Illustrator</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="project-modal" id="modal-graphic-focus" role="dialog" aria-modal="true" aria-label="Focus — Film Poster">
+  <button class="project-modal-close" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div class="project-modal-inner layout-landscape">
+    <div class="pm-media pm-media-full">
+      <img class="lightbox-trigger" src="images/work/graphic/focus.jpg" alt="Focus — Film Poster">
+    </div>
+    <div class="pm-body" style="grid-template-columns:1fr;">
+      <div class="pm-info">
+        <h2>Focus — Film Poster</h2>
+        <p class="pm-tagline">Cinematic teaser poster for a short film.</p>
+        <p class="pm-desc">A moody, high-contrast teaser poster — a split visual composition and bold condensed type, built in the style of a professional film festival teaser.</p>
+        <ul class="pm-meta">
+          <li><span>Type</span>Poster</li>
+          <li><span>Tools</span>Adobe Photoshop, Illustrator</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="project-modal" id="modal-graphic-galaxys24" role="dialog" aria-modal="true" aria-label="Samsung Galaxy S24 Ultra — Product Poster">
+  <button class="project-modal-close" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div class="project-modal-inner layout-landscape">
+    <div class="pm-media pm-media-full">
+      <img class="lightbox-trigger" src="images/work/graphic/galaxys24.jpg" alt="Samsung Galaxy S24 Ultra — Product Poster">
+    </div>
+    <div class="pm-body" style="grid-template-columns:1fr;">
+      <div class="pm-info">
+        <h2>Samsung Galaxy S24 Ultra — Product Poster</h2>
+        <p class="pm-tagline">Tech product launch poster.</p>
+        <p class="pm-desc">A premium tech product poster — dramatic macro product photography, a clean feature-icon list, and an ecosystem strip, in the style of an official Samsung launch asset.</p>
+        <ul class="pm-meta">
+          <li><span>Type</span>Poster</li>
+          <li><span>Tools</span>Adobe Photoshop, Illustrator</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="project-modal" id="modal-graphic-musicfest" role="dialog" aria-modal="true" aria-label="Music Festival — Event Poster">
+  <button class="project-modal-close" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div class="project-modal-inner layout-landscape">
+    <div class="pm-media pm-media-full">
+      <img class="lightbox-trigger" src="images/work/graphic/musicfest.jpg" alt="Music Festival — Event Poster">
+    </div>
+    <div class="pm-body" style="grid-template-columns:1fr;">
+      <div class="pm-info">
+        <h2>Music Festival — Event Poster</h2>
+        <p class="pm-tagline">Multi-day music festival event poster.</p>
+        <p class="pm-desc">A high-energy festival poster — bold hand-painted-style lettering, a stacked lineup list, and a full info block (dates, venue, ticket link, QR code) built for both print and social.</p>
+        <ul class="pm-meta">
+          <li><span>Type</span>Poster</li>
+          <li><span>Tools</span>Adobe Photoshop, Illustrator</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="project-modal" id="modal-graphic-aitools" role="dialog" aria-modal="true" aria-label="AI Tools Review — YouTube Thumbnail">
+  <button class="project-modal-close" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div class="project-modal-inner layout-landscape">
+    <div class="pm-media pm-media-full">
+      <img class="lightbox-trigger" src="images/work/graphic/aitools.jpg" alt="AI Tools Review — YouTube Thumbnail">
+    </div>
+    <div class="pm-body" style="grid-template-columns:1fr;">
+      <div class="pm-info">
+        <h2>AI Tools Review — YouTube Thumbnail</h2>
+        <p class="pm-tagline">YouTube thumbnail for a tech review video.</p>
+        <p class="pm-desc">A high-CTR tech YouTube thumbnail — bold contrast lettering, tool logo row, and a robot visual built to stop the scroll in a crowded feed.</p>
+        <ul class="pm-meta">
+          <li><span>Type</span>Thumbnail</li>
+          <li><span>Tools</span>Adobe Photoshop, Illustrator</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="project-modal" id="modal-graphic-photoshop" role="dialog" aria-modal="true" aria-label="Photoshop Tutorial — YouTube Thumbnail">
+  <button class="project-modal-close" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div class="project-modal-inner layout-landscape">
+    <div class="pm-media pm-media-full">
+      <img class="lightbox-trigger" src="images/work/graphic/photoshop.jpg" alt="Photoshop Tutorial — YouTube Thumbnail">
+    </div>
+    <div class="pm-body" style="grid-template-columns:1fr;">
+      <div class="pm-info">
+        <h2>Photoshop Tutorial — YouTube Thumbnail</h2>
+        <p class="pm-tagline">YouTube thumbnail for a design tutorial.</p>
+        <p class="pm-desc">A creative-tutorial YouTube thumbnail — a double-exposure portrait effect demonstrating the exact skill being taught, with a clean feature-icon row for edit/design/enhance/create.</p>
+        <ul class="pm-meta">
+          <li><span>Type</span>Thumbnail</li>
+          <li><span>Tools</span>Adobe Photoshop, Illustrator</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+(function() {
+  var overlay = document.getElementById('lightboxOverlay');
+  var img = document.getElementById('lightboxImg');
+  document.addEventListener('click', function(e) {
+    var trigger = e.target.closest('.lightbox-trigger');
+    if (trigger) {
+      img.src = trigger.getAttribute('src');
+      img.alt = trigger.getAttribute('alt') || '';
+      overlay.classList.add('active');
+    }
+  });
+  overlay.addEventListener('click', function() {
+    overlay.classList.remove('active');
+    img.src = '';
+  });
+})();
+</script>
+
+<script>
+(function() {
+  var pills = document.querySelectorAll('.filter-pill');
+  var sections = document.querySelectorAll('.work-section');
+  var empty = document.getElementById('workEmpty');
+  pills.forEach(function(pill) {
+    pill.addEventListener('click', function() {
+      pills.forEach(function(p) { p.classList.remove('active'); });
+      pill.classList.add('active');
+      var filter = pill.getAttribute('data-filter');
+      var visibleCount = 0;
+      sections.forEach(function(sec) {
+        var show = filter === 'all' || sec.getAttribute('data-section') === filter;
+        sec.style.display = show ? '' : 'none';
+        if (show) visibleCount++;
+      });
+      empty.style.display = visibleCount === 0 ? '' : 'none';
+    });
+  });
+})();
+</script>
 <script src="js/main.js"></script>
 <script src="js/animation.js"></script>
 </body>

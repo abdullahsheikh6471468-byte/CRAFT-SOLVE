@@ -16,7 +16,7 @@
     }
 
     const MIN_DISPLAY_TIME = 500;  // preloader kam se kam itni der screen par rahy (flash na ho)
-    const MAX_WAIT_TIME = 8000;    // safety fallback: kisi image ky slow/fail hony par b itni der ky baad hide hojaye
+    const MAX_WAIT_TIME = 15000;   // safety fallback: kisi image ky slow/fail hony par b itni der ky baad hide hojaye
     const startTime = Date.now();
     let hidden = false;
 
@@ -34,9 +34,14 @@
 
     // Page ki tamam <img> collect karo taky unky load hony ka intezar kiya ja sakay,
     // is tarah images preloader ky peechy hi load ho jayengi aur user ko baad me
-    // "pop-in" hoty huay nazar nahi aayengi.
+    // "pop-in" hoty huay nazar nahi aayengi. Video poster images bhi shamil karo,
+    // kyunky woh document.images ka hissa nahi hoti.
     const imgElements = Array.from(document.images || []);
-    const total = imgElements.length;
+    const posterUrls = Array.from(document.querySelectorAll('video[poster]'))
+        .map(function(v) { return v.getAttribute('poster'); })
+        .filter(Boolean);
+
+    const total = imgElements.length + posterUrls.length;
 
     if (total === 0) {
         hidePreloader();
@@ -58,6 +63,13 @@
             img.addEventListener('load', onOneDone, { once: true });
             img.addEventListener('error', onOneDone, { once: true });
         }
+    });
+
+    posterUrls.forEach(function(url) {
+        const preloadImg = new Image();
+        preloadImg.addEventListener('load', onOneDone, { once: true });
+        preloadImg.addEventListener('error', onOneDone, { once: true });
+        preloadImg.src = url;
     });
 
     // Absolute safety net — agar network bohat slow ho ya koi image fail ho jaye
@@ -127,6 +139,53 @@ document.addEventListener('DOMContentLoaded', function() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     }
+
+    const modalOverlay = document.querySelector('#modalOverlay');
+    const modalTriggers = document.querySelectorAll('[data-modal-target]');
+    let activeModal = null;
+
+    function openProjectModal(modal) {
+        if (!modal) return;
+        activeModal = modal;
+        modal.classList.add('active');
+        modalOverlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeProjectModal() {
+        if (!activeModal) return;
+        activeModal.classList.remove('active');
+        modalOverlay.classList.remove('active');
+        document.body.style.overflow = '';
+        const video = activeModal.querySelector('video');
+        if (video) video.pause();
+        activeModal = null;
+    }
+
+    modalTriggers.forEach(function(trigger) {
+        const targetId = trigger.getAttribute('data-modal-target');
+        const modal = document.getElementById(targetId);
+        if (!modal) return;
+
+        trigger.addEventListener('click', function() {
+            openProjectModal(modal);
+        });
+        trigger.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                openProjectModal(modal);
+            }
+        });
+
+        const closeBtn = modal.querySelector('.project-modal-close');
+        if (closeBtn) closeBtn.addEventListener('click', closeProjectModal);
+    });
+
+    if (modalOverlay) modalOverlay.addEventListener('click', closeProjectModal);
+
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeProjectModal();
+    });
 
     const contactForm = document.querySelector('#contact-form');
     if (contactForm) {

@@ -57,6 +57,13 @@
 @media (max-width: 720px) {
   .section { padding: 70px 0; }
   .grid-3 { grid-template-columns: 1fr; }
+  .layout-landscape .pm-body { grid-template-columns: 1fr; gap: 30px; padding: 30px 24px; }
+  .pm-shots { min-height: 220px; margin-top: 8px; }
+  .pm-shots .shot { width: 68%; }
+  .project-modal-inner.layout-portrait { flex-direction: column; }
+  .layout-portrait .pm-media { width: 100%; border-radius: var(--radius-lg) var(--radius-lg) 0 0; }
+  .layout-portrait .pm-media video { aspect-ratio: 16 / 9; height: auto; object-fit: contain; }
+  .layout-portrait .pm-body { padding: 30px 24px; }
   .grid-4 { grid-template-columns: 1fr 1fr; }
   .work-hero-card { grid-column: span 1; }
   .footer-grid { grid-template-columns: 1fr; gap: 34px; padding-bottom: 40px; }
