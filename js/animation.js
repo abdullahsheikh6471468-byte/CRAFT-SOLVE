@@ -54,39 +54,51 @@ document.addEventListener('DOMContentLoaded', function() {
     // CASCADING SCROLL REVEAL
     const revealEls = document.querySelectorAll('.reveal');
     if ('IntersectionObserver' in window) {
-        let delayCounter = 0;
-        let delayResetTimeout;
 
         const observer = new IntersectionObserver(function(entries) {
             entries.forEach(function(entry) {
                 if (entry.isIntersecting) {
-
-                    // Adds a staggered 100ms delay to each item so they pop up one after another
-                    setTimeout(function() {
-                        entry.target.classList.add('in-view');
-                    }, delayCounter * 100);
-
-                    delayCounter++; // Increase delay for the next item
-
-                    // Reset the cascade delay when scrolling stops
-                    clearTimeout(delayResetTimeout);
-                    delayResetTimeout = setTimeout(function() { delayCounter = 0; }, 300);
-
+                    // Reveal immediately on intersect. There used to be an extra
+                    // setTimeout stagger here (step * 80ms) which stacked ON TOP of the
+                    // CSS transition-delay values — so a grid's 4th card waited 240ms
+                    // from JS *plus* 270ms from CSS before it even began its 600ms
+                    // transition. That compounding is what made everything feel a beat
+                    // late. Stagger is now handled in CSS alone, in one place.
+                    entry.target.classList.add('in-view');
                     observer.unobserve(entry.target);
                 }
             });
-        }, { threshold: 0.15 });
+            // Trigger slightly BEFORE the element reaches the viewport (positive bottom
+            // margin extends the detection box downward), so the motion is already
+            // underway as it scrolls into view rather than starting after it has landed.
+        }, { threshold: 0, rootMargin: '0px 0px 120px 0px' });
 
         revealEls.forEach(function(el) { observer.observe(el); });
     } else {
         revealEls.forEach(function(el) { el.classList.add('in-view'); });
     }
 
-    // Fail-safe: if anything above fails silently on a slow/older browser,
-    // force every section visible after 1.5s so content is never stuck hidden.
+    // NOTE: there used to be a blanket "reveal everything after 1.5s" fail-safe here.
+    // That was the bug behind sections "appearing with no animation" — it silently
+    // flipped every .reveal element to .in-view 1.5s after page load, so by the time
+    // a real person actually scrolled down to a section (almost always more than 1.5s
+    // after load), the fade/slide-in had already happened off-screen and the content
+    // just popped in fully visible with nothing left to animate.
+    //
+    // IntersectionObserver is supported in effectively every modern browser (the
+    // `else` branch above already covers the rare case where it isn't), so scroll
+    // reveal doesn't need a timer-based safety net. Instead, guard against the one
+    // real failure mode — an element that, for whatever reason, never gets observed
+    // (e.g. added to the DOM after this script ran) — by watching for elements still
+    // sitting at opacity:0 well after the page has settled, and only then revealing
+    // *those*, long after any normal scroll would have reached them.
     setTimeout(function() {
-        document.querySelectorAll('.reveal').forEach(function(el) { el.classList.add('in-view'); });
-    }, 1500);
+        document.querySelectorAll('.reveal:not(.in-view)').forEach(function(el) {
+            const rect = el.getBoundingClientRect();
+            const alreadyPassed = rect.top < 0 && rect.bottom < 0;
+            if (alreadyPassed) el.classList.add('in-view');
+        });
+    }, 10000);
 
     document.querySelectorAll('.text-reveal').forEach(function(el) {
         const words = el.textContent.trim().split(' ');

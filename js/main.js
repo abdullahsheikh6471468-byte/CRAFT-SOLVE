@@ -15,8 +15,7 @@
         return;
     }
 
-    const MIN_DISPLAY_TIME = 500;  // preloader kam se kam itni der screen par rahy (flash na ho)
-    const MAX_WAIT_TIME = 15000;   // safety fallback: kisi image ky slow/fail hony par b itni der ky baad hide hojaye
+    const MIN_DISPLAY_TIME = 300;  // preloader kam se kam itni der screen par rahy (flash na ho)
     const startTime = Date.now();
     let hidden = false;
 
@@ -32,48 +31,14 @@
         }, remaining);
     }
 
-    // Page ki tamam <img> collect karo taky unky load hony ka intezar kiya ja sakay,
-    // is tarah images preloader ky peechy hi load ho jayengi aur user ko baad me
-    // "pop-in" hoty huay nazar nahi aayengi. Video poster images bhi shamil karo,
-    // kyunky woh document.images ka hissa nahi hoti.
-    const imgElements = Array.from(document.images || []);
-    const posterUrls = Array.from(document.querySelectorAll('video[poster]'))
-        .map(function(v) { return v.getAttribute('poster'); })
-        .filter(Boolean);
-
-    const total = imgElements.length + posterUrls.length;
-
-    if (total === 0) {
+    // Preloader ab sirf DOM ready hony ka intezar karta hai — page ki tamam
+    // images/videos ka wait nahi karta, taky site fast feel ho. Off-screen
+    // images khud lazy-load ho jati hain jab user unky qareeb scroll kare.
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', hidePreloader);
+    } else {
         hidePreloader();
-        return;
     }
-
-    let loadedCount = 0;
-    function onOneDone() {
-        loadedCount++;
-        if (loadedCount >= total) {
-            hidePreloader();
-        }
-    }
-
-    imgElements.forEach(function(img) {
-        if (img.complete && img.naturalWidth !== 0) {
-            onOneDone();
-        } else {
-            img.addEventListener('load', onOneDone, { once: true });
-            img.addEventListener('error', onOneDone, { once: true });
-        }
-    });
-
-    posterUrls.forEach(function(url) {
-        const preloadImg = new Image();
-        preloadImg.addEventListener('load', onOneDone, { once: true });
-        preloadImg.addEventListener('error', onOneDone, { once: true });
-        preloadImg.src = url;
-    });
-
-    // Absolute safety net — agar network bohat slow ho ya koi image fail ho jaye
-    setTimeout(hidePreloader, MAX_WAIT_TIME);
 })();
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -147,6 +112,23 @@ document.addEventListener('DOMContentLoaded', function() {
     function openProjectModal(modal) {
         if (!modal) return;
         activeModal = modal;
+        // Lazy-load this modal's images/video only now, on first open
+        modal.querySelectorAll('.lazy-media').forEach(function(el) {
+            if (el.tagName === 'IMG' && el.dataset.src) {
+                el.src = el.dataset.src;
+                el.removeAttribute('data-src');
+            } else if (el.tagName === 'VIDEO') {
+                if (el.dataset.poster) {
+                    el.poster = el.dataset.poster;
+                    el.removeAttribute('data-poster');
+                }
+                if (el.dataset.src) {
+                    el.src = el.dataset.src;
+                    el.preload = 'metadata';
+                    el.removeAttribute('data-src');
+                }
+            }
+        });
         modal.classList.add('active');
         modalOverlay.classList.add('active');
         document.body.style.overflow = 'hidden';
