@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us · CraftSolve</title>
     <meta name="description" content="Meet CraftSolve, a digital agency solving business problems through design, development, and innovation. Learn our story, values, and team.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="CraftSolve">
+    <meta property="og:title" content="About Us · CraftSolve">
+    <meta property="og:description" content="Meet CraftSolve, a digital agency solving business problems through design, development, and innovation. Learn our story, values, and team.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="About Us · CraftSolve">
+    <meta name="twitter:description" content="Meet CraftSolve, a digital agency solving business problems through design, development, and innovation. Learn our story, values, and team.">
     <link rel="icon" href="images/favicon.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -16,34 +23,37 @@
 
 <body>
 
+    <a href="#main" class="skip-link">Skip to content</a>
+
     <div class="preloader" id="preloader">
         <div class="preloader-inner">
-            <img src="images/logo.png" alt="CraftSolve" class="preloader-logo">
+            <img src="images/logo.png" alt="CraftSolve" class="preloader-logo" width="360" height="480">
             <div class="preloader-bar"><span></span></div>
         </div>
     </div>
 
-    <nav class="navbar scrolled">
+    <nav class="navbar scrolled" aria-label="Main">
         <div class="container nav-inner">
             <a href="index.html" class="nav-logo">
-                <img src="images/logo.png" alt="CraftSolve">
+                <img src="images/logo.png" alt="CraftSolve" width="360" height="480">
             </a>
             <div class="nav-links">
                 <a href="index.html">Home</a>
-                <a href="about.html" class="active">About</a>
+                <a href="about.html" class="active" aria-current="page">About</a>
                 <a href="services.html">Services</a>
                 <a href="work.html">Work</a>
                 <a href="contact.html">Contact</a>
             </div>
             <a href="contact.html" class="btn btn-primary btn-sm">Let's Talk</a>
-            <button class="hamburger" aria-label="Open menu">
+            <button class="hamburger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-drawer">
       <span></span><span></span><span></span>
     </button>
         </div>
     </nav>
 
     <div class="drawer-overlay"></div>
-    <div class="mobile-drawer">
+    <div class="mobile-drawer" id="mobile-drawer">
+        <button class="drawer-close" type="button" aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="22" height="22" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="services.html">Services</a>
@@ -52,7 +62,8 @@
         <a href="contact.html" class="btn btn-primary" style="margin-top:10px;">Let's Talk</a>
     </div>
 
-    <header class="page-header">
+    <main id="main">
+<header class="page-header">
         <div class="hero-bg">
             <div class="grid-overlay"></div>
             <div class="blob blob-1"></div>
@@ -68,7 +79,7 @@
             <div class="reveal">
                 <div class="about-photo-frame founder-frame">
                     <div class="founder-glow-ring"></div>
-                    <img src="images/team-abdullah.png" alt="CraftSolve founder">
+                    <img src="images/team-abdullah.webp" alt="CraftSolve founder" width="960" height="1280">
                     <div class="founder-sweep"></div>
 
                 </div>
@@ -77,16 +88,16 @@
                 <div class="eyebrow-line"><span class="dash"></span><span style="font-family:'Space Mono',monospace;font-size:13px;color:var(--indigo);">OUR STORY</span></div>
                 <h2 class="headline">We started CraftSolve to close the gap between good ideas and working products.</h2>
                 <p class="lede" style="margin-top:20px;max-width:none;">Too many businesses hire for outputs: a website, an app, a logo, without anyone asking whether that output actually solves the underlying problem. CraftSolve exists to ask that question first, every time.</p>
-                <p class="lede" style="margin-top:16px;max-width:none;">We're a small, senior team spanning UI/UX design, full-stack development, mobile and game engineering, and brand design. That range means fewer handoffs, fewer misunderstandings, and a product that feels considered end to end, not stitched
+                <p class="lede" style="margin-top:16px;max-width:none;">We're a small, multidisciplinary team spanning UI/UX design, full-stack development, mobile and game engineering, and brand design. That range means fewer handoffs, fewer misunderstandings, and a product that feels considered end to end, not stitched
                     together from three different vendors.</p>
                 <div class="stat-strip">
                     <div>
-                        <div class="num grad-text" data-count="7" data-suffix="">0</div>
+                        <div class="num grad-text" data-count="6" data-suffix="">0</div>
                         <div class="label">DISCIPLINES</div>
                     </div>
                     <div>
-                        <div class="num grad-text" data-count="100" data-suffix="%">0%</div>
-                        <div class="label">CUSTOM BUILDS</div>
+                        <div class="num grad-text" data-count="4" data-suffix="">0</div>
+                        <div class="label">TEAM MEMBERS</div>
                     </div>
                     <div>
                         <div class="num grad-text" data-count="1" data-suffix="">0</div>
@@ -143,7 +154,7 @@
             </div>
             <div class="grid-4">
                 <div class="team-card reveal">
-                    <div class="team-photo"><img src="images/team-abdullah-sheikh.png" alt="Abdullah Sheikh, UI/UX Designer"></div>
+                    <div class="team-photo"><img src="images/team-abdullah-sheikh.webp" alt="Abdullah Sheikh, UI/UX Designer" width="960" height="1280" loading="lazy" decoding="async"></div>
                     <div class="team-info">
                         <h4>Abdullah Sheikh</h4>
                         <div class="role">UI/UX DESIGNER</div>
@@ -154,7 +165,7 @@
                     </div>
                 </div>
                 <div class="team-card reveal">
-                    <div class="team-photo"><img src="images/team-abdullah.png" alt="Abdullah, Full Stack Developer"></div>
+                    <div class="team-photo"><img src="images/team-abdullah.webp" alt="Abdullah, Full Stack Developer" width="960" height="1280" loading="lazy" decoding="async"></div>
                     <div class="team-info">
                         <h4>Abdullah</h4>
                         <div class="role">FULL STACK DEVELOPER</div>
@@ -165,7 +176,7 @@
                     </div>
                 </div>
                 <div class="team-card reveal">
-                    <div class="team-photo"><img src="images/team-ezza.png" alt="Ezza, Graphic Designer and Video Editor"></div>
+                    <div class="team-photo"><img src="images/team-ezza.webp" alt="Ezza, Graphic Designer and Video Editor" width="960" height="1280" loading="lazy" decoding="async"></div>
                     <div class="team-info">
                         <h4>Ezza</h4>
                         <div class="role">GRAPHIC DESIGNER &amp; VIDEO EDITOR</div>
@@ -176,7 +187,7 @@
                     </div>
                 </div>
                 <div class="team-card reveal">
-                    <div class="team-photo"><img src="images/team-muniba.png" alt="Muniba, Backend Developer"></div>
+                    <div class="team-photo"><img src="images/team-muniba.webp" alt="Muniba, Backend Developer" width="960" height="1280" loading="lazy" decoding="async"></div>
                     <div class="team-info">
                         <h4>Muniba</h4>
                         <div class="role">BACKEND DEVELOPER</div>
@@ -204,12 +215,14 @@
         </div>
     </section>
 
-    <footer class="footer">
+    </main>
+
+<footer class="footer">
         <div class="footer-watermark" aria-hidden="true">CraftSolve</div>
         <div class="container">
             <div class="footer-grid">
                 <div>
-                    <div class="footer-logo"><img src="images/logo.png" alt="CraftSolve"></div>
+                    <div class="footer-logo"><img src="images/logo.png" alt="CraftSolve" width="360" height="480" loading="lazy" decoding="async"></div>
                     <p style="font-size:14px;max-width:280px;">A digital agency solving business problems through design, development, and innovation.</p>
                     <div class="social-row">
                         <a class="social-icon" href="https://linkedin.com/company/craftsolve" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M6.94 8.5H3.56V20H6.94V8.5ZM5.25 7A2 2 0 1 0 5.25 3 2 2 0 0 0 5.25 7ZM20.4 20H17V13.9C17 12.3 16.4 11.3 15 11.3C13.9 11.3 13.3 12 13 12.7C12.9 13 12.9 13.4 12.9 13.8V20H9.5S9.6 9.4 9.5 8.5H12.9V10C13.3 9.3 14.2 8.3 16 8.3C18.2 8.3 20.4 9.7 20.4 13.2V20Z"/></svg></a>
@@ -240,7 +253,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <span>© 2026 CraftSolve. All rights reserved.</span>
+                <span>© 2026 CraftSolve. All rights reserved. <a href="privacy.html" class="footer-legal">Privacy Policy</a></span>
                 <a href="#top" class="back-to-top" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg></a>
             </div>
         </div>

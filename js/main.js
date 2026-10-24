@@ -57,18 +57,25 @@ document.addEventListener('DOMContentLoaded', function() {
     const drawer = document.querySelector('.mobile-drawer');
     const overlay = document.querySelector('.drawer-overlay');
 
+    const drawerClose = document.querySelector('.drawer-close');
+
     function openDrawer() {
         drawer.classList.add('open');
         overlay.classList.add('open');
         hamburger.classList.add('active');
+        hamburger.setAttribute('aria-expanded', 'true');
         document.body.style.overflow = 'hidden';
+        if (drawerClose) drawerClose.focus();
     }
 
     function closeDrawer() {
+        const wasOpen = drawer.classList.contains('open');
         drawer.classList.remove('open');
         overlay.classList.remove('open');
         hamburger.classList.remove('active');
+        hamburger.setAttribute('aria-expanded', 'false');
         document.body.style.overflow = '';
+        if (wasOpen && document.activeElement && drawer.contains(document.activeElement)) hamburger.focus();
     }
 
     if (hamburger && drawer && overlay) {
@@ -76,6 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
             drawer.classList.contains('open') ? closeDrawer() : openDrawer();
         });
         overlay.addEventListener('click', closeDrawer);
+        if (drawerClose) drawerClose.addEventListener('click', closeDrawer);
     }
 
     document.querySelectorAll('.mobile-drawer a').forEach(function(link) {
@@ -166,7 +174,10 @@ document.addEventListener('DOMContentLoaded', function() {
     if (modalOverlay) modalOverlay.addEventListener('click', closeProjectModal);
 
     document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape') closeProjectModal();
+        if (e.key === 'Escape') {
+            closeProjectModal();
+            if (drawer && drawer.classList.contains('open')) closeDrawer();
+        }
     });
 
     const contactForm = document.querySelector('#contact-form');

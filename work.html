@@ -5,6 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Our Work · CraftSolve</title>
 <meta name="description" content="CraftSolve's project showcase: case studies, videos, and future work will appear here.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="CraftSolve">
+    <meta property="og:title" content="Our Work · CraftSolve">
+    <meta property="og:description" content="CraftSolve's project showcase: case studies, videos, and future work will appear here.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Our Work · CraftSolve">
+    <meta name="twitter:description" content="CraftSolve's project showcase: case studies, videos, and future work will appear here.">
 <link rel="icon" href="images/favicon.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -14,34 +21,37 @@
 </head>
 <body>
 
+    <a href="#main" class="skip-link">Skip to content</a>
+
 <div class="preloader" id="preloader">
   <div class="preloader-inner">
-    <img src="images/logo.png" alt="CraftSolve" class="preloader-logo">
+    <img src="images/logo.png" alt="CraftSolve" class="preloader-logo" width="360" height="480">
     <div class="preloader-bar"><span></span></div>
   </div>
 </div>
 
-<nav class="navbar scrolled">
+<nav class="navbar scrolled" aria-label="Main">
   <div class="container nav-inner">
     <a href="index.html" class="nav-logo">
-      <img src="images/logo.png" alt="CraftSolve" loading="lazy" decoding="async">
+      <img src="images/logo.png" alt="CraftSolve" loading="lazy" decoding="async" width="360" height="480">
     </a>
     <div class="nav-links">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
-      <a href="work.html" class="active">Work</a>
+      <a href="work.html" class="active" aria-current="page">Work</a>
       <a href="contact.html">Contact</a>
     </div>
     <a href="contact.html" class="btn btn-primary btn-sm">Let's Talk</a>
-    <button class="hamburger" aria-label="Open menu">
+    <button class="hamburger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-drawer">
       <span></span><span></span><span></span>
     </button>
   </div>
 </nav>
 
 <div class="drawer-overlay"></div>
-<div class="mobile-drawer">
+<div class="mobile-drawer" id="mobile-drawer">
+        <button class="drawer-close" type="button" aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="22" height="22" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
   <a href="index.html">Home</a>
   <a href="about.html">About</a>
   <a href="services.html">Services</a>
@@ -50,6 +60,7 @@
   <a href="contact.html" class="btn btn-primary" style="margin-top:10px;">Let's Talk</a>
 </div>
 
+<main id="main">
 <header class="page-header">
   <div class="hero-bg">
     <div class="grid-overlay"></div>
@@ -82,57 +93,57 @@
       <div class="work-grid">
       <div class="work-tile reveal" data-modal-target="modal-yaadgar" data-cats="web-dev" tabindex="0" role="button" aria-haspopup="dialog">
         <div class="work-tile-img">
-          <img src="images/work/yaadgar/poster.jpg" alt="Yaadgar Events Planner" loading="lazy" decoding="async">
+          <img src="images/work/yaadgar/poster.jpg" alt="Yaadgar Events Planner" loading="lazy" decoding="async" width="1000" height="562">
           <span class="status-pill status-pill-live">LIVE</span>
         </div>
         <div class="work-tile-body">
           <h3>Yaadgar Events Planner</h3>
           <p>A premium event-planning site with a full booking flow, live gallery, and WhatsApp-integrated reviews.</p>
-          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          <span class="work-tile-cta">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
       </div>
       <div class="work-tile reveal" data-modal-target="modal-quosar" data-cats="web-dev" tabindex="0" role="button" aria-haspopup="dialog">
         <div class="work-tile-img">
-          <img src="images/work/quosar/poster.jpg" alt="Quosar Beauty Saloon" loading="lazy" decoding="async">
+          <img src="images/work/quosar/poster.jpg" alt="Quosar Beauty Saloon" loading="lazy" decoding="async" width="1000" height="560">
           
         </div>
         <div class="work-tile-body">
           <h3>Quosar Beauty Saloon</h3>
           <p>A dark, editorial salon booking site for hair, skin, and bridal services in Lahore.</p>
-          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          <span class="work-tile-cta">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
       </div>
       <div class="work-tile reveal" data-modal-target="modal-fitwithabdullah" data-cats="web-dev" tabindex="0" role="button" aria-haspopup="dialog">
         <div class="work-tile-img">
-          <img src="images/work/fitwithabdullah/poster.jpg" alt="FitWithAbdullah" loading="lazy" decoding="async">
+          <img src="images/work/fitwithabdullah/poster.jpg" alt="FitWithAbdullah" loading="lazy" decoding="async" width="900" height="506">
           
         </div>
         <div class="work-tile-body">
           <h3>FitWithAbdullah</h3>
           <p>A dark fitness-coaching site with personalized Pakistani diet plans and workout programs.</p>
-          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          <span class="work-tile-cta">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
       </div>
       <div class="work-tile reveal" data-modal-target="modal-sentinel" data-cats="web-dev" tabindex="0" role="button" aria-haspopup="dialog">
         <div class="work-tile-img">
-          <img src="images/work/sentinel/poster.jpg" alt="Sentinel" loading="lazy" decoding="async">
+          <img src="images/work/sentinel/poster.jpg" alt="Sentinel" loading="lazy" decoding="async" width="900" height="506">
           
         </div>
         <div class="work-tile-body">
           <h3>Sentinel</h3>
           <p>A browser-based security monitoring app with real-time unauthorized-access alarm audio.</p>
-          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          <span class="work-tile-cta">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
       </div>
       <div class="work-tile reveal" data-modal-target="modal-visionattend" data-cats="web-dev" tabindex="0" role="button" aria-haspopup="dialog">
         <div class="work-tile-img">
-          <img src="images/work/visionattend/poster.jpg" alt="VisionAttend AI" loading="lazy" decoding="async">
+          <img src="images/work/visionattend/poster.jpg" alt="VisionAttend AI" loading="lazy" decoding="async" width="900" height="506">
           
         </div>
         <div class="work-tile-body">
           <h3>VisionAttend AI</h3>
           <p>A facial-recognition attendance system with a clean admin sign-in portal.</p>
-          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          <span class="work-tile-cta">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
       </div>
       </div>
@@ -146,68 +157,68 @@
       <div class="work-grid">
       <div class="work-tile reveal" data-modal-target="modal-mediflow" data-cats="dashboard" tabindex="0" role="button" aria-haspopup="dialog">
         <div class="work-tile-img">
-          <img src="images/work/mediflow/poster.jpg" alt="MediFlow" loading="lazy" decoding="async">
+          <img src="images/work/mediflow/poster.jpg" alt="MediFlow" loading="lazy" decoding="async" width="1000" height="562">
           
         </div>
         <div class="work-tile-body">
           <h3>MediFlow</h3>
           <p>A hospital emergency management dashboard covering patients, doctors, beds, and live analytics.</p>
-          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          <span class="work-tile-cta">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
       </div>
       <div class="work-tile reveal" data-modal-target="modal-ashford" data-cats="dashboard" tabindex="0" role="button" aria-haspopup="dialog">
         <div class="work-tile-img">
-          <img src="images/work/ashford/poster.jpg" alt="Ashford University" loading="lazy" decoding="async">
+          <img src="images/work/ashford/poster.jpg" alt="Ashford University" loading="lazy" decoding="async" width="1000" height="562">
           
         </div>
         <div class="work-tile-body">
           <h3>Ashford University</h3>
           <p>Executive registrar console for university admissions &amp; records.</p>
-          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          <span class="work-tile-cta">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
       </div>
       <div class="work-tile reveal" data-modal-target="modal-epicure" data-cats="dashboard" tabindex="0" role="button" aria-haspopup="dialog">
         <div class="work-tile-img">
-          <img src="images/work/epicure/poster.jpg" alt="Epicure Slate" loading="lazy" decoding="async">
+          <img src="images/work/epicure/poster.jpg" alt="Epicure Slate" loading="lazy" decoding="async" width="1000" height="562">
           
         </div>
         <div class="work-tile-body">
           <h3>Epicure Slate</h3>
           <p>Gourmet restaurant ops console with a live kitchen display system.</p>
-          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          <span class="work-tile-cta">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
       </div>
       <div class="work-tile reveal" data-modal-target="modal-skyfleet" data-cats="dashboard" tabindex="0" role="button" aria-haspopup="dialog">
         <div class="work-tile-img">
-          <img src="images/work/skyfleet/poster.jpg" alt="SkyFleet Dynamics" loading="lazy" decoding="async">
+          <img src="images/work/skyfleet/poster.jpg" alt="SkyFleet Dynamics" loading="lazy" decoding="async" width="1000" height="562">
           
         </div>
         <div class="work-tile-body">
           <h3>SkyFleet Dynamics</h3>
           <p>Live fleet telemetry and GPS logistics command center.</p>
-          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          <span class="work-tile-cta">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
       </div>
       <div class="work-tile reveal" data-modal-target="modal-sterling" data-cats="dashboard" tabindex="0" role="button" aria-haspopup="dialog">
         <div class="work-tile-img">
-          <img src="images/work/sterling/poster.jpg" alt="Sterling Capital" loading="lazy" decoding="async">
+          <img src="images/work/sterling/poster.jpg" alt="Sterling Capital" loading="lazy" decoding="async" width="1000" height="560">
           
         </div>
         <div class="work-tile-body">
           <h3>Sterling Capital</h3>
           <p>Wealth management console with live AUM and account rails.</p>
-          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          <span class="work-tile-cta">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
       </div>
       <div class="work-tile reveal" data-modal-target="modal-verdant" data-cats="dashboard" tabindex="0" role="button" aria-haspopup="dialog">
         <div class="work-tile-img">
-          <img src="images/work/verdant/poster.jpg" alt="Verdant Eco" loading="lazy" decoding="async">
+          <img src="images/work/verdant/poster.jpg" alt="Verdant Eco" loading="lazy" decoding="async" width="1000" height="562">
           
         </div>
         <div class="work-tile-body">
           <h3>Verdant Eco</h3>
           <p>Smart-greenhouse environmental analytics dashboard.</p>
-          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          <span class="work-tile-cta">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
       </div>
       </div>
@@ -221,79 +232,79 @@
       <div class="work-grid">
       <div class="work-tile reveal" data-modal-target="modal-app-dawaclock" data-cats="mobile-app" tabindex="0" role="button" aria-haspopup="dialog">
         <div class="work-tile-img">
-          <img src="images/work/apps/dawaclock-poster.jpg" alt="DawaClock" loading="lazy" decoding="async">
+          <img src="images/work/apps/dawaclock-poster.jpg" alt="DawaClock" loading="lazy" decoding="async" width="576" height="1280">
           
         </div>
         <div class="work-tile-body">
           <h3>DawaClock</h3>
           <p>Medicine reminder &amp; refill tracker for elderly and chronic patients.</p>
-          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          <span class="work-tile-cta">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
       </div>
       <div class="work-tile reveal" data-modal-target="modal-app-toolcanopy" data-cats="mobile-app" tabindex="0" role="button" aria-haspopup="dialog">
         <div class="work-tile-img">
-          <img src="images/work/apps/toolcanopy-poster.jpg" alt="ToolCanopy" loading="lazy" decoding="async">
+          <img src="images/work/apps/toolcanopy-poster.jpg" alt="ToolCanopy" loading="lazy" decoding="async" width="576" height="1280">
           
         </div>
         <div class="work-tile-body">
           <h3>ToolCanopy</h3>
           <p>Peer-to-peer equipment marketplace for engineering students.</p>
-          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          <span class="work-tile-cta">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
       </div>
       <div class="work-tile reveal" data-modal-target="modal-app-sathwork" data-cats="mobile-app" tabindex="0" role="button" aria-haspopup="dialog">
         <div class="work-tile-img">
-          <img src="images/work/apps/sathwork-poster.jpg" alt="SathWork" loading="lazy" decoding="async">
+          <img src="images/work/apps/sathwork-poster.jpg" alt="SathWork" loading="lazy" decoding="async" width="576" height="1280">
           
         </div>
         <div class="work-tile-body">
           <h3>SathWork</h3>
           <p>Tinder-style swipe matcher for students &amp; indie creators.</p>
-          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          <span class="work-tile-cta">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
       </div>
       <div class="work-tile reveal" data-modal-target="modal-app-chornasha" data-cats="mobile-app" tabindex="0" role="button" aria-haspopup="dialog">
         <div class="work-tile-img">
-          <img src="images/work/apps/chornasha-poster.jpg" alt="Chornasha" loading="lazy" decoding="async">
+          <img src="images/work/apps/chornasha-poster.jpg" alt="Chornasha" loading="lazy" decoding="async" width="576" height="1280">
           
         </div>
         <div class="work-tile-body">
           <h3>Chornasha</h3>
           <p>Sobriety &amp; addiction-recovery companion.</p>
-          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          <span class="work-tile-cta">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
       </div>
       <div class="work-tile reveal" data-modal-target="modal-app-togseo" data-cats="mobile-app" tabindex="0" role="button" aria-haspopup="dialog">
         <div class="work-tile-img">
-          <img src="images/work/apps/togseo-poster.jpg" alt="Togseo" loading="lazy" decoding="async">
+          <img src="images/work/apps/togseo-poster.jpg" alt="Togseo" loading="lazy" decoding="async" width="700" height="1555">
           
         </div>
         <div class="work-tile-body">
           <h3>Togseo</h3>
           <p>Guided sewing &amp; tailoring companion.</p>
-          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          <span class="work-tile-cta">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
       </div>
       <div class="work-tile reveal" data-modal-target="modal-app-devboard" data-cats="mobile-app" tabindex="0" role="button" aria-haspopup="dialog">
         <div class="work-tile-img">
-          <img src="images/work/apps/devboard-poster.jpg" alt="DevBoard" loading="lazy" decoding="async">
+          <img src="images/work/apps/devboard-poster.jpg" alt="DevBoard" loading="lazy" decoding="async" width="700" height="1555">
           
         </div>
         <div class="work-tile-body">
           <h3>DevBoard</h3>
           <p>Terminal-styled mobile server monitoring dashboard.</p>
-          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          <span class="work-tile-cta">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
       </div>
       <div class="work-tile reveal" data-modal-target="modal-app-quickkaam" data-cats="mobile-app" tabindex="0" role="button" aria-haspopup="dialog">
         <div class="work-tile-img">
-          <img src="images/work/apps/quickkaam-poster.jpg" alt="Quick Kaam" loading="lazy" decoding="async">
+          <img src="images/work/apps/quickkaam-poster.jpg" alt="Quick Kaam" loading="lazy" decoding="async" width="700" height="1555">
           
         </div>
         <div class="work-tile-body">
           <h3>Quick Kaam</h3>
           <p>Local service marketplace for Lahore, Pakistan.</p>
-          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          <span class="work-tile-cta">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
       </div>
       </div>
@@ -307,46 +318,46 @@
       <div class="work-grid">
       <div class="work-tile reveal" data-modal-target="modal-zombie-shooter" data-cats="mobile-game" tabindex="0" role="button" aria-haspopup="dialog">
         <div class="work-tile-img">
-          <img src="images/work/placeholder/zombie-shooter-poster.jpg" alt="Zombie Shooter" loading="lazy" decoding="async">
+          <img src="images/work/placeholder/zombie-shooter-poster.jpg" alt="Zombie Shooter" loading="lazy" decoding="async" width="700" height="315">
           
         </div>
         <div class="work-tile-body">
           <h3>Zombie Shooter</h3>
           <p>Top-down Android zombie survival shooter — 30 levels + boss fight.</p>
-          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          <span class="work-tile-cta">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
       </div>
       <div class="work-tile reveal" data-modal-target="modal-hopscotch-hollow" data-cats="mobile-game" tabindex="0" role="button" aria-haspopup="dialog">
         <div class="work-tile-img">
-          <img src="images/work/placeholder/hopscotch-hollow-poster.jpg" alt="Hopscotch Hollow" loading="lazy" decoding="async">
+          <img src="images/work/placeholder/hopscotch-hollow-poster.jpg" alt="Hopscotch Hollow" loading="lazy" decoding="async" width="700" height="315">
           
         </div>
         <div class="work-tile-body">
           <h3>Hopscotch Hollow</h3>
           <p>2D platformer adventure across 6 worlds, 36 levels, with an upgrade economy.</p>
-          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          <span class="work-tile-cta">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
       </div>
       <div class="work-tile reveal" data-modal-target="modal-escape-game" data-cats="mobile-game" tabindex="0" role="button" aria-haspopup="dialog">
         <div class="work-tile-img">
-          <img src="images/work/escape-game/poster.jpg" alt="Escape" loading="lazy" decoding="async">
+          <img src="images/work/escape-game/poster.jpg" alt="Escape" loading="lazy" decoding="async" width="900" height="506">
           
         </div>
         <div class="work-tile-body">
           <h3>Escape</h3>
           <p>A tile-based maze escape game — find the key, avoid the guards, beat the clock.</p>
-          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          <span class="work-tile-cta">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
       </div>
       <div class="work-tile reveal" data-modal-target="modal-speedrush" data-cats="mobile-game" tabindex="0" role="button" aria-haspopup="dialog">
         <div class="work-tile-img">
-          <img src="images/work/speedrush/poster.jpg" alt="SpeedRush 2D" loading="lazy" decoding="async">
+          <img src="images/work/speedrush/poster.jpg" alt="SpeedRush 2D" loading="lazy" decoding="async" width="900" height="506">
           
         </div>
         <div class="work-tile-body">
           <h3>SpeedRush 2D</h3>
           <p>A top-down 2D racing game — 5-lap circuits, rival AI cars, and a live speedometer HUD.</p>
-          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          <span class="work-tile-cta">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
       </div>
       </div>
@@ -360,145 +371,145 @@
       <div class="work-grid">
       <div class="work-tile reveal" data-modal-target="modal-uiux-airpods" data-cats="ui-ux" tabindex="0" role="button" aria-haspopup="dialog">
         <div class="work-tile-img">
-          <img src="images/work/uiux/airpods-final.jpg" alt="AirPods Pro Landing" loading="lazy" decoding="async">
+          <img src="images/work/uiux/airpods-final.jpg" alt="AirPods Pro Landing" loading="lazy" decoding="async" width="700" height="466">
           
         </div>
         <div class="work-tile-body">
           <h3>AirPods Pro Landing</h3>
           <p>Apple product landing page exploration.</p>
-          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          <span class="work-tile-cta">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
       </div>
       <div class="work-tile reveal" data-modal-target="modal-uiux-chatbot" data-cats="ui-ux" tabindex="0" role="button" aria-haspopup="dialog">
         <div class="work-tile-img">
-          <img src="images/work/uiux/chatbot-final.jpg" alt="Chatly — AI Chatbot SaaS" loading="lazy" decoding="async">
+          <img src="images/work/uiux/chatbot-final.jpg" alt="Chatly — AI Chatbot SaaS" loading="lazy" decoding="async" width="700" height="495">
           
         </div>
         <div class="work-tile-body">
           <h3>Chatly — AI Chatbot SaaS</h3>
           <p>AI chatbot SaaS marketing homepage.</p>
-          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          <span class="work-tile-cta">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
       </div>
       <div class="work-tile reveal" data-modal-target="modal-uiux-gaming" data-cats="ui-ux" tabindex="0" role="button" aria-haspopup="dialog">
         <div class="work-tile-img">
-          <img src="images/work/uiux/gaming-final.jpg" alt="PlayZone Gaming Hub" loading="lazy" decoding="async">
+          <img src="images/work/uiux/gaming-final.jpg" alt="PlayZone Gaming Hub" loading="lazy" decoding="async" width="700" height="466">
           
         </div>
         <div class="work-tile-body">
           <h3>PlayZone Gaming Hub</h3>
           <p>Gaming platform &amp; tournament hub homepage.</p>
-          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          <span class="work-tile-cta">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
       </div>
       <div class="work-tile reveal" data-modal-target="modal-uiux-lamp" data-cats="ui-ux" tabindex="0" role="button" aria-haspopup="dialog">
         <div class="work-tile-img">
-          <img src="images/work/uiux/lamp-final.jpg" alt="Lumiere Lighting Store" loading="lazy" decoding="async">
+          <img src="images/work/uiux/lamp-final.jpg" alt="Lumiere Lighting Store" loading="lazy" decoding="async" width="700" height="384">
           
         </div>
         <div class="work-tile-body">
           <h3>Lumiere Lighting Store</h3>
           <p>Modern lighting e-commerce landing page.</p>
-          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          <span class="work-tile-cta">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
       </div>
       <div class="work-tile reveal" data-modal-target="modal-uiux-course" data-cats="ui-ux" tabindex="0" role="button" aria-haspopup="dialog">
         <div class="work-tile-img">
-          <img src="images/work/uiux/course-final.jpg" alt="Online Course Dashboard" loading="lazy" decoding="async">
+          <img src="images/work/uiux/course-final.jpg" alt="Online Course Dashboard" loading="lazy" decoding="async" width="700" height="466">
           
         </div>
         <div class="work-tile-body">
           <h3>Online Course Dashboard</h3>
           <p>Student learning dashboard UI.</p>
-          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          <span class="work-tile-cta">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
       </div>
       <div class="work-tile reveal" data-modal-target="modal-uiux-crockery" data-cats="ui-ux" tabindex="0" role="button" aria-haspopup="dialog">
         <div class="work-tile-img">
-          <img src="images/work/uiux/crockery-final.jpg" alt="Crockery &amp; Homeware Store" loading="lazy" decoding="async">
+          <img src="images/work/uiux/crockery-final.jpg" alt="Crockery &amp; Homeware Store" loading="lazy" decoding="async" width="700" height="1513">
           
         </div>
         <div class="work-tile-body">
           <h3>Crockery &amp; Homeware Store</h3>
           <p>Homeware e-commerce landing page.</p>
-          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          <span class="work-tile-cta">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
       </div>
       <div class="work-tile reveal" data-modal-target="modal-uiux-deleivery" data-cats="ui-ux" tabindex="0" role="button" aria-haspopup="dialog">
         <div class="work-tile-img">
-          <img src="images/work/uiux/deleivery-final.jpg" alt="Food Delivery App" loading="lazy" decoding="async">
+          <img src="images/work/uiux/deleivery-final.jpg" alt="Food Delivery App" loading="lazy" decoding="async" width="700" height="1513">
           
         </div>
         <div class="work-tile-body">
           <h3>Food Delivery App</h3>
           <p>Food delivery mobile app UI.</p>
-          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          <span class="work-tile-cta">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
       </div>
       <div class="work-tile reveal" data-modal-target="modal-uiux-furniture" data-cats="ui-ux" tabindex="0" role="button" aria-haspopup="dialog">
         <div class="work-tile-img">
-          <img src="images/work/uiux/furniture-final.jpg" alt="Furniture Store Landing" loading="lazy" decoding="async">
+          <img src="images/work/uiux/furniture-final.jpg" alt="Furniture Store Landing" loading="lazy" decoding="async" width="700" height="466">
           
         </div>
         <div class="work-tile-body">
           <h3>Furniture Store Landing</h3>
           <p>Furniture e-commerce landing page.</p>
-          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          <span class="work-tile-cta">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
       </div>
       <div class="work-tile reveal" data-modal-target="modal-uiux-laptop" data-cats="ui-ux" tabindex="0" role="button" aria-haspopup="dialog">
         <div class="work-tile-img">
-          <img src="images/work/uiux/laptop-final.jpg" alt="Laptop Marketplace" loading="lazy" decoding="async">
+          <img src="images/work/uiux/laptop-final.jpg" alt="Laptop Marketplace" loading="lazy" decoding="async" width="700" height="466">
           
         </div>
         <div class="work-tile-body">
           <h3>Laptop Marketplace</h3>
           <p>Laptop resale marketplace UI.</p>
-          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          <span class="work-tile-cta">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
       </div>
       <div class="work-tile reveal" data-modal-target="modal-uiux-mirror" data-cats="ui-ux" tabindex="0" role="button" aria-haspopup="dialog">
         <div class="work-tile-img">
-          <img src="images/work/uiux/mirror-final.jpg" alt="Smart Mirror Product Page" loading="lazy" decoding="async">
+          <img src="images/work/uiux/mirror-final.jpg" alt="Smart Mirror Product Page" loading="lazy" decoding="async" width="700" height="466">
           
         </div>
         <div class="work-tile-body">
           <h3>Smart Mirror Product Page</h3>
           <p>Smart mirror product landing page.</p>
-          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          <span class="work-tile-cta">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
       </div>
       <div class="work-tile reveal" data-modal-target="modal-uiux-mob-repair" data-cats="ui-ux" tabindex="0" role="button" aria-haspopup="dialog">
         <div class="work-tile-img">
-          <img src="images/work/uiux/mob-repair-final.jpg" alt="Mobile Repair Service" loading="lazy" decoding="async">
+          <img src="images/work/uiux/mob-repair-final.jpg" alt="Mobile Repair Service" loading="lazy" decoding="async" width="700" height="1475">
           
         </div>
         <div class="work-tile-body">
           <h3>Mobile Repair Service</h3>
           <p>Mobile repair service booking UI.</p>
-          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          <span class="work-tile-cta">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
       </div>
       <div class="work-tile reveal" data-modal-target="modal-uiux-parada" data-cats="ui-ux" tabindex="0" role="button" aria-haspopup="dialog">
         <div class="work-tile-img">
-          <img src="images/work/uiux/parada-final.jpg" alt="Parada Fashion Store" loading="lazy" decoding="async">
+          <img src="images/work/uiux/parada-final.jpg" alt="Parada Fashion Store" loading="lazy" decoding="async" width="700" height="1478">
           
         </div>
         <div class="work-tile-body">
           <h3>Parada Fashion Store</h3>
           <p>Fashion e-commerce landing page.</p>
-          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          <span class="work-tile-cta">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
       </div>
       <div class="work-tile reveal" data-modal-target="modal-uiux-saas-animation" data-cats="ui-ux" tabindex="0" role="button" aria-haspopup="dialog">
         <div class="work-tile-img">
-          <img src="images/work/uiux/saas-animation-final.jpg" alt="SaaS Animation Landing" loading="lazy" decoding="async">
+          <img src="images/work/uiux/saas-animation-final.jpg" alt="SaaS Animation Landing" loading="lazy" decoding="async" width="700" height="466">
           
         </div>
         <div class="work-tile-body">
           <h3>SaaS Animation Landing</h3>
           <p>Animated SaaS product landing page.</p>
-          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          <span class="work-tile-cta">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
       </div>
       </div>
@@ -512,123 +523,123 @@
       <div class="work-grid">
       <div class="work-tile reveal" data-modal-target="modal-graphic-fitlife" data-cats="graphic-design" tabindex="0" role="button" aria-haspopup="dialog">
         <div class="work-tile-img">
-          <img src="images/work/graphic/fitlife.jpg" alt="FitLife — Fitness App Banner" loading="lazy" decoding="async">
+          <img src="images/work/graphic/fitlife.jpg" alt="FitLife — Fitness App Banner" loading="lazy" decoding="async" width="900" height="600">
           
         </div>
         <div class="work-tile-body">
           <h3>FitLife — Fitness App Banner</h3>
           <p>Web banner ad for a fitness app.</p>
-          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          <span class="work-tile-cta">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
       </div>
       <div class="work-tile reveal" data-modal-target="modal-graphic-luxora" data-cats="graphic-design" tabindex="0" role="button" aria-haspopup="dialog">
         <div class="work-tile-img">
-          <img src="images/work/graphic/luxora.jpg" alt="Luxora Furniture — Promo Banner" loading="lazy" decoding="async">
+          <img src="images/work/graphic/luxora.jpg" alt="Luxora Furniture — Promo Banner" loading="lazy" decoding="async" width="900" height="450">
           
         </div>
         <div class="work-tile-body">
           <h3>Luxora Furniture — Promo Banner</h3>
           <p>E-commerce sale banner for a furniture brand.</p>
-          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          <span class="work-tile-cta">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
       </div>
       <div class="work-tile reveal" data-modal-target="modal-graphic-glamour" data-cats="graphic-design" tabindex="0" role="button" aria-haspopup="dialog">
         <div class="work-tile-img">
-          <img src="images/work/graphic/glamour.jpg" alt="Glamour Beauty Salon — Flyer" loading="lazy" decoding="async">
+          <img src="images/work/graphic/glamour.jpg" alt="Glamour Beauty Salon — Flyer" loading="lazy" decoding="async" width="900" height="1274">
           
         </div>
         <div class="work-tile-body">
           <h3>Glamour Beauty Salon — Flyer</h3>
           <p>Print/social flyer for a beauty salon.</p>
-          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          <span class="work-tile-cta">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
       </div>
       <div class="work-tile reveal" data-modal-target="modal-graphic-spicehouse" data-cats="graphic-design" tabindex="0" role="button" aria-haspopup="dialog">
         <div class="work-tile-img">
-          <img src="images/work/graphic/spicehouse.jpg" alt="Spice House — Brand Identity" loading="lazy" decoding="async">
+          <img src="images/work/graphic/spicehouse.jpg" alt="Spice House — Brand Identity" loading="lazy" decoding="async" width="900" height="900">
           
         </div>
         <div class="work-tile-body">
           <h3>Spice House — Brand Identity</h3>
           <p>Restaurant logo &amp; brand mark system.</p>
-          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          <span class="work-tile-cta">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
       </div>
       <div class="work-tile reveal" data-modal-target="modal-graphic-visionmedia" data-cats="graphic-design" tabindex="0" role="button" aria-haspopup="dialog">
         <div class="work-tile-img">
-          <img src="images/work/graphic/visionmedia.jpg" alt="Vision Media — Brand Identity" loading="lazy" decoding="async">
+          <img src="images/work/graphic/visionmedia.jpg" alt="Vision Media — Brand Identity" loading="lazy" decoding="async" width="900" height="900">
           
         </div>
         <div class="work-tile-body">
           <h3>Vision Media — Brand Identity</h3>
           <p>Creative agency logo &amp; brand mark system.</p>
-          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          <span class="work-tile-cta">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
       </div>
       <div class="work-tile reveal" data-modal-target="modal-graphic-messi" data-cats="graphic-design" tabindex="0" role="button" aria-haspopup="dialog">
         <div class="work-tile-img">
-          <img src="images/work/graphic/messi.jpg" alt="Messi — Magazine Cover" loading="lazy" decoding="async">
+          <img src="images/work/graphic/messi.jpg" alt="Messi — Magazine Cover" loading="lazy" decoding="async" width="900" height="1272">
           
         </div>
         <div class="work-tile-body">
           <h3>Messi — Magazine Cover</h3>
           <p>Editorial sports magazine cover poster.</p>
-          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          <span class="work-tile-cta">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
       </div>
       <div class="work-tile reveal" data-modal-target="modal-graphic-focus" data-cats="graphic-design" tabindex="0" role="button" aria-haspopup="dialog">
         <div class="work-tile-img">
-          <img src="images/work/graphic/focus.jpg" alt="Focus — Film Poster" loading="lazy" decoding="async">
+          <img src="images/work/graphic/focus.jpg" alt="Focus — Film Poster" loading="lazy" decoding="async" width="900" height="1272">
           
         </div>
         <div class="work-tile-body">
           <h3>Focus — Film Poster</h3>
           <p>Cinematic teaser poster for a short film.</p>
-          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          <span class="work-tile-cta">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
       </div>
       <div class="work-tile reveal" data-modal-target="modal-graphic-galaxys24" data-cats="graphic-design" tabindex="0" role="button" aria-haspopup="dialog">
         <div class="work-tile-img">
-          <img src="images/work/graphic/galaxys24.jpg" alt="Samsung Galaxy S24 Ultra — Product Poster" loading="lazy" decoding="async">
+          <img src="images/work/graphic/galaxys24.jpg" alt="Samsung Galaxy S24 Ultra — Product Poster" loading="lazy" decoding="async" width="900" height="1274">
           
         </div>
         <div class="work-tile-body">
           <h3>Samsung Galaxy S24 Ultra — Product Poster</h3>
           <p>Tech product launch poster.</p>
-          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          <span class="work-tile-cta">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
       </div>
       <div class="work-tile reveal" data-modal-target="modal-graphic-musicfest" data-cats="graphic-design" tabindex="0" role="button" aria-haspopup="dialog">
         <div class="work-tile-img">
-          <img src="images/work/graphic/musicfest.jpg" alt="Music Festival — Event Poster" loading="lazy" decoding="async">
+          <img src="images/work/graphic/musicfest.jpg" alt="Music Festival — Event Poster" loading="lazy" decoding="async" width="900" height="1274">
           
         </div>
         <div class="work-tile-body">
           <h3>Music Festival — Event Poster</h3>
           <p>Multi-day music festival event poster.</p>
-          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          <span class="work-tile-cta">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
       </div>
       <div class="work-tile reveal" data-modal-target="modal-graphic-aitools" data-cats="graphic-design" tabindex="0" role="button" aria-haspopup="dialog">
         <div class="work-tile-img">
-          <img src="images/work/graphic/aitools.jpg" alt="AI Tools Review — YouTube Thumbnail" loading="lazy" decoding="async">
+          <img src="images/work/graphic/aitools.jpg" alt="AI Tools Review — YouTube Thumbnail" loading="lazy" decoding="async" width="900" height="506">
           
         </div>
         <div class="work-tile-body">
           <h3>AI Tools Review — YouTube Thumbnail</h3>
           <p>YouTube thumbnail for a tech review video.</p>
-          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          <span class="work-tile-cta">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
       </div>
       <div class="work-tile reveal" data-modal-target="modal-graphic-photoshop" data-cats="graphic-design" tabindex="0" role="button" aria-haspopup="dialog">
         <div class="work-tile-img">
-          <img src="images/work/graphic/photoshop.jpg" alt="Photoshop Tutorial — YouTube Thumbnail" loading="lazy" decoding="async">
+          <img src="images/work/graphic/photoshop.jpg" alt="Photoshop Tutorial — YouTube Thumbnail" loading="lazy" decoding="async" width="900" height="506">
           
         </div>
         <div class="work-tile-body">
           <h3>Photoshop Tutorial — YouTube Thumbnail</h3>
           <p>YouTube thumbnail for a design tutorial.</p>
-          <span class="work-tile-cta">View Case Study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          <span class="work-tile-cta">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
       </div>
       </div>
@@ -661,12 +672,14 @@
   </div>
 </section>
 
+</main>
+
 <footer class="footer">
   <div class="footer-watermark" aria-hidden="true">CraftSolve</div>
   <div class="container">
     <div class="footer-grid">
       <div>
-        <div class="footer-logo"><img src="images/logo.png" alt="CraftSolve" loading="lazy" decoding="async"></div>
+        <div class="footer-logo"><img src="images/logo.png" alt="CraftSolve" loading="lazy" decoding="async" width="360" height="480" loading="lazy" decoding="async"></div>
         <p style="font-size:14px;max-width:280px;">A digital agency solving business problems through design, development, and innovation.</p>
         <div class="social-row">
           <a class="social-icon" href="https://linkedin.com/company/craftsolve" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M6.94 8.5H3.56V20H6.94V8.5ZM5.25 7A2 2 0 1 0 5.25 3 2 2 0 0 0 5.25 7ZM20.4 20H17V13.9C17 12.3 16.4 11.3 15 11.3C13.9 11.3 13.3 12 13 12.7C12.9 13 12.9 13.4 12.9 13.8V20H9.5S9.6 9.4 9.5 8.5H12.9V10C13.3 9.3 14.2 8.3 16 8.3C18.2 8.3 20.4 9.7 20.4 13.2V20Z"/></svg></a>
@@ -697,7 +710,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 CraftSolve. All rights reserved.</span>
+      <span>© 2026 CraftSolve. All rights reserved. <a href="privacy.html" class="footer-legal">Privacy Policy</a></span>
       <a href="#top" class="back-to-top" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg></a>
     </div>
   </div>
@@ -730,10 +743,10 @@
         </a>
       </div>
       <div class="pm-shots">
-        <img class="shot shot-1 lazy-media" data-src="images/work/yaadgar/shot-1.jpg" alt="Yaadgar Events Planner home page">
-        <img class="shot shot-2 lazy-media" data-src="images/work/yaadgar/shot-2.jpg" alt="Yaadgar Events Planner decoration gallery">
-        <img class="shot shot-3 lazy-media" data-src="images/work/yaadgar/shot-3.jpg" alt="Yaadgar Events Planner about page">
-        <img class="shot shot-4 lazy-media" data-src="images/work/yaadgar/shot-4.jpg" alt="Yaadgar Events Planner booking form">
+        <img class="shot shot-1 lazy-media" data-src="images/work/yaadgar/shot-1.jpg" alt="Yaadgar Events Planner home page" width="760" height="428">
+        <img class="shot shot-2 lazy-media" data-src="images/work/yaadgar/shot-2.jpg" alt="Yaadgar Events Planner decoration gallery" width="760" height="428">
+        <img class="shot shot-3 lazy-media" data-src="images/work/yaadgar/shot-3.jpg" alt="Yaadgar Events Planner about page" width="760" height="428">
+        <img class="shot shot-4 lazy-media" data-src="images/work/yaadgar/shot-4.jpg" alt="Yaadgar Events Planner booking form" width="760" height="428">
       </div>
     </div>
   </div>
@@ -759,10 +772,10 @@
         </ul>
       </div>
       <div class="pm-shots">
-        <img class="shot shot-1 lazy-media" data-src="images/work/quosar/shot-2.jpg" alt="Quosar service pricing cards">
-        <img class="shot shot-2 lazy-media" data-src="images/work/quosar/shot-3.jpg" alt="Quosar WhatsApp booking CTA">
-        <img class="shot shot-3 lazy-media" data-src="images/work/quosar/shot-4.jpg" alt="Quosar expert team profiles">
-        <img class="shot shot-4 lazy-media" data-src="images/work/quosar/poster.jpg" alt="Quosar salon website hero">
+        <img class="shot shot-1 lazy-media" data-src="images/work/quosar/shot-2.jpg" alt="Quosar service pricing cards" width="1000" height="562">
+        <img class="shot shot-2 lazy-media" data-src="images/work/quosar/shot-3.jpg" alt="Quosar WhatsApp booking CTA" width="1000" height="562">
+        <img class="shot shot-3 lazy-media" data-src="images/work/quosar/shot-4.jpg" alt="Quosar expert team profiles" width="1000" height="561">
+        <img class="shot shot-4 lazy-media" data-src="images/work/quosar/poster.jpg" alt="Quosar salon website hero" width="1000" height="560">
       </div>
     </div>
   </div>
@@ -788,10 +801,10 @@
         </ul>
       </div>
       <div class="pm-shots">
-        <img class="shot shot-1 lazy-media" data-src="images/work/fitwithabdullah/poster.jpg" alt="FitWithAbdullah homepage hero">
-        <img class="shot shot-2 lazy-media" data-src="images/work/fitwithabdullah/shot-3.jpg" alt="FitWithAbdullah homepage — become the best version">
-        <img class="shot shot-3 lazy-media" data-src="images/work/fitwithabdullah/shot-2.jpg" alt="FitWithAbdullah Pakistani diet planner">
-        <img class="shot shot-4 lazy-media" data-src="images/work/fitwithabdullah/shot-1.jpg" alt="FitWithAbdullah Talk With Me contact page">
+        <img class="shot shot-1 lazy-media" data-src="images/work/fitwithabdullah/poster.jpg" alt="FitWithAbdullah homepage hero" width="900" height="506">
+        <img class="shot shot-2 lazy-media" data-src="images/work/fitwithabdullah/shot-3.jpg" alt="FitWithAbdullah homepage — become the best version" width="800" height="449">
+        <img class="shot shot-3 lazy-media" data-src="images/work/fitwithabdullah/shot-2.jpg" alt="FitWithAbdullah Pakistani diet planner" width="800" height="449">
+        <img class="shot shot-4 lazy-media" data-src="images/work/fitwithabdullah/shot-1.jpg" alt="FitWithAbdullah Talk With Me contact page" width="800" height="448">
       </div>
     </div>
   </div>
@@ -817,9 +830,9 @@
         </ul>
       </div>
       <div class="pm-shots">
-        <img class="shot shot-1 lazy-media" data-src="images/work/sentinel/shot-2.jpg" alt="Sentinel dashboard — monitoring active">
-        <img class="shot shot-2 lazy-media" data-src="images/work/sentinel/shot-3.jpg" alt="Sentinel dashboard — idle state">
-        <img class="shot shot-3 lazy-media" data-src="images/work/sentinel/shot-1.jpg" alt="Sentinel activity log">
+        <img class="shot shot-1 lazy-media" data-src="images/work/sentinel/shot-2.jpg" alt="Sentinel dashboard — monitoring active" width="800" height="450">
+        <img class="shot shot-2 lazy-media" data-src="images/work/sentinel/shot-3.jpg" alt="Sentinel dashboard — idle state" width="800" height="448">
+        <img class="shot shot-3 lazy-media" data-src="images/work/sentinel/shot-1.jpg" alt="Sentinel activity log" width="800" height="473">
       </div>
     </div>
   </div>
@@ -845,11 +858,11 @@
         </ul>
       </div>
       <div class="pm-shots">
-        <img class="shot shot-1 lazy-media" data-src="images/work/visionattend/shot-1.jpg" alt="VisionAttend AI sign-in portal">
-        <img class="shot shot-2 lazy-media" data-src="images/work/visionattend/shot-2.jpg" alt="VisionAttend AI student roster">
-        <img class="shot shot-3 lazy-media" data-src="images/work/visionattend/shot-3.jpg" alt="VisionAttend AI add student form">
-        <img class="shot shot-4 lazy-media" data-src="images/work/visionattend/shot-4.jpg" alt="VisionAttend AI attendance dashboard">
-        <img class="shot shot-5 lazy-media" data-src="images/work/visionattend/shot-5.jpg" alt="VisionAttend AI attendance rules settings">
+        <img class="shot shot-1 lazy-media" data-src="images/work/visionattend/shot-1.jpg" alt="VisionAttend AI sign-in portal" width="800" height="420">
+        <img class="shot shot-2 lazy-media" data-src="images/work/visionattend/shot-2.jpg" alt="VisionAttend AI student roster" width="800" height="421">
+        <img class="shot shot-3 lazy-media" data-src="images/work/visionattend/shot-3.jpg" alt="VisionAttend AI add student form" width="800" height="416">
+        <img class="shot shot-4 lazy-media" data-src="images/work/visionattend/shot-4.jpg" alt="VisionAttend AI attendance dashboard" width="800" height="421">
+        <img class="shot shot-5 lazy-media" data-src="images/work/visionattend/shot-5.jpg" alt="VisionAttend AI attendance rules settings" width="800" height="420">
       </div>
     </div>
   </div>
@@ -875,10 +888,10 @@
         </ul>
       </div>
       <div class="pm-shots">
-        <img class="shot shot-1 lazy-media" data-src="images/work/mediflow/shot-1.jpg" alt="MediFlow dashboard analytics">
-        <img class="shot shot-2 lazy-media" data-src="images/work/mediflow/shot-2.jpg" alt="MediFlow patient admission">
-        <img class="shot shot-3 lazy-media" data-src="images/work/mediflow/shot-3.jpg" alt="MediFlow doctors roster">
-        <img class="shot shot-4 lazy-media" data-src="images/work/mediflow/shot-4.jpg" alt="MediFlow bed occupancy">
+        <img class="shot shot-1 lazy-media" data-src="images/work/mediflow/shot-1.jpg" alt="MediFlow dashboard analytics" width="760" height="428">
+        <img class="shot shot-2 lazy-media" data-src="images/work/mediflow/shot-2.jpg" alt="MediFlow patient admission" width="760" height="428">
+        <img class="shot shot-3 lazy-media" data-src="images/work/mediflow/shot-3.jpg" alt="MediFlow doctors roster" width="760" height="428">
+        <img class="shot shot-4 lazy-media" data-src="images/work/mediflow/shot-4.jpg" alt="MediFlow bed occupancy" width="760" height="428">
       </div>
     </div>
   </div>
@@ -904,10 +917,10 @@
         </ul>
       </div>
       <div class="pm-shots">
-        <img class="shot shot-1 lazy-media" data-src="images/work/ashford/poster.jpg" alt="Ashford University dashboard overview">
-        <img class="shot shot-2 lazy-media" data-src="images/work/ashford/shot-1.jpg" alt="Ashford University dashboard detail view">
-        <img class="shot shot-3 lazy-media" data-src="images/work/ashford/shot-2.jpg" alt="Ashford University dashboard detail view">
-        <img class="shot shot-4 lazy-media" data-src="images/work/ashford/shot-3.jpg" alt="Ashford University dashboard detail view">
+        <img class="shot shot-1 lazy-media" data-src="images/work/ashford/poster.jpg" alt="Ashford University dashboard overview" width="1000" height="562">
+        <img class="shot shot-2 lazy-media" data-src="images/work/ashford/shot-1.jpg" alt="Ashford University dashboard detail view" width="1000" height="562">
+        <img class="shot shot-3 lazy-media" data-src="images/work/ashford/shot-2.jpg" alt="Ashford University dashboard detail view" width="1000" height="561">
+        <img class="shot shot-4 lazy-media" data-src="images/work/ashford/shot-3.jpg" alt="Ashford University dashboard detail view" width="1000" height="557">
       </div>
     </div>
   </div>
@@ -933,10 +946,10 @@
         </ul>
       </div>
       <div class="pm-shots">
-        <img class="shot shot-1 lazy-media" data-src="images/work/epicure/poster.jpg" alt="Epicure Slate dashboard overview">
-        <img class="shot shot-2 lazy-media" data-src="images/work/epicure/shot-1.jpg" alt="Epicure Slate dashboard detail view">
-        <img class="shot shot-3 lazy-media" data-src="images/work/epicure/shot-2.jpg" alt="Epicure Slate dashboard detail view">
-        <img class="shot shot-4 lazy-media" data-src="images/work/epicure/shot-3.jpg" alt="Epicure Slate dashboard detail view">
+        <img class="shot shot-1 lazy-media" data-src="images/work/epicure/poster.jpg" alt="Epicure Slate dashboard overview" width="1000" height="562">
+        <img class="shot shot-2 lazy-media" data-src="images/work/epicure/shot-1.jpg" alt="Epicure Slate dashboard detail view" width="1000" height="558">
+        <img class="shot shot-3 lazy-media" data-src="images/work/epicure/shot-2.jpg" alt="Epicure Slate dashboard detail view" width="1000" height="559">
+        <img class="shot shot-4 lazy-media" data-src="images/work/epicure/shot-3.jpg" alt="Epicure Slate dashboard detail view" width="1000" height="559">
       </div>
     </div>
   </div>
@@ -962,10 +975,10 @@
         </ul>
       </div>
       <div class="pm-shots">
-        <img class="shot shot-1 lazy-media" data-src="images/work/skyfleet/poster.jpg" alt="SkyFleet Dynamics dashboard overview">
-        <img class="shot shot-2 lazy-media" data-src="images/work/skyfleet/shot-1.jpg" alt="SkyFleet Dynamics dashboard detail view">
-        <img class="shot shot-3 lazy-media" data-src="images/work/skyfleet/shot-2.jpg" alt="SkyFleet Dynamics dashboard detail view">
-        <img class="shot shot-4 lazy-media" data-src="images/work/skyfleet/shot-3.jpg" alt="SkyFleet Dynamics dashboard detail view">
+        <img class="shot shot-1 lazy-media" data-src="images/work/skyfleet/poster.jpg" alt="SkyFleet Dynamics dashboard overview" width="1000" height="562">
+        <img class="shot shot-2 lazy-media" data-src="images/work/skyfleet/shot-1.jpg" alt="SkyFleet Dynamics dashboard detail view" width="1000" height="562">
+        <img class="shot shot-3 lazy-media" data-src="images/work/skyfleet/shot-2.jpg" alt="SkyFleet Dynamics dashboard detail view" width="1000" height="555">
+        <img class="shot shot-4 lazy-media" data-src="images/work/skyfleet/shot-3.jpg" alt="SkyFleet Dynamics dashboard detail view" width="1000" height="560">
       </div>
     </div>
   </div>
@@ -991,10 +1004,10 @@
         </ul>
       </div>
       <div class="pm-shots">
-        <img class="shot shot-1 lazy-media" data-src="images/work/sterling/poster.jpg" alt="Sterling Capital dashboard overview">
-        <img class="shot shot-2 lazy-media" data-src="images/work/sterling/shot-1.jpg" alt="Sterling Capital dashboard detail view">
-        <img class="shot shot-3 lazy-media" data-src="images/work/sterling/shot-2.jpg" alt="Sterling Capital dashboard detail view">
-        <img class="shot shot-4 lazy-media" data-src="images/work/sterling/shot-3.jpg" alt="Sterling Capital dashboard detail view">
+        <img class="shot shot-1 lazy-media" data-src="images/work/sterling/poster.jpg" alt="Sterling Capital dashboard overview" width="1000" height="560">
+        <img class="shot shot-2 lazy-media" data-src="images/work/sterling/shot-1.jpg" alt="Sterling Capital dashboard detail view" width="1000" height="562">
+        <img class="shot shot-3 lazy-media" data-src="images/work/sterling/shot-2.jpg" alt="Sterling Capital dashboard detail view" width="1000" height="559">
+        <img class="shot shot-4 lazy-media" data-src="images/work/sterling/shot-3.jpg" alt="Sterling Capital dashboard detail view" width="1000" height="560">
       </div>
     </div>
   </div>
@@ -1020,9 +1033,9 @@
         </ul>
       </div>
       <div class="pm-shots">
-        <img class="shot shot-1 lazy-media" data-src="images/work/verdant/poster.jpg" alt="Verdant Eco dashboard overview">
-        <img class="shot shot-2 lazy-media" data-src="images/work/verdant/shot-1.jpg" alt="Verdant Eco dashboard detail view">
-        <img class="shot shot-3 lazy-media" data-src="images/work/verdant/shot-2.jpg" alt="Verdant Eco dashboard detail view">
+        <img class="shot shot-1 lazy-media" data-src="images/work/verdant/poster.jpg" alt="Verdant Eco dashboard overview" width="1000" height="562">
+        <img class="shot shot-2 lazy-media" data-src="images/work/verdant/shot-1.jpg" alt="Verdant Eco dashboard detail view" width="1000" height="562">
+        <img class="shot shot-3 lazy-media" data-src="images/work/verdant/shot-2.jpg" alt="Verdant Eco dashboard detail view" width="1000" height="562">
       </div>
     </div>
   </div>
@@ -1049,10 +1062,10 @@
       </div>
       <div>
         <div class="app-shots-grid">
-          <img class="lightbox-trigger lazy-media" data-src="images/work/apps/dawaclock-ss-1.jpg" alt="DawaClock screenshot 1">
-          <img class="lightbox-trigger lazy-media" data-src="images/work/apps/dawaclock-ss-2.jpg" alt="DawaClock screenshot 2">
-          <img class="lightbox-trigger lazy-media" data-src="images/work/apps/dawaclock-ss-3.jpg" alt="DawaClock screenshot 3">
-          <img class="lightbox-trigger lazy-media" data-src="images/work/apps/dawaclock-ss-4.jpg" alt="DawaClock screenshot 4">
+          <img class="lightbox-trigger lazy-media" data-src="images/work/apps/dawaclock-ss-1.jpg" alt="DawaClock screenshot 1" width="500" height="1080">
+          <img class="lightbox-trigger lazy-media" data-src="images/work/apps/dawaclock-ss-2.jpg" alt="DawaClock screenshot 2" width="500" height="1080">
+          <img class="lightbox-trigger lazy-media" data-src="images/work/apps/dawaclock-ss-3.jpg" alt="DawaClock screenshot 3" width="500" height="1080">
+          <img class="lightbox-trigger lazy-media" data-src="images/work/apps/dawaclock-ss-4.jpg" alt="DawaClock screenshot 4" width="500" height="1080">
         </div>
       </div>
     </div>
@@ -1080,9 +1093,9 @@
       </div>
       <div>
         <div class="app-shots-grid">
-          <img class="lightbox-trigger lazy-media" data-src="images/work/apps/toolcanopy-ss-1.jpg" alt="ToolCanopy screenshot 1">
-          <img class="lightbox-trigger lazy-media" data-src="images/work/apps/toolcanopy-ss-2.jpg" alt="ToolCanopy screenshot 2">
-          <img class="lightbox-trigger lazy-media" data-src="images/work/apps/toolcanopy-ss-3.jpg" alt="ToolCanopy screenshot 3">
+          <img class="lightbox-trigger lazy-media" data-src="images/work/apps/toolcanopy-ss-1.jpg" alt="ToolCanopy screenshot 1" width="500" height="1080">
+          <img class="lightbox-trigger lazy-media" data-src="images/work/apps/toolcanopy-ss-2.jpg" alt="ToolCanopy screenshot 2" width="500" height="1080">
+          <img class="lightbox-trigger lazy-media" data-src="images/work/apps/toolcanopy-ss-3.jpg" alt="ToolCanopy screenshot 3" width="500" height="1080">
         </div>
       </div>
     </div>
@@ -1110,10 +1123,10 @@
       </div>
       <div>
         <div class="app-shots-grid">
-          <img class="lightbox-trigger lazy-media" data-src="images/work/apps/sathwork-ss-1.jpg" alt="SathWork screenshot 1">
-          <img class="lightbox-trigger lazy-media" data-src="images/work/apps/sathwork-ss-2.jpg" alt="SathWork screenshot 2">
-          <img class="lightbox-trigger lazy-media" data-src="images/work/apps/sathwork-ss-3.jpg" alt="SathWork screenshot 3">
-          <img class="lightbox-trigger lazy-media" data-src="images/work/apps/sathwork-ss-4.jpg" alt="SathWork screenshot 4">
+          <img class="lightbox-trigger lazy-media" data-src="images/work/apps/sathwork-ss-1.jpg" alt="SathWork screenshot 1" width="500" height="1080">
+          <img class="lightbox-trigger lazy-media" data-src="images/work/apps/sathwork-ss-2.jpg" alt="SathWork screenshot 2" width="500" height="1083">
+          <img class="lightbox-trigger lazy-media" data-src="images/work/apps/sathwork-ss-3.jpg" alt="SathWork screenshot 3" width="500" height="1080">
+          <img class="lightbox-trigger lazy-media" data-src="images/work/apps/sathwork-ss-4.jpg" alt="SathWork screenshot 4" width="500" height="1080">
         </div>
       </div>
     </div>
@@ -1141,9 +1154,9 @@
       </div>
       <div>
         <div class="app-shots-grid">
-          <img class="lightbox-trigger lazy-media" data-src="images/work/apps/chornasha-ss-1.jpg" alt="Chornasha screenshot 1">
-          <img class="lightbox-trigger lazy-media" data-src="images/work/apps/chornasha-ss-2.jpg" alt="Chornasha screenshot 2">
-          <img class="lightbox-trigger lazy-media" data-src="images/work/apps/chornasha-ss-3.jpg" alt="Chornasha screenshot 3">
+          <img class="lightbox-trigger lazy-media" data-src="images/work/apps/chornasha-ss-1.jpg" alt="Chornasha screenshot 1" width="500" height="1080">
+          <img class="lightbox-trigger lazy-media" data-src="images/work/apps/chornasha-ss-2.jpg" alt="Chornasha screenshot 2" width="500" height="1080">
+          <img class="lightbox-trigger lazy-media" data-src="images/work/apps/chornasha-ss-3.jpg" alt="Chornasha screenshot 3" width="576" height="1280">
         </div>
       </div>
     </div>
@@ -1171,10 +1184,10 @@
       </div>
       <div>
         <div class="app-shots-grid">
-          <img class="lightbox-trigger lazy-media" data-src="images/work/apps/togseo-ss-1.jpg" alt="Togseo screenshot 1">
-          <img class="lightbox-trigger lazy-media" data-src="images/work/apps/togseo-ss-2.jpg" alt="Togseo screenshot 2">
-          <img class="lightbox-trigger lazy-media" data-src="images/work/apps/togseo-ss-3.jpg" alt="Togseo screenshot 3">
-          <img class="lightbox-trigger lazy-media" data-src="images/work/apps/togseo-ss-4.jpg" alt="Togseo screenshot 4">
+          <img class="lightbox-trigger lazy-media" data-src="images/work/apps/togseo-ss-1.jpg" alt="Togseo screenshot 1" width="500" height="1080">
+          <img class="lightbox-trigger lazy-media" data-src="images/work/apps/togseo-ss-2.jpg" alt="Togseo screenshot 2" width="500" height="1080">
+          <img class="lightbox-trigger lazy-media" data-src="images/work/apps/togseo-ss-3.jpg" alt="Togseo screenshot 3" width="500" height="1080">
+          <img class="lightbox-trigger lazy-media" data-src="images/work/apps/togseo-ss-4.jpg" alt="Togseo screenshot 4" width="500" height="1080">
         </div>
       </div>
     </div>
@@ -1202,10 +1215,10 @@
       </div>
       <div>
         <div class="app-shots-grid">
-          <img class="lightbox-trigger lazy-media" data-src="images/work/apps/devboard-ss-1.jpg" alt="DevBoard screenshot 1">
-          <img class="lightbox-trigger lazy-media" data-src="images/work/apps/devboard-ss-2.jpg" alt="DevBoard screenshot 2">
-          <img class="lightbox-trigger lazy-media" data-src="images/work/apps/devboard-ss-3.jpg" alt="DevBoard screenshot 3">
-          <img class="lightbox-trigger lazy-media" data-src="images/work/apps/devboard-ss-4.jpg" alt="DevBoard screenshot 4">
+          <img class="lightbox-trigger lazy-media" data-src="images/work/apps/devboard-ss-1.jpg" alt="DevBoard screenshot 1" width="500" height="1080">
+          <img class="lightbox-trigger lazy-media" data-src="images/work/apps/devboard-ss-2.jpg" alt="DevBoard screenshot 2" width="500" height="1083">
+          <img class="lightbox-trigger lazy-media" data-src="images/work/apps/devboard-ss-3.jpg" alt="DevBoard screenshot 3" width="500" height="1080">
+          <img class="lightbox-trigger lazy-media" data-src="images/work/apps/devboard-ss-4.jpg" alt="DevBoard screenshot 4" width="500" height="1080">
         </div>
       </div>
     </div>
@@ -1233,10 +1246,10 @@
       </div>
       <div>
         <div class="app-shots-grid">
-          <img class="lightbox-trigger lazy-media" data-src="images/work/apps/quickkaam-ss-1.jpg" alt="Quick Kaam screenshot 1">
-          <img class="lightbox-trigger lazy-media" data-src="images/work/apps/quickkaam-ss-2.jpg" alt="Quick Kaam screenshot 2">
-          <img class="lightbox-trigger lazy-media" data-src="images/work/apps/quickkaam-ss-3.jpg" alt="Quick Kaam screenshot 3">
-          <img class="lightbox-trigger lazy-media" data-src="images/work/apps/quickkaam-ss-4.jpg" alt="Quick Kaam screenshot 4">
+          <img class="lightbox-trigger lazy-media" data-src="images/work/apps/quickkaam-ss-1.jpg" alt="Quick Kaam screenshot 1" width="500" height="1080">
+          <img class="lightbox-trigger lazy-media" data-src="images/work/apps/quickkaam-ss-2.jpg" alt="Quick Kaam screenshot 2" width="500" height="1080">
+          <img class="lightbox-trigger lazy-media" data-src="images/work/apps/quickkaam-ss-3.jpg" alt="Quick Kaam screenshot 3" width="500" height="1080">
+          <img class="lightbox-trigger lazy-media" data-src="images/work/apps/quickkaam-ss-4.jpg" alt="Quick Kaam screenshot 4" width="500" height="1080">
         </div>
       </div>
     </div>
@@ -1263,10 +1276,10 @@
         </ul>
       </div>
       <div class="pm-shots">
-        <img class="shot shot-1 lazy-media" data-src="images/work/placeholder/zombie-shooter-poster.jpg" alt="Zombie Shooter gameplay">
-        <img class="shot shot-2 lazy-media" data-src="images/work/placeholder/zombie-shooter-shot-1.jpg" alt="Zombie Shooter gameplay 1">
-        <img class="shot shot-3 lazy-media" data-src="images/work/placeholder/zombie-shooter-shot-2.jpg" alt="Zombie Shooter gameplay 2">
-        <img class="shot shot-4 lazy-media" data-src="images/work/placeholder/zombie-shooter-shot-3.jpg" alt="Zombie Shooter gameplay 3">
+        <img class="shot shot-1 lazy-media" data-src="images/work/placeholder/zombie-shooter-poster.jpg" alt="Zombie Shooter gameplay" width="700" height="315">
+        <img class="shot shot-2 lazy-media" data-src="images/work/placeholder/zombie-shooter-shot-1.jpg" alt="Zombie Shooter gameplay 1" width="700" height="315">
+        <img class="shot shot-3 lazy-media" data-src="images/work/placeholder/zombie-shooter-shot-2.jpg" alt="Zombie Shooter gameplay 2" width="700" height="315">
+        <img class="shot shot-4 lazy-media" data-src="images/work/placeholder/zombie-shooter-shot-3.jpg" alt="Zombie Shooter gameplay 3" width="700" height="315">
       </div>
     </div>
   </div>
@@ -1292,10 +1305,10 @@
         </ul>
       </div>
       <div class="pm-shots">
-        <img class="shot shot-1 lazy-media" data-src="images/work/placeholder/hopscotch-hollow-poster.jpg" alt="Hopscotch Hollow gameplay">
-        <img class="shot shot-2 lazy-media" data-src="images/work/placeholder/hopscotch-hollow-shot-1.jpg" alt="Hopscotch Hollow gameplay 1">
-        <img class="shot shot-3 lazy-media" data-src="images/work/placeholder/hopscotch-hollow-shot-2.jpg" alt="Hopscotch Hollow gameplay 2">
-        <img class="shot shot-4 lazy-media" data-src="images/work/placeholder/hopscotch-hollow-shot-3.jpg" alt="Hopscotch Hollow gameplay 3">
+        <img class="shot shot-1 lazy-media" data-src="images/work/placeholder/hopscotch-hollow-poster.jpg" alt="Hopscotch Hollow gameplay" width="700" height="315">
+        <img class="shot shot-2 lazy-media" data-src="images/work/placeholder/hopscotch-hollow-shot-1.jpg" alt="Hopscotch Hollow gameplay 1" width="700" height="315">
+        <img class="shot shot-3 lazy-media" data-src="images/work/placeholder/hopscotch-hollow-shot-2.jpg" alt="Hopscotch Hollow gameplay 2" width="700" height="315">
+        <img class="shot shot-4 lazy-media" data-src="images/work/placeholder/hopscotch-hollow-shot-3.jpg" alt="Hopscotch Hollow gameplay 3" width="700" height="315">
       </div>
     </div>
   </div>
@@ -1321,10 +1334,10 @@
         </ul>
       </div>
       <div class="pm-shots">
-        <img class="shot shot-1 lazy-media" data-src="images/work/escape-game/poster.jpg" alt="Escape main menu">
-        <img class="shot shot-2 lazy-media" data-src="images/work/escape-game/shot-2.jpg" alt="Escape Level 1 — Tutorial Escape">
-        <img class="shot shot-3 lazy-media" data-src="images/work/escape-game/shot-3.jpg" alt="Escape Level 2 — Locked Rooms">
-        <img class="shot shot-4 lazy-media" data-src="images/work/escape-game/shot-4.jpg" alt="Escape Level 4 — Enemy Facility">
+        <img class="shot shot-1 lazy-media" data-src="images/work/escape-game/poster.jpg" alt="Escape main menu" width="900" height="506">
+        <img class="shot shot-2 lazy-media" data-src="images/work/escape-game/shot-2.jpg" alt="Escape Level 1 — Tutorial Escape" width="800" height="418">
+        <img class="shot shot-3 lazy-media" data-src="images/work/escape-game/shot-3.jpg" alt="Escape Level 2 — Locked Rooms" width="800" height="418">
+        <img class="shot shot-4 lazy-media" data-src="images/work/escape-game/shot-4.jpg" alt="Escape Level 4 — Enemy Facility" width="800" height="417">
       </div>
     </div>
   </div>
@@ -1350,8 +1363,8 @@
         </ul>
       </div>
       <div class="pm-shots">
-        <img class="shot shot-1 lazy-media" data-src="images/work/speedrush/shot-1.jpg" alt="SpeedRush 2D — mid-race pack">
-        <img class="shot shot-2 lazy-media" data-src="images/work/speedrush/shot-2.jpg" alt="SpeedRush 2D — final lap">
+        <img class="shot shot-1 lazy-media" data-src="images/work/speedrush/shot-1.jpg" alt="SpeedRush 2D — mid-race pack" width="900" height="506">
+        <img class="shot shot-2 lazy-media" data-src="images/work/speedrush/shot-2.jpg" alt="SpeedRush 2D — final lap" width="900" height="506">
       </div>
     </div>
   </div>
@@ -1363,7 +1376,7 @@
   </button>
   <div class="project-modal-inner layout-uiux">
     <div class="pm-media">
-      <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/airpods-final.jpg" alt="AirPods Pro Landing final design">
+      <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/airpods-final.jpg" alt="AirPods Pro Landing final design" width="700" height="466">
     </div>
     <div class="pm-body">
       <div class="pm-info">
@@ -1377,11 +1390,11 @@
         <div class="uiux-pair-row">
           <div class="uiux-pair-item">
             <div class="app-shots-heading">Wireframe</div>
-            <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/airpods-wire.jpg" alt="AirPods Pro Landing wireframe">
+            <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/airpods-wire.jpg" alt="AirPods Pro Landing wireframe" width="700" height="466">
           </div>
           <div class="uiux-pair-item">
             <div class="app-shots-heading">Final Design</div>
-            <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/airpods-final.jpg" alt="AirPods Pro Landing final design">
+            <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/airpods-final.jpg" alt="AirPods Pro Landing final design" width="700" height="466">
           </div>
         </div>
       </div>
@@ -1395,7 +1408,7 @@
   </button>
   <div class="project-modal-inner layout-uiux">
     <div class="pm-media">
-      <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/chatbot-final.jpg" alt="Chatly — AI Chatbot SaaS final design">
+      <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/chatbot-final.jpg" alt="Chatly — AI Chatbot SaaS final design" width="700" height="495">
     </div>
     <div class="pm-body">
       <div class="pm-info">
@@ -1409,11 +1422,11 @@
         <div class="uiux-pair-row">
           <div class="uiux-pair-item">
             <div class="app-shots-heading">Wireframe</div>
-            <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/chatbot-wire.jpg" alt="Chatly — AI Chatbot SaaS wireframe">
+            <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/chatbot-wire.jpg" alt="Chatly — AI Chatbot SaaS wireframe" width="700" height="498">
           </div>
           <div class="uiux-pair-item">
             <div class="app-shots-heading">Final Design</div>
-            <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/chatbot-final.jpg" alt="Chatly — AI Chatbot SaaS final design">
+            <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/chatbot-final.jpg" alt="Chatly — AI Chatbot SaaS final design" width="700" height="495">
           </div>
         </div>
       </div>
@@ -1427,7 +1440,7 @@
   </button>
   <div class="project-modal-inner layout-uiux">
     <div class="pm-media">
-      <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/gaming-final.jpg" alt="PlayZone Gaming Hub final design">
+      <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/gaming-final.jpg" alt="PlayZone Gaming Hub final design" width="700" height="466">
     </div>
     <div class="pm-body">
       <div class="pm-info">
@@ -1441,11 +1454,11 @@
         <div class="uiux-pair-row">
           <div class="uiux-pair-item">
             <div class="app-shots-heading">Wireframe</div>
-            <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/gaming-wire.jpg" alt="PlayZone Gaming Hub wireframe">
+            <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/gaming-wire.jpg" alt="PlayZone Gaming Hub wireframe" width="700" height="466">
           </div>
           <div class="uiux-pair-item">
             <div class="app-shots-heading">Final Design</div>
-            <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/gaming-final.jpg" alt="PlayZone Gaming Hub final design">
+            <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/gaming-final.jpg" alt="PlayZone Gaming Hub final design" width="700" height="466">
           </div>
         </div>
       </div>
@@ -1459,7 +1472,7 @@
   </button>
   <div class="project-modal-inner layout-uiux">
     <div class="pm-media">
-      <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/lamp-final.jpg" alt="Lumiere Lighting Store final design">
+      <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/lamp-final.jpg" alt="Lumiere Lighting Store final design" width="700" height="384">
     </div>
     <div class="pm-body">
       <div class="pm-info">
@@ -1473,11 +1486,11 @@
         <div class="uiux-pair-row">
           <div class="uiux-pair-item">
             <div class="app-shots-heading">Wireframe</div>
-            <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/lamp-wire.jpg" alt="Lumiere Lighting Store wireframe">
+            <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/lamp-wire.jpg" alt="Lumiere Lighting Store wireframe" width="700" height="384">
           </div>
           <div class="uiux-pair-item">
             <div class="app-shots-heading">Final Design</div>
-            <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/lamp-final.jpg" alt="Lumiere Lighting Store final design">
+            <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/lamp-final.jpg" alt="Lumiere Lighting Store final design" width="700" height="384">
           </div>
         </div>
       </div>
@@ -1491,7 +1504,7 @@
   </button>
   <div class="project-modal-inner layout-uiux">
     <div class="pm-media">
-      <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/course-final.jpg" alt="Online Course Dashboard final design">
+      <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/course-final.jpg" alt="Online Course Dashboard final design" width="700" height="466">
     </div>
     <div class="pm-body">
       <div class="pm-info">
@@ -1505,11 +1518,11 @@
         <div class="uiux-pair-row">
           <div class="uiux-pair-item">
             <div class="app-shots-heading">Wireframe</div>
-            <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/course-wire.jpg" alt="Online Course Dashboard wireframe">
+            <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/course-wire.jpg" alt="Online Course Dashboard wireframe" width="700" height="466">
           </div>
           <div class="uiux-pair-item">
             <div class="app-shots-heading">Final Design</div>
-            <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/course-final.jpg" alt="Online Course Dashboard final design">
+            <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/course-final.jpg" alt="Online Course Dashboard final design" width="700" height="466">
           </div>
         </div>
       </div>
@@ -1523,7 +1536,7 @@
   </button>
   <div class="project-modal-inner layout-uiux">
     <div class="pm-media">
-      <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/crockery-final.jpg" alt="Crockery &amp; Homeware Store final design">
+      <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/crockery-final.jpg" alt="Crockery &amp; Homeware Store final design" width="700" height="1513">
     </div>
     <div class="pm-body">
       <div class="pm-info">
@@ -1537,11 +1550,11 @@
         <div class="uiux-pair-row">
           <div class="uiux-pair-item">
             <div class="app-shots-heading">Wireframe</div>
-            <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/crockery-wire.jpg" alt="Crockery &amp; Homeware Store wireframe">
+            <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/crockery-wire.jpg" alt="Crockery &amp; Homeware Store wireframe" width="700" height="1516">
           </div>
           <div class="uiux-pair-item">
             <div class="app-shots-heading">Final Design</div>
-            <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/crockery-final.jpg" alt="Crockery &amp; Homeware Store final design">
+            <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/crockery-final.jpg" alt="Crockery &amp; Homeware Store final design" width="700" height="1513">
           </div>
         </div>
       </div>
@@ -1555,7 +1568,7 @@
   </button>
   <div class="project-modal-inner layout-uiux">
     <div class="pm-media">
-      <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/deleivery-final.jpg" alt="Food Delivery App final design">
+      <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/deleivery-final.jpg" alt="Food Delivery App final design" width="700" height="1513">
     </div>
     <div class="pm-body">
       <div class="pm-info">
@@ -1569,11 +1582,11 @@
         <div class="uiux-pair-row">
           <div class="uiux-pair-item">
             <div class="app-shots-heading">Wireframe</div>
-            <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/deleivery-wire.jpg" alt="Food Delivery App wireframe">
+            <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/deleivery-wire.jpg" alt="Food Delivery App wireframe" width="700" height="1475">
           </div>
           <div class="uiux-pair-item">
             <div class="app-shots-heading">Final Design</div>
-            <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/deleivery-final.jpg" alt="Food Delivery App final design">
+            <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/deleivery-final.jpg" alt="Food Delivery App final design" width="700" height="1513">
           </div>
         </div>
       </div>
@@ -1587,7 +1600,7 @@
   </button>
   <div class="project-modal-inner layout-uiux">
     <div class="pm-media">
-      <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/furniture-final.jpg" alt="Furniture Store Landing final design">
+      <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/furniture-final.jpg" alt="Furniture Store Landing final design" width="700" height="466">
     </div>
     <div class="pm-body">
       <div class="pm-info">
@@ -1601,11 +1614,11 @@
         <div class="uiux-pair-row">
           <div class="uiux-pair-item">
             <div class="app-shots-heading">Wireframe</div>
-            <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/furniture-wire.jpg" alt="Furniture Store Landing wireframe">
+            <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/furniture-wire.jpg" alt="Furniture Store Landing wireframe" width="700" height="466">
           </div>
           <div class="uiux-pair-item">
             <div class="app-shots-heading">Final Design</div>
-            <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/furniture-final.jpg" alt="Furniture Store Landing final design">
+            <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/furniture-final.jpg" alt="Furniture Store Landing final design" width="700" height="466">
           </div>
         </div>
       </div>
@@ -1619,7 +1632,7 @@
   </button>
   <div class="project-modal-inner layout-uiux">
     <div class="pm-media">
-      <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/laptop-final.jpg" alt="Laptop Marketplace final design">
+      <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/laptop-final.jpg" alt="Laptop Marketplace final design" width="700" height="466">
     </div>
     <div class="pm-body">
       <div class="pm-info">
@@ -1633,11 +1646,11 @@
         <div class="uiux-pair-row">
           <div class="uiux-pair-item">
             <div class="app-shots-heading">Wireframe</div>
-            <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/laptop-wire.jpg" alt="Laptop Marketplace wireframe">
+            <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/laptop-wire.jpg" alt="Laptop Marketplace wireframe" width="700" height="466">
           </div>
           <div class="uiux-pair-item">
             <div class="app-shots-heading">Final Design</div>
-            <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/laptop-final.jpg" alt="Laptop Marketplace final design">
+            <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/laptop-final.jpg" alt="Laptop Marketplace final design" width="700" height="466">
           </div>
         </div>
       </div>
@@ -1651,7 +1664,7 @@
   </button>
   <div class="project-modal-inner layout-uiux">
     <div class="pm-media">
-      <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/mirror-final.jpg" alt="Smart Mirror Product Page final design">
+      <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/mirror-final.jpg" alt="Smart Mirror Product Page final design" width="700" height="466">
     </div>
     <div class="pm-body">
       <div class="pm-info">
@@ -1665,11 +1678,11 @@
         <div class="uiux-pair-row">
           <div class="uiux-pair-item">
             <div class="app-shots-heading">Wireframe</div>
-            <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/mirror-wire.jpg" alt="Smart Mirror Product Page wireframe">
+            <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/mirror-wire.jpg" alt="Smart Mirror Product Page wireframe" width="700" height="466">
           </div>
           <div class="uiux-pair-item">
             <div class="app-shots-heading">Final Design</div>
-            <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/mirror-final.jpg" alt="Smart Mirror Product Page final design">
+            <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/mirror-final.jpg" alt="Smart Mirror Product Page final design" width="700" height="466">
           </div>
         </div>
       </div>
@@ -1683,7 +1696,7 @@
   </button>
   <div class="project-modal-inner layout-uiux">
     <div class="pm-media">
-      <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/mob-repair-final.jpg" alt="Mobile Repair Service final design">
+      <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/mob-repair-final.jpg" alt="Mobile Repair Service final design" width="700" height="1475">
     </div>
     <div class="pm-body">
       <div class="pm-info">
@@ -1697,11 +1710,11 @@
         <div class="uiux-pair-row">
           <div class="uiux-pair-item">
             <div class="app-shots-heading">Wireframe</div>
-            <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/mob-repair-wire.jpg" alt="Mobile Repair Service wireframe">
+            <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/mob-repair-wire.jpg" alt="Mobile Repair Service wireframe" width="700" height="1475">
           </div>
           <div class="uiux-pair-item">
             <div class="app-shots-heading">Final Design</div>
-            <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/mob-repair-final.jpg" alt="Mobile Repair Service final design">
+            <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/mob-repair-final.jpg" alt="Mobile Repair Service final design" width="700" height="1475">
           </div>
         </div>
       </div>
@@ -1715,7 +1728,7 @@
   </button>
   <div class="project-modal-inner layout-uiux">
     <div class="pm-media">
-      <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/parada-final.jpg" alt="Parada Fashion Store final design">
+      <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/parada-final.jpg" alt="Parada Fashion Store final design" width="700" height="1478">
     </div>
     <div class="pm-body">
       <div class="pm-info">
@@ -1729,11 +1742,11 @@
         <div class="uiux-pair-row">
           <div class="uiux-pair-item">
             <div class="app-shots-heading">Wireframe</div>
-            <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/parada-wire.jpg" alt="Parada Fashion Store wireframe">
+            <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/parada-wire.jpg" alt="Parada Fashion Store wireframe" width="700" height="1481">
           </div>
           <div class="uiux-pair-item">
             <div class="app-shots-heading">Final Design</div>
-            <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/parada-final.jpg" alt="Parada Fashion Store final design">
+            <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/parada-final.jpg" alt="Parada Fashion Store final design" width="700" height="1478">
           </div>
         </div>
       </div>
@@ -1747,7 +1760,7 @@
   </button>
   <div class="project-modal-inner layout-uiux">
     <div class="pm-media">
-      <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/saas-animation-final.jpg" alt="SaaS Animation Landing final design">
+      <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/saas-animation-final.jpg" alt="SaaS Animation Landing final design" width="700" height="466">
     </div>
     <div class="pm-body">
       <div class="pm-info">
@@ -1761,11 +1774,11 @@
         <div class="uiux-pair-row">
           <div class="uiux-pair-item">
             <div class="app-shots-heading">Wireframe</div>
-            <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/saas-animation-wire.jpg" alt="SaaS Animation Landing wireframe">
+            <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/saas-animation-wire.jpg" alt="SaaS Animation Landing wireframe" width="700" height="466">
           </div>
           <div class="uiux-pair-item">
             <div class="app-shots-heading">Final Design</div>
-            <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/saas-animation-final.jpg" alt="SaaS Animation Landing final design">
+            <img class="lightbox-trigger lazy-media" data-src="images/work/uiux/saas-animation-final.jpg" alt="SaaS Animation Landing final design" width="700" height="466">
           </div>
         </div>
       </div>
@@ -1779,7 +1792,7 @@
   </button>
   <div class="project-modal-inner layout-landscape">
     <div class="pm-media pm-media-full">
-      <img class="lightbox-trigger lazy-media" data-src="images/work/graphic/fitlife.jpg" alt="FitLife — Fitness App Banner">
+      <img class="lightbox-trigger lazy-media" data-src="images/work/graphic/fitlife.jpg" alt="FitLife — Fitness App Banner" width="900" height="600">
     </div>
     <div class="pm-body" style="grid-template-columns:1fr;">
       <div class="pm-info">
@@ -1801,7 +1814,7 @@
   </button>
   <div class="project-modal-inner layout-landscape">
     <div class="pm-media pm-media-full">
-      <img class="lightbox-trigger lazy-media" data-src="images/work/graphic/luxora.jpg" alt="Luxora Furniture — Promo Banner">
+      <img class="lightbox-trigger lazy-media" data-src="images/work/graphic/luxora.jpg" alt="Luxora Furniture — Promo Banner" width="900" height="450">
     </div>
     <div class="pm-body" style="grid-template-columns:1fr;">
       <div class="pm-info">
@@ -1823,7 +1836,7 @@
   </button>
   <div class="project-modal-inner layout-landscape">
     <div class="pm-media pm-media-full">
-      <img class="lightbox-trigger lazy-media" data-src="images/work/graphic/glamour.jpg" alt="Glamour Beauty Salon — Flyer">
+      <img class="lightbox-trigger lazy-media" data-src="images/work/graphic/glamour.jpg" alt="Glamour Beauty Salon — Flyer" width="900" height="1274">
     </div>
     <div class="pm-body" style="grid-template-columns:1fr;">
       <div class="pm-info">
@@ -1845,7 +1858,7 @@
   </button>
   <div class="project-modal-inner layout-landscape">
     <div class="pm-media pm-media-full">
-      <img class="lightbox-trigger lazy-media" data-src="images/work/graphic/spicehouse.jpg" alt="Spice House — Brand Identity">
+      <img class="lightbox-trigger lazy-media" data-src="images/work/graphic/spicehouse.jpg" alt="Spice House — Brand Identity" width="900" height="900">
     </div>
     <div class="pm-body" style="grid-template-columns:1fr;">
       <div class="pm-info">
@@ -1867,7 +1880,7 @@
   </button>
   <div class="project-modal-inner layout-landscape">
     <div class="pm-media pm-media-full">
-      <img class="lightbox-trigger lazy-media" data-src="images/work/graphic/visionmedia.jpg" alt="Vision Media — Brand Identity">
+      <img class="lightbox-trigger lazy-media" data-src="images/work/graphic/visionmedia.jpg" alt="Vision Media — Brand Identity" width="900" height="900">
     </div>
     <div class="pm-body" style="grid-template-columns:1fr;">
       <div class="pm-info">
@@ -1889,7 +1902,7 @@
   </button>
   <div class="project-modal-inner layout-landscape">
     <div class="pm-media pm-media-full">
-      <img class="lightbox-trigger lazy-media" data-src="images/work/graphic/messi.jpg" alt="Messi — Magazine Cover">
+      <img class="lightbox-trigger lazy-media" data-src="images/work/graphic/messi.jpg" alt="Messi — Magazine Cover" width="900" height="1272">
     </div>
     <div class="pm-body" style="grid-template-columns:1fr;">
       <div class="pm-info">
@@ -1911,7 +1924,7 @@
   </button>
   <div class="project-modal-inner layout-landscape">
     <div class="pm-media pm-media-full">
-      <img class="lightbox-trigger lazy-media" data-src="images/work/graphic/focus.jpg" alt="Focus — Film Poster">
+      <img class="lightbox-trigger lazy-media" data-src="images/work/graphic/focus.jpg" alt="Focus — Film Poster" width="900" height="1272">
     </div>
     <div class="pm-body" style="grid-template-columns:1fr;">
       <div class="pm-info">
@@ -1933,7 +1946,7 @@
   </button>
   <div class="project-modal-inner layout-landscape">
     <div class="pm-media pm-media-full">
-      <img class="lightbox-trigger lazy-media" data-src="images/work/graphic/galaxys24.jpg" alt="Samsung Galaxy S24 Ultra — Product Poster">
+      <img class="lightbox-trigger lazy-media" data-src="images/work/graphic/galaxys24.jpg" alt="Samsung Galaxy S24 Ultra — Product Poster" width="900" height="1274">
     </div>
     <div class="pm-body" style="grid-template-columns:1fr;">
       <div class="pm-info">
@@ -1955,7 +1968,7 @@
   </button>
   <div class="project-modal-inner layout-landscape">
     <div class="pm-media pm-media-full">
-      <img class="lightbox-trigger lazy-media" data-src="images/work/graphic/musicfest.jpg" alt="Music Festival — Event Poster">
+      <img class="lightbox-trigger lazy-media" data-src="images/work/graphic/musicfest.jpg" alt="Music Festival — Event Poster" width="900" height="1274">
     </div>
     <div class="pm-body" style="grid-template-columns:1fr;">
       <div class="pm-info">
@@ -1977,7 +1990,7 @@
   </button>
   <div class="project-modal-inner layout-landscape">
     <div class="pm-media pm-media-full">
-      <img class="lightbox-trigger lazy-media" data-src="images/work/graphic/aitools.jpg" alt="AI Tools Review — YouTube Thumbnail">
+      <img class="lightbox-trigger lazy-media" data-src="images/work/graphic/aitools.jpg" alt="AI Tools Review — YouTube Thumbnail" width="900" height="506">
     </div>
     <div class="pm-body" style="grid-template-columns:1fr;">
       <div class="pm-info">
@@ -1999,7 +2012,7 @@
   </button>
   <div class="project-modal-inner layout-landscape">
     <div class="pm-media pm-media-full">
-      <img class="lightbox-trigger lazy-media" data-src="images/work/graphic/photoshop.jpg" alt="Photoshop Tutorial — YouTube Thumbnail">
+      <img class="lightbox-trigger lazy-media" data-src="images/work/graphic/photoshop.jpg" alt="Photoshop Tutorial — YouTube Thumbnail" width="900" height="506">
     </div>
     <div class="pm-body" style="grid-template-columns:1fr;">
       <div class="pm-info">
@@ -2016,21 +2029,34 @@
 </div>
 
 
+<div class="lightbox-overlay" id="lightboxOverlay" role="dialog" aria-modal="true" aria-label="Image preview">
+  <button type="button" class="lightbox-close" aria-label="Close preview"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="20" height="20" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+  <img id="lightboxImg" alt="">
+</div>
+
 <script>
 (function() {
   var overlay = document.getElementById('lightboxOverlay');
   var img = document.getElementById('lightboxImg');
+  if (!overlay || !img) return;
+  function closeLightbox() {
+    overlay.classList.remove('active');
+    img.removeAttribute('src');
+  }
   document.addEventListener('click', function(e) {
     var trigger = e.target.closest('.lightbox-trigger');
-    if (trigger) {
+    if (trigger && trigger.getAttribute('src')) {
       img.src = trigger.getAttribute('src');
       img.alt = trigger.getAttribute('alt') || '';
       overlay.classList.add('active');
     }
   });
-  overlay.addEventListener('click', function() {
-    overlay.classList.remove('active');
-    img.src = '';
+  overlay.addEventListener('click', closeLightbox);
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && overlay.classList.contains('active')) {
+      e.stopImmediatePropagation();
+      closeLightbox();
+    }
   });
 })();
 </script>
