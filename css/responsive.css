@@ -44,10 +44,7 @@
             padding: 8px 8px 8px 12px;
         }
         .navbar .btn-sm {
-            order: 2;
-            flex-basis: auto;
-            padding: 9px 16px;
-            font-size: 13px;
+            display: none;
         }
         .hamburger {
             order: 3;
@@ -262,26 +259,21 @@
         width: clamp(22px, 2.2vw, 38px);
     }
     .hero-title {
-        font-size: clamp(2.6rem, min(5.0vw, 8.0vh), 6rem);
+        font-size: clamp(2.6rem, min(5.3vw, 8.4vh), 6rem);
     }
     .hero-sub {
         max-width: 36em;
         margin-top: max(12px, 2vh);
-        font-size: clamp(0.95rem, min(1.0vw, 2.0vh), 1.3rem);
+        font-size: clamp(0.95rem, min(1.2vw, 2.3vh), 1.3rem);
     }
     .hero-actions {
-    gap: 18px clamp(120px, 11vw, 200px);
-    margin-top: max(18px, 3vh);
-
-}
-    .hero-actions {
-        gap: 18px 24px;
+        gap: 18px clamp(120px, 11vw, 200px);
         margin-top: max(18px, 3vh);
     }
     .hero .hero-cta {
-    padding: clamp(8px, 1.4vh, 12px) clamp(16px, 1.5vw, 24px);
-    font-size: clamp(0.8rem, min(0.85vw, 1.7vh), 0.92rem);
-}
+        padding: clamp(12px, 1.8vh, 17px) clamp(22px, 2vw, 32px);
+        font-size: clamp(0.9rem, min(1vw, 2vh), 1.05rem);
+    }
     .hero-play {
         width: clamp(46px, 3.4vw, 60px);
         height: clamp(46px, 3.4vw, 60px);

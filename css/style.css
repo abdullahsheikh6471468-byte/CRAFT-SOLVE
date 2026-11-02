@@ -392,6 +392,7 @@ h2.headline {
     top: 0;
     right: 0;
     height: 100vh;
+    height: 100dvh;
     width: min(78vw, 340px);
     background: rgba(10, 14, 26, 0.86);
     backdrop-filter: blur(24px);
@@ -1213,14 +1214,14 @@ h2.headline {
 }
 
 .work-section-heading h3 {
-    color: #fff;
+    color: var(--ink);
     font-size: 19px;
     white-space: nowrap;
 }
 
 .work-section-heading .line {
     height: 1px;
-    background: var(--line);
+    background: var(--line-dark);
     flex: 1;
 }
 
@@ -1653,9 +1654,9 @@ h2.headline {
 .filter-pill {
     font-family: 'Space Mono', monospace;
     font-size: 12.5px;
-    color: #A9AFC3;
-    border: 1px solid var(--line);
-    background: rgba(255, 255, 255, 0.03);
+    color: #475569;
+    border: 1px solid var(--line-dark);
+    background: #fff;
     padding: 9px 18px;
     border-radius: 20px;
     cursor: pointer;
@@ -1663,8 +1664,8 @@ h2.headline {
 }
 
 .filter-pill:hover {
-    color: #fff;
-    border-color: rgba(255, 255, 255, 0.25);
+    color: var(--ink);
+    border-color: rgba(10, 14, 26, 0.3);
 }
 
 .filter-pill.active {
