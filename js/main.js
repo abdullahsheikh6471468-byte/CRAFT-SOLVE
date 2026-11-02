@@ -1,6 +1,6 @@
 (function() {
     const preloader = document.getElementById('preloader');
-    const heroElements = document.querySelectorAll('.hero-word, .pop-in, .hero-visual-stage, .hero-sweep, .btn');
+    const heroElements = document.querySelectorAll('.hero-anim, .hero-img, .btn');
 
     function replayHeroAnimations() {
         heroElements.forEach(function(el) {

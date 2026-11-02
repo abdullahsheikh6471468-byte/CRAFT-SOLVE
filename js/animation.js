@@ -1,32 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-    const heroBg = document.querySelector('.hero-bg');
-    const heroEl = document.querySelector('.hero');
-    if (heroBg && heroEl && window.matchMedia('(min-width: 900px)').matches) {
-        const blobs = heroBg.querySelectorAll('.blob');
-        heroEl.addEventListener('mousemove', function(e) {
-            const x = (e.clientX / window.innerWidth) - 0.5;
-            const y = (e.clientY / window.innerHeight) - 0.5;
-            blobs.forEach(function(blob, i) {
-                const strength = (i + 1) * 14;
-                blob.style.transform = 'translate(' + (x * strength) + 'px, ' + (y * strength) + 'px)';
-            });
-        });
-    }
-
-    // Scroll-driven parallax on the hero
-    const heroForParallax = document.querySelector('.hero');
-    if (heroForParallax) {
-        const parallaxVisual = heroForParallax.querySelector('.hero-visual');
-        const parallaxText = heroForParallax.querySelector('.hero-text');
-        window.addEventListener('scroll', function() {
-            const y = window.scrollY;
-            if (y < window.innerHeight) {
-                if (parallaxVisual) parallaxVisual.style.transform = 'translateY(' + (y * 0.18) + 'px)';
-                if (parallaxText) parallaxText.style.transform = 'translateY(' + (y * 0.08) + 'px)';
-            }
-        });
-    }
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
     const particleField = document.querySelector('.particle-field');
     if (particleField) {
@@ -106,35 +80,6 @@ document.addEventListener('DOMContentLoaded', function() {
             return '<span style="opacity:0;animation:fade-up 0.6s ease forwards;animation-delay:' + (i * 0.05) + 's">' + w + '&nbsp;</span>';
         }).join('');
     });
-
-    // Robot head cursor tracking — the 3D visual turns toward the pointer
-    const heroVisualStage = document.getElementById('hero3d');
-    const heroVisualImg = document.getElementById('hero3dImg');
-    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (heroVisualStage && heroVisualImg && !prefersReducedMotion && window.matchMedia('(min-width: 900px)').matches) {
-        let targetX = 0,
-            targetY = 0,
-            curX = 0,
-            curY = 0;
-        const maxTilt = 16;
-        window.addEventListener('mousemove', function(e) {
-            const rect = heroVisualStage.getBoundingClientRect();
-            const cx = rect.left + rect.width / 2;
-            const cy = rect.top + rect.height / 2;
-            const dx = (e.clientX - cx) / (window.innerWidth / 2);
-            const dy = (e.clientY - cy) / (window.innerHeight / 2);
-            targetX = Math.max(-1, Math.min(1, dx));
-            targetY = Math.max(-1, Math.min(1, dy));
-        });
-        (function animateHead() {
-            curX += (targetX - curX) * 0.07;
-            curY += (targetY - curY) * 0.07;
-            const rotY = curX * maxTilt;
-            const rotX = -curY * maxTilt * 0.6;
-            heroVisualImg.style.transform = 'perspective(900px) rotateY(' + rotY.toFixed(2) + 'deg) rotateX(' + rotX.toFixed(2) + 'deg)';
-            requestAnimationFrame(animateHead);
-        })();
-    }
 
     // Count-up stat numbers when they scroll into view
     function animateCount(el) {

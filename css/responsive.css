@@ -1,365 +1,57 @@
-    @media (max-width: 1080px) {
-        .container {
-            padding: 0 20px;
-        }
-        .footer-grid {
-            grid-template-columns: 1.2fr 1fr 1fr;
-        }
-        .grid-4 {
-            grid-template-columns: repeat(2, 1fr);
-        }
+/* HERO: wide screens use the desktop artwork and a fixed one-screen layout */
+@media (min-width: 900px) and (min-height: 560px) and (min-aspect-ratio: 5/4) {
+    .hero {
+        height: 100vh;
+        height: 100svh;
+        min-height: 560px;
+        padding: max(104px, 12vh) 0 0;
+        background: #050c26;
     }
-    
-    @media (max-width: 980px) {
-        .nav-links {
-            display: none;
-        }
-        .hamburger {
-            display: flex;
-        }
-        .grid-2 {
-            grid-template-columns: 1fr;
-            gap: 40px;
-        }
-        .grid-3 {
-            grid-template-columns: repeat(2, 1fr);
-        }
-        .work-hero-card {
-            grid-column: span 2;
-        }
-        .footer-grid {
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-        }
-        .section {
-            padding: 90px 0;
-        }
-        .cta-band {
-            padding: 53px 29px;
-        }
-        /* --- Nav: keep the floating capsule shape on tablet/mobile --- */
-        .nav-inner {
-            flex-wrap: nowrap;
-            row-gap: 0;
-            padding: 8px 8px 8px 12px;
-        }
-        .navbar .btn-sm {
-            order: 2;
-            flex-basis: auto;
-            padding: 9px 16px;
-            font-size: 13px;
-        }
-        .hamburger {
-            order: 3;
-        }
-        /* --- Hero: rebuilt mobile stacking order (brand -> robot -> copy -> pills/actions/stats) --- */
-        /* --- HERO: MOCKUP MATCH & RESPONSIVE FIX --- */
-        /* Stop the horizontal scroll and white space */
-        .hero {
-            height: auto;
-            min-height: 100vh;
-            padding-top: 120px;
-            padding-bottom: 40px;
-            display: flex;
-            overflow: hidden;
-        }
-        /* Force a strict vertical column */
-        .hero-grid {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            position: relative;
-        }
-        /* 1. Big Title */
-        .hero-brand {
-            order: 1;
-            z-index: 3;
-            text-align: left;
-            margin: 0 0 16px 0;
-            transform: none;
-        }
-        .hero-word-big {
-            font-size: clamp(52px, 16vw, 84px);
-            text-align: left;
-            line-height: 0.9;
-            display: block;
-        }
-        /* 2. Description Text */
-        .hero-text-left {
-            order: 2;
-            z-index: 3;
-            max-width: 85%;
-            /* Keeps text readable on the left */
-            margin-top: 0;
-        }
-        .hero .lede {
-            font-size: 15px;
-            /* Adds a dark shadow so text is readable if it overlaps the robot */
-            text-shadow: 0 4px 12px rgba(0, 0, 0, 0.85);
-            background: rgba(4, 6, 12, 0.55);
-            box-shadow: 0 0 0 12px rgba(4, 6, 12, 0.55);
-            border-radius: 12px;
-            -webkit-backdrop-filter: blur(3px);
-            backdrop-filter: blur(3px);
-        }
-        /* 3. Buttons & Stats Container */
-        .hero-text-right {
-            order: 3;
-            z-index: 3;
-            display: flex;
-            flex-direction: column;
-            margin-top: 24px;
-            width: 100%;
-        }
-        /* 4. Stacked Buttons */
-        .hero-actions {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            width: 100%;
-            white-space: normal;
-        }
-        .hero-actions .btn {
-            width: 100%;
-            border-radius: 999px;
-            padding: 16px;
-            font-size: 15px;
-            text-align: center;
-        }
-        /* 5. Stats with Dividers */
-        .hero-stats {
-            display: flex;
-            flex-direction: row;
-            margin-top: 32px;
-            gap: 0;
-            width: 100%;
-            justify-content: space-between;
-        }
-        .hero-stat {
-            flex: 1;
-            text-align: center;
-            border-right: 1px solid rgba(255, 255, 255, 0.15);
-            padding: 0 5px;
-        }
-        .hero-stat:last-child {
-            border-right: none;
-        }
-        /* 6. Fix the Robot: Lock it to the background so it can't stretch the screen */
-        .hero-visual {
-            position: absolute;
-            top: 20%;
-            right: -25%;
-            /* Tucks it onto the right side of the screen */
-            width: 100%;
-            max-width: 450px;
-            height: 100%;
-            min-height: auto;
-            z-index: 1;
-            /* Pushes it firmly behind the text */
-            pointer-events: none;
-            margin: 0;
-        }
-        /* Reset the massive 550px base width from style.css */
-        .hero-visual-stage {
-            position: relative;
-            width: 100%;
-            height: auto;
-            left: auto;
-            top: auto;
-            transform: none;
-        }
-        .hero-visual-glow {
-            width: 220px;
-            height: 220px;
-            top: 40%;
-            left: 50%;
-        }
+    .hero .hero-bg {
+        inset: 0;
     }
-    
-    @media (max-width: 720px) {
-        .section {
-            padding: 70px 0;
-        }
-        .grid-3 {
-            grid-template-columns: 1fr;
-        }
-        .layout-landscape .pm-body {
-            grid-template-columns: 1fr;
-            gap: 30px;
-            padding: 30px 24px;
-        }
-        .pm-shots {
-            min-height: 220px;
-            margin-top: 8px;
-        }
-        .pm-shots .shot {
-            width: 68%;
-        }
-        .project-modal-inner.layout-portrait {
-            flex-direction: column;
-        }
-        .layout-portrait .pm-media {
-            width: 100%;
-            border-radius: var(--radius-lg) var(--radius-lg) 0 0;
-        }
-        .layout-portrait .pm-media video {
-            aspect-ratio: 16 / 9;
-            height: auto;
-            object-fit: contain;
-        }
-        .layout-portrait .pm-body {
-            padding: 30px 24px;
-        }
-        .grid-4 {
-            grid-template-columns: 1fr 1fr;
-        }
-        .work-hero-card {
-            grid-column: span 1;
-        }
-        .footer-grid {
-            grid-template-columns: 1fr;
-            gap: 34px;
-            padding-bottom: 40px;
-        }
-        .footer-bottom {
-            flex-direction: column;
-            align-items: flex-start;
-        }
-        .form-row {
-            grid-template-columns: 1fr;
-        }
-        .why-card {
-            flex-direction: column;
-        }
-        .contact-form {
-            padding: 28px;
-        }
-        .page-header {
-            padding: 110px 0 50px;
-        }
-        .about-photo-frame {
-            order: -1;
-            height: 380px;
-        }
-        .blob-1,
-        .blob-2,
-        .blob-3 {
-            transform: scale(0.7);
-        }
+    .hero-img {
+        height: 100%;
+        object-fit: cover;
+        object-position: center 62%;
+        -webkit-mask-image: none;
+        mask-image: none;
+        transform-origin: 50% 60%;
     }
-    
-    @media (max-width: 480px) {
-        .nav-logo span {
-            font-size: 16px;
-        }
-        .btn {
-            padding: 12px 20px;
-            font-size: 14px;
-        }
-        .cta-band {
-            border-radius: 22px;
-            padding: 40px 22px;
-        }
-        .grid-4 {
-            grid-template-columns: 1fr;
-        }
+    .hero-content {
+        margin-block: 0;
     }
-    /* --- Small phones (SE, older Androids, ~360px and under) --- */
-    
-    @media (max-width: 380px) {
-        .container {
-            padding: 0 14px;
-        }
-        .btn {
-            padding: 11px 16px;
-            font-size: 13px;
-        }
-        .section {
-            padding: 56px 0;
-        }
-        .cta-band {
-            padding: 32px 16px;
-        }
-        .pm-shots .shot {
-            width: 82%;
-        }
+    .hero-eyebrow {
+        gap: clamp(12px, 1.2vw, 20px);
+        margin-bottom: max(12px, 1.8vh);
+        font-size: clamp(11px, 0.9vw, 15px);
+        letter-spacing: 0.34em;
     }
-    
-    @media (min-width: 1600px) {
-        .container {
-            max-width: 1400px;
-        }
+    .hero-eyebrow::before,
+    .hero-eyebrow::after {
+        width: clamp(22px, 2.2vw, 38px);
     }
-
-@media (max-width: 980px) {
-    .navbar .btn-sm {
-        min-height: 44px;
+    .hero-title {
+        font-size: clamp(2.6rem, min(5.0vw, 8.0vh), 6rem);
     }
-    .mobile-drawer {
-        padding-top: 95px;
-        gap: 20px;
+    .hero-sub {
+        max-width: 36em;
+        margin-top: max(12px, 2vh);
+        font-size: clamp(0.95rem, min(1.0vw, 2.0vh), 1.3rem);
     }
-    .mobile-drawer a:not(.btn) {
-        padding: 5px 0;
+    .hero-actions {
+        gap: 18px clamp(120px, 11vw, 200px);
+        margin-top: max(18px, 3vh);
     }
-    .footer ul li {
-        margin-bottom: 0;
+    .hero .hero-cta {
+        padding: clamp(8px, 1.4vh, 12px) clamp(16px, 1.5vw, 24px);
+        font-size: clamp(0.8rem, min(0.85vw, 1.7vh), 0.92rem);
     }
-    .footer ul li a {
-        display: inline-block;
-        padding: 8px 0;
+    .hero-play {
+        width: clamp(46px, 3.4vw, 60px);
+        height: clamp(46px, 3.4vw, 60px);
     }
-}
-
-@media (max-width: 720px) {
-    .filter-pill {
-        min-height: 44px;
-    }
-}
-
-@media (max-width: 980px) {
-    .grid-2 {
-        grid-template-columns: minmax(0, 1fr);
-    }
-    .grid-2 > * {
-        min-width: 0;
-    }
-    .hero-stats {
-        white-space: normal;
-    }
-    .hero-stat {
-        min-width: 0;
-    }
-    .hero-stat .label {
-        line-height: 1.4;
-        overflow-wrap: anywhere;
-    }
-}
-
-@media (max-width: 480px) {
-    .grid-4 {
-        gap: 14px;
-    }
-    .value-card {
-        padding: 22px 16px;
-    }
-    .value-card h4 {
-        font-size: 17px;
-    }
-    .hero-stat .label {
-        font-size: 10.5px;
-        letter-spacing: 0;
-    }
-}
-
-@media (max-width: 720px) {
-    .page-header h1 {
-        line-height: 1.2;
-    }
-}
-
-@media (max-width: 380px) {
-    .contact-form {
-        padding: 20px;
+    .hero-scroll {
+        bottom: max(14px, 2.6vh);
     }
 }

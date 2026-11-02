@@ -35,7 +35,7 @@
     <nav class="navbar" aria-label="Main">
         <div class="container nav-inner">
             <a href="index.html" class="nav-logo">
-                <img src="images/logo.png" alt="CraftSolve" width="360" height="480">
+                <img src="images/logo-nav.png" alt="CraftSolve" width="342" height="230">
             </a>
             <div class="nav-links">
                 <a href="index.html" class="active" aria-current="page">Home</a>
@@ -63,52 +63,31 @@
     <main id="main">
 <header class="hero">
         <div class="hero-bg">
-            <div class="grid-overlay"></div>
-            <div class="blob blob-1"></div>
-            <div class="blob blob-2"></div>
-            <div class="blob blob-3"></div>
-            <div class="particle-field"></div>
-            <div class="hero-sweep"></div>
+            <picture>
+                <source media="(min-width: 900px) and (min-height: 560px) and (min-aspect-ratio: 5/4)" srcset="images/hero-desktop.webp" width="1672" height="941">
+                <img class="hero-img" src="images/hero-mobile.webp" alt="A person looking out over a city skyline at sunset, framed by glass panels for Web Development, UI/UX Design, Graphic Design and Game Development" width="1212" height="1298" fetchpriority="high" decoding="async">
+            </picture>
         </div>
-        <div class="container hero-grid">
-            <h1 class="hero-brand">
-                <span class="hero-word hero-word-big" style="animation-delay:.1s">CraftSolve</span>
+        <div class="container hero-content">
+            <p class="hero-eyebrow hero-anim" style="--d:.15s">We don’t just build. <span>We solve</span></p>
+            <h1 class="hero-title hero-anim" style="--d:.3s">
+                <span class="hero-line">Turning Ideas</span>
+                <span class="hero-line">Into <span class="hero-accent">Reality<svg class="hero-swoosh" viewBox="0 0 240 14" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="heroSwoosh" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#14a8ff" stop-opacity="0"/><stop offset=".5" stop-color="#14a8ff"/><stop offset="1" stop-color="#0a78ff" stop-opacity="0"/></linearGradient></defs><path d="M2 11 C 70 2, 170 2, 238 9" fill="none" stroke="url(#heroSwoosh)" stroke-width="3.5" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg></span></span>
             </h1>
-            <div class="hero-text-left">
-                <p class="lede hero-lede">CraftSolve is a digital agency where design, engineering, and strategy work as one system. From UI/UX and full-stack development to mobile apps, games, branding, and dashboards. We turn ideas into digital products that actually solve the
-                    problem behind them.</p>
-            </div>
-            <div class="hero-visual fade-up delay-1">
-                <div class="hero-visual-glow"></div>
-                <div class="hero-visual-stage" id="hero3d">
-                    <img src="images/hero-visual.webp" alt="CraftSolve 3D visual" id="hero3dImg" draggable="false" width="960" height="1280">
-                </div>
-            </div>
-            <div class="hero-text-right">
-                <div class="hero-actions">
-                    <a href="contact.html" class="btn btn-primary magnetic" style="animation:slide-in-left .7s cubic-bezier(.16,1,.3,1) .75s both;">Start Your Project</a>
-                    <a href="services.html" class="btn btn-ghost magnetic" style="animation:slide-in-right .7s cubic-bezier(.16,1,.3,1) .85s both;">Our Services</a>
-                </div>
-                <div class="hero-stats">
-                    <div class="hero-stat pop-in" style="animation-delay:.95s">
-                        <div class="num" data-count="6" data-suffix="">0</div>
-                        <div class="label">CORE SERVICES</div>
-                    </div>
-                    <div class="hero-stat pop-in" style="animation-delay:1.02s">
-                        <div class="num" data-count="4" data-suffix="">0</div>
-                        <div class="label">TEAM MEMBERS</div>
-                    </div>
-                    <div class="hero-stat pop-in" style="animation-delay:1.09s">
-                        <div class="num" data-count="1" data-suffix="">0</div>
-                        <div class="label">POINT OF CONTACT</div>
-                    </div>
-                </div>
+            <p class="hero-sub hero-anim" style="--d:.45s">We are a creative tech studio, delivering modern solutions in design, development and more.</p>
+            <div class="hero-actions hero-anim" style="--d:.6s">
+                <a href="services.html" class="btn btn-primary hero-cta magnetic">Explore Our Services <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                <a href="about.html" class="hero-watch"><span class="hero-play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 4l14 8-14 8z"/></svg></span>Watch Intro</a>
             </div>
         </div>
-
+        <a href="#about" class="hero-scroll hero-anim" style="--d:.9s" aria-label="Scroll down">
+            <span class="hero-mouse" aria-hidden="true"></span>
+            <span>Scroll Down</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </a>
     </header>
 
-    <section class="section">
+    <section class="section" id="about">
         <div class="container grid-2">
             <div class="reveal reveal-left">
                 <div class="eyebrow-line"><span class="dash"></span><span class="tag mono" style="margin:0;">About</span>
