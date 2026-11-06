@@ -347,3 +347,41 @@
         display: none;
     }
 }
+
+
+/* HERO: keep the whole text block (and both buttons) ABOVE the man's head.
+   The head sits at ~56.8% of the artwork; with object-fit:cover and
+   object-position y=62% its on-screen top is 62svh - 0.052*renderedHeight.
+   Everything in the text block is sized from the space above that point. */
+@media (min-width: 900px) and (min-height: 560px) and (min-aspect-ratio: 5/4) {
+    .hero {
+        --head-top: calc(62svh - 0.052 * max(56.28vw, 100svh));
+        --pad-top: clamp(92px, 6.2vw, 124px);
+        --u: calc((var(--head-top) - var(--pad-top) - 14px) / 100);
+        padding-top: var(--pad-top);
+    }
+    .hero-eyebrow {
+        margin-bottom: calc(var(--u) * 2.2);
+        font-size: clamp(10px, calc(var(--u) * 3.2), 15px);
+    }
+    .hero-title {
+        font-size: clamp(1.9rem, min(calc(var(--u) * 18), 5.3vw), 6rem);
+        line-height: 1.04;
+    }
+    .hero-sub {
+        margin-top: calc(var(--u) * 2);
+        font-size: clamp(0.82rem, calc(var(--u) * 3.5), 1.3rem);
+    }
+    .hero-actions {
+        gap: 16px clamp(28px, 2.6vw, 48px);
+        margin-top: calc(var(--u) * 3.2);
+    }
+    .hero .hero-cta {
+        padding: clamp(9px, calc(var(--u) * 2.1), 17px) clamp(20px, 2vw, 32px);
+        font-size: clamp(0.82rem, calc(var(--u) * 3.3), 1.05rem);
+    }
+    .hero-play {
+        width: clamp(38px, calc(var(--u) * 10), 60px);
+        height: clamp(38px, calc(var(--u) * 10), 60px);
+    }
+}
