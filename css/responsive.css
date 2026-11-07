@@ -385,13 +385,6 @@
         height: clamp(38px, calc(var(--u) * 10), 60px);
     }
 }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 64668a9 (changes)
->>>>>>> origin/main
 
 
 /* "Scroll Down" indicator removed on every device */
@@ -405,11 +398,3 @@ body { overflow-x: clip; }
     .navbar { padding: 12px 0; }
     .navbar .nav-inner { width: calc(100% - 24px); margin-left: auto; margin-right: auto; }
 }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 83862fd032716d25e864d3f0a91deb22ef72222d
-=======
->>>>>>> 64668a9 (changes)
->>>>>>> origin/main

@@ -2650,13 +2650,6 @@ summary:focus-visible {
     .cta-banner-link { display: none; }
     .cta-band-mobile { display: block; }
 }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 64668a9 (changes)
->>>>>>> origin/main
 
 
 /* ===== GLASS NAV BAR ===== */
@@ -2682,13 +2675,6 @@ summary:focus-visible {
     backdrop-filter: blur(18px) saturate(170%);
     border: 1px solid rgba(255, 255, 255, 0.6);
 }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 83862fd032716d25e864d3f0a91deb22ef72222d
-=======
->>>>>>> origin/main
 
 
 /* Smaller, centred CTA banner on the home page */
@@ -2852,7 +2838,3 @@ summary:focus-visible {
     }
     .cta-card::after { height: min(52vw, 240px); }
 }
-<<<<<<< HEAD
-=======
->>>>>>> 64668a9 (changes)
->>>>>>> origin/main
