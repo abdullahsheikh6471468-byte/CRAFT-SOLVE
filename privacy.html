@@ -14,10 +14,12 @@
     <meta name="twitter:description" content="How CraftSolve handles the information you share through this website.">
 <link rel="icon" href="images/favicon.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/responsive.css">
-<link rel="stylesheet" href="css/animations.css">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=19">
+<link rel="stylesheet" href="css/responsive.css?v=19">
+<link rel="stylesheet" href="css/animations.css?v=19">
+    <link rel="stylesheet" href="css/home-anim.css?v=19">
+    <link rel="stylesheet" href="css/pro-anim.css?v=19">
 </head>
 <body>
 
@@ -33,13 +35,18 @@
 <nav class="navbar scrolled" aria-label="Main">
   <div class="container nav-inner">
     <a href="index.html" class="nav-logo">
-      <img src="images/logo-nav.png" alt="CraftSolve" width="342" height="230">
+      <img src="images/logo-mark.png" alt="" class="nav-logo-mark" width="128" height="128">
+      <span class="nav-logo-text"><b>Craft</b>Solve</span>
     </a>
     <div class="nav-links">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
       <a href="contact.html">Contact</a>
+      <div class="nav-dropdown">
+        <button type="button" class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true" aria-controls="social-menu">Social <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-dropdown-menu" id="social-menu" role="menu"><a href="https://linkedin.com/company/craftsolve" target="_blank" rel="noopener" class="social-item"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.94 8.5H3.56V20H6.94V8.5ZM5.25 7A2 2 0 1 0 5.25 3 2 2 0 0 0 5.25 7ZM20.4 20H17V13.9C17 12.3 16.4 11.3 15 11.3C13.9 11.3 13.3 12 13 12.7C12.9 13 12.9 13.4 12.9 13.8V20H9.5S9.6 9.4 9.5 8.5H12.9V10C13.3 9.3 14.2 8.3 16 8.3C18.2 8.3 20.4 9.7 20.4 13.2V20Z"/></svg><span>LinkedIn</span></a><a href="https://www.instagram.com/craft.solve?igsh=MTNzZjlxMzJ3bjUyeg==" target="_blank" rel="noopener" class="social-item"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2Zm-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm5.25-1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5Z"/></svg><span>Instagram</span></a><a href="https://www.facebook.com/share/192Q8X9ZMj/?mibextid=wwXIfr" target="_blank" rel="noopener" class="social-item"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.25-1.5 1.55-1.5H16.7V3.6C16.4 3.55 15.4 3.47 14.24 3.47c-2.42 0-4.08 1.48-4.08 4.2v2.22H7.4v3.1h2.76V21h3.34Z"/></svg><span>Facebook</span></a><a href="https://wa.me/923354673607" target="_blank" rel="noopener" class="social-item"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.4 14.2c-.2.6-1.3 1.2-1.9 1.3-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-3-1.3-5-4.3-5.1-4.5-.2-.2-1.2-1.6-1.2-3.1 0-1.5.8-2.2 1-2.5.2-.3.5-.4.7-.4h.5c.2 0 .4 0 .6.4.2.5.7 1.8.8 1.9.1.1.1.3 0 .5-.1.2-.1.3-.3.5l-.4.5c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.4.1.6-.1l.6-.7c.2-.3.4-.2.6-.1l1.7.8c.2.1.4.2.4.4.1.2.1.9-.1 1.5Z"/></svg><span>WhatsApp</span></a></div>
+      </div>
     </div>
     <a href="contact.html" class="btn btn-primary btn-sm">Let's Talk</a>
     <button class="hamburger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-drawer">
@@ -55,7 +62,11 @@
   <a href="about.html">About</a>
   <a href="services.html">Services</a>
   <a href="contact.html">Contact</a>
-  <a href="contact.html" class="btn btn-primary" style="margin-top:10px;">Let's Talk</a>
+  <div class="drawer-social">
+            <button type="button" class="drawer-social-toggle" aria-expanded="false">Social <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+            <div class="drawer-social-list"><a href="https://linkedin.com/company/craftsolve" target="_blank" rel="noopener" class="social-item"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.94 8.5H3.56V20H6.94V8.5ZM5.25 7A2 2 0 1 0 5.25 3 2 2 0 0 0 5.25 7ZM20.4 20H17V13.9C17 12.3 16.4 11.3 15 11.3C13.9 11.3 13.3 12 13 12.7C12.9 13 12.9 13.4 12.9 13.8V20H9.5S9.6 9.4 9.5 8.5H12.9V10C13.3 9.3 14.2 8.3 16 8.3C18.2 8.3 20.4 9.7 20.4 13.2V20Z"/></svg><span>LinkedIn</span></a><a href="https://www.instagram.com/craft.solve?igsh=MTNzZjlxMzJ3bjUyeg==" target="_blank" rel="noopener" class="social-item"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2Zm-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm5.25-1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5Z"/></svg><span>Instagram</span></a><a href="https://www.facebook.com/share/192Q8X9ZMj/?mibextid=wwXIfr" target="_blank" rel="noopener" class="social-item"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.25-1.5 1.55-1.5H16.7V3.6C16.4 3.55 15.4 3.47 14.24 3.47c-2.42 0-4.08 1.48-4.08 4.2v2.22H7.4v3.1h2.76V21h3.34Z"/></svg><span>Facebook</span></a><a href="https://wa.me/923354673607" target="_blank" rel="noopener" class="social-item"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.4 14.2c-.2.6-1.3 1.2-1.9 1.3-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-3-1.3-5-4.3-5.1-4.5-.2-.2-1.2-1.6-1.2-3.1 0-1.5.8-2.2 1-2.5.2-.3.5-.4.7-.4h.5c.2 0 .4 0 .6.4.2.5.7 1.8.8 1.9.1.1.1.3 0 .5-.1.2-.1.3-.3.5l-.4.5c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.4.1.6-.1l.6-.7c.2-.3.4-.2.6-.1l1.7.8c.2.1.4.2.4.4.1.2.1.9-.1 1.5Z"/></svg><span>WhatsApp</span></a></div>
+        </div>
+        <a href="contact.html" class="btn btn-primary" style="margin-top:10px;">Let's Talk</a>
 </div>
 
 <main id="main">
@@ -98,7 +109,7 @@
   </div>
 </section>
 
-</main>
+ </main>
 
 <footer class="footer">
   <div class="footer-watermark" aria-hidden="true">CraftSolve</div>
@@ -141,7 +152,38 @@
   </div>
 </footer>
 
-<script src="js/main.js"></script>
-<script src="js/animation.js"></script>
+<script src="js/main.js?v=19"></script>
+<script src="js/animation.js?v=19"></script>
+<script src="js/home-anim.js?v=19"></script>
+<script src="js/pro-anim.js?v=19"></script>
+<script>
+/* Mobile menu safety net: works even if js/main.js fails to load or is out of date. */
+(function () {
+    /* Never let the loading screen block the page if main.js did not run */
+    function hideLoader() {
+        var p = document.getElementById('preloader');
+        if (p && !p.classList.contains('hidden')) p.classList.add('hidden');
+    }
+    window.addEventListener('load', function () { setTimeout(hideLoader, 900); });
+    setTimeout(hideLoader, 3500);
+    document.addEventListener('click', function (e) {
+        var t = e.target;
+        if (!t || !t.closest) return;
+        var ham = t.closest('.hamburger'), close = t.closest('.drawer-close'), ov = t.closest('.drawer-overlay');
+        if (!ham && !close && !ov) return;
+        var d = document.querySelector('.mobile-drawer');
+        if (!d) return;
+        var want = ham ? !d.classList.contains('open') : false;   /* read BEFORE main.js handles the click (capture phase) */
+        setTimeout(function () {
+            if (d.classList.contains('open') === want) return;
+            var o = document.querySelector('.drawer-overlay'), h = document.querySelector('.hamburger');
+            d.classList.toggle('open', want);
+            if (o) o.classList.toggle('open', want);
+            if (h) { h.classList.toggle('active', want); h.setAttribute('aria-expanded', want ? 'true' : 'false'); }
+            document.body.style.overflow = want ? 'hidden' : '';
+        }, 80);
+    }, true);
+})();
+</script>
 </body>
 </html>

@@ -210,3 +210,38 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
 });
+
+
+// ===== Social dropdown (desktop) + accordion (mobile drawer) =====
+document.addEventListener('DOMContentLoaded', function() {
+    var dd = document.querySelector('.nav-dropdown');
+    if (dd) {
+        var btn = dd.querySelector('.nav-dropdown-toggle');
+        var setOpen = function(open) {
+            dd.classList.toggle('open', open);
+            btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        };
+        btn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            setOpen(!dd.classList.contains('open'));
+        });
+        document.addEventListener('click', function(e) {
+            if (!dd.contains(e.target)) setOpen(false);
+        });
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && dd.classList.contains('open')) { setOpen(false); btn.focus(); }
+        });
+        dd.querySelectorAll('.social-item').forEach(function(a) {
+            a.addEventListener('click', function() { setOpen(false); });
+        });
+    }
+    var ds = document.querySelector('.drawer-social');
+    if (ds) {
+        var dbtn = ds.querySelector('.drawer-social-toggle');
+        dbtn.addEventListener('click', function() {
+            var open = !ds.classList.contains('open');
+            ds.classList.toggle('open', open);
+            dbtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        });
+    }
+});
