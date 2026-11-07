@@ -1,0 +1,136 @@
+/* ===== SITE-WIDE PROFESSIONAL ANIMATIONS (all pages) ===== */
+
+/* 1. Page enter / leave transition */
+body { animation: page-in 0.55s cubic-bezier(0.22, 0.7, 0.2, 1) both; }
+@keyframes page-in {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+body.is-leaving {
+    opacity: 0;
+    transform: translateY(-6px);
+    transition: opacity 0.25s ease, transform 0.25s ease;
+    pointer-events: none;
+}
+
+/* 2. Inner-page header: staggered entrance */
+.page-header .container > * {
+    animation: ph-rise 0.8s cubic-bezier(0.22, 0.7, 0.2, 1) both;
+}
+.page-header .container > *:nth-child(1) { animation-delay: 0.10s; }
+.page-header .container > *:nth-child(2) { animation-delay: 0.22s; }
+.page-header .container > *:nth-child(3) { animation-delay: 0.34s; }
+.page-header .container > *:nth-child(4) { animation-delay: 0.46s; }
+.page-header .container > .reveal { opacity: 1; transform: none; transition: none; }
+@keyframes ph-rise {
+    from { opacity: 0; transform: translateY(26px); filter: blur(6px); }
+    to   { opacity: 1; transform: none; filter: blur(0); }
+}
+.page-header .hero-bg,
+.page-header .container { will-change: transform; }
+
+/* 3. Eyebrow dash draws itself when its block scrolls in */
+.eyebrow-line .dash {
+    display: inline-block;
+    transform-origin: left center;
+    transition: transform 0.9s cubic-bezier(0.22, 0.7, 0.2, 1) 0.15s;
+}
+.reveal:not(.in-view) .eyebrow-line .dash { transform: scaleX(0); }
+.reveal.in-view .eyebrow-line .dash { transform: scaleX(1); }
+
+/* 4. Cards: live 3D tilt (class toggled by pro-anim.js) */
+.tilt-live {
+    transition: transform 0.15s ease-out, box-shadow 0.3s ease !important;
+    transition-delay: 0s !important;
+    transform: perspective(900px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg)) translateY(-6px) !important;
+    will-change: transform;
+}
+
+/* 5. Buttons: soft light sweep on hover + arrow nudge */
+.btn-primary { position: relative; overflow: hidden; }
+.btn-primary::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -70%;
+    width: 45%;
+    height: 100%;
+    background: linear-gradient(100deg, transparent, rgba(255, 255, 255, 0.35), transparent);
+    transform: skewX(-20deg);
+    pointer-events: none;
+}
+.btn-primary:hover::after { animation: btn-sweep 0.8s ease-out 1; }
+@keyframes btn-sweep {
+    from { left: -70%; }
+    to   { left: 130%; }
+}
+.btn svg { transition: transform 0.25s ease; }
+.btn:hover svg { transform: translateX(3px); }
+
+/* 6. Contact form: staggered fields + focus glow */
+.contact-form .form-group,
+.contact-form button[type="submit"] {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.22, 0.7, 0.2, 1);
+    transition-delay: calc(var(--fi, 0) * 70ms + 150ms);
+}
+.reveal.in-view .contact-form .form-group,
+.reveal.in-view .contact-form button[type="submit"] { opacity: 1; transform: none; }
+.contact-form .form-group label { transition: color 0.25s ease; }
+.contact-form .form-group:focus-within label { color: #1a8cff; }
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    transition: border-color 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+}
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    box-shadow: 0 0 0 4px rgba(26, 140, 255, 0.16);
+    outline: none;
+}
+
+/* 7. Footer: link underline slide, social icons lift */
+.footer-grid a:not(.social-icon) {
+    background: linear-gradient(currentColor, currentColor) left bottom / 0 1px no-repeat;
+    transition: background-size 0.3s ease, color 0.2s ease;
+    padding-bottom: 2px;
+}
+.footer-grid a:not(.social-icon):hover { background-size: 100% 1px; }
+.social-icon { transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), background-color 0.2s ease, border-color 0.2s ease; }
+.social-icon:hover { transform: translateY(-4px) scale(1.08); }
+
+/* 8. Closing CTA card: floating illustration + light sweep on hover */
+.cta-card::after { animation: cta-float 7s ease-in-out infinite; will-change: transform; }
+@keyframes cta-float {
+    0%, 100% { transform: translateY(0); }
+    50%      { transform: translateY(-7px); }
+}
+.cta-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -40%;
+    width: 30%;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(100deg, transparent, rgba(255, 255, 255, 0.16), transparent);
+    transform: skewX(-20deg);
+    pointer-events: none;
+}
+.cta-card:hover::before { animation: btn-sweep 1.2s ease-out 1; }
+
+/* 9. List items reveal (privacy etc.) */
+li.reveal { transition-duration: 0.6s; }
+
+@media (prefers-reduced-motion: reduce) {
+    body { animation: none; }
+    .page-header .container > *,
+    .cta-card::after,
+    .btn-primary:hover::after,
+    .cta-card:hover::before { animation: none !important; }
+    .contact-form .form-group,
+    .contact-form button[type="submit"] { opacity: 1; transform: none; transition: none; }
+    .eyebrow-line .dash { transform: none !important; }
+}

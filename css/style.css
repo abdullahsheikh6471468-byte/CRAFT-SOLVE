@@ -2651,6 +2651,9 @@ summary:focus-visible {
     .cta-band-mobile { display: block; }
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 64668a9 (changes)
 
 
 /* ===== GLASS NAV BAR ===== */
@@ -2676,5 +2679,171 @@ summary:focus-visible {
     backdrop-filter: blur(18px) saturate(170%);
     border: 1px solid rgba(255, 255, 255, 0.6);
 }
+<<<<<<< HEAD
 =======
 >>>>>>> 83862fd032716d25e864d3f0a91deb22ef72222d
+=======
+
+
+/* Smaller, centred CTA banner on the home page */
+.cta-banner-link {
+    width: 100%;
+    max-width: 980px;
+    margin: 56px auto 0;
+}
+
+
+/* ===== GLASSMORPHISM NAV (final) ===== */
+.nav-inner,
+.navbar.scrolled .nav-inner {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.62) 0%, rgba(255, 255, 255, 0.40) 100%);
+    -webkit-backdrop-filter: blur(24px) saturate(190%);
+    backdrop-filter: blur(24px) saturate(190%);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow:
+        0 10px 34px rgba(8, 16, 40, 0.20),
+        inset 0 1px 0 rgba(255, 255, 255, 0.75),
+        inset 0 -1px 0 rgba(255, 255, 255, 0.15);
+}
+.navbar.scrolled .nav-inner {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.72) 0%, rgba(255, 255, 255, 0.52) 100%);
+}
+.nav-links a,
+.nav-dropdown-toggle { color: #0B1020; font-weight: 500; }
+.nav-links a:hover,
+.nav-dropdown-toggle:hover,
+.nav-dropdown.open .nav-dropdown-toggle { color: #000; }
+.nav-logo .nav-logo-text { color: #065B5B; }
+.nav-dropdown-menu {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.64));
+    -webkit-backdrop-filter: blur(24px) saturate(190%);
+    backdrop-filter: blur(24px) saturate(190%);
+    border: 1px solid rgba(255, 255, 255, 0.65);
+    box-shadow: 0 18px 44px rgba(8, 16, 40, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+
+/* ===== HOME CTA CARD (picture background + live text & button) ===== */
+.cta-card {
+    container-type: inline-size;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 980px;
+    margin: 56px auto 0;
+    aspect-ratio: 1739 / 686;
+    border-radius: clamp(24px, 4vw, 40px);
+    overflow: hidden;
+    background: #0a3fc4 url(../images/cta-bg.jpg) center / cover no-repeat;
+    box-shadow: 0 24px 60px -20px rgba(11, 79, 200, 0.45);
+}
+.cta-card-text { position: relative; z-index: 2; padding-left: 6.2cqw; max-width: 64cqw; }
+.cta-card h2 {
+    margin: 0 0 1.6cqw;
+    font-family: 'Plus Jakarta Sans', 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 4.5cqw;
+    line-height: 1.1;
+    white-space: nowrap;
+    letter-spacing: -0.02em;
+    color: #fff;
+}
+.cta-card p {
+    margin: 0 0 3.2cqw;
+    max-width: 47cqw;
+    font-size: 2cqw;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.88);
+}
+.cta-card-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 1.2cqw;
+    padding: 1.7cqw 3.2cqw;
+    border-radius: 999px;
+    background: #fff;
+    color: #0b1b5e;
+    font-weight: 600;
+    font-size: 1.9cqw;
+    line-height: 1;
+    box-shadow: 0 10px 28px rgba(5, 20, 90, 0.35);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.cta-card-btn svg { width: 1.2em; height: 1.2em; transition: transform 0.25s ease; }
+.cta-card-btn:hover { transform: translateY(-3px); box-shadow: 0 16px 34px rgba(5, 20, 90, 0.45); }
+.cta-card-btn:hover svg { transform: translateX(4px); }
+
+@media (max-width: 767px) {
+    .cta-card {
+        display: block;
+        aspect-ratio: auto;
+        margin-top: 40px;
+        padding: 34px 24px calc(min(62vw, 300px) - 6px);
+        background: linear-gradient(170deg, #04268f 0%, #0540c4 42%, #0a68ee 72%, #11a6ff 100%);
+    }
+    .cta-card::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: min(62vw, 300px);
+        background: url(../images/cta-bg-mobile.jpg) 100% 50% / cover no-repeat;
+        -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 40%);
+        mask-image: linear-gradient(to bottom, transparent 0%, #000 40%);
+        pointer-events: none;
+    }
+    .cta-card-text { padding: 0; max-width: none; }
+    .cta-card h2 { margin: 0 0 12px; font-size: clamp(1.9rem, 8.6vw, 2.5rem); white-space: normal; }
+    .cta-card p { margin: 0 0 22px; max-width: 26em; font-size: 1rem; }
+    .cta-card-btn { gap: 10px; padding: 15px 26px; font-size: 1rem; }
+}
+
+
+/* ===== CTA CARD: wider (full container) and slimmer ===== */
+@media (min-width: 768px) {
+    .cta-card {
+        max-width: none;
+        aspect-ratio: 3.8 / 1;
+        min-height: 240px;
+        border-radius: clamp(24px, 3vw, 36px);
+        background: linear-gradient(100deg, #03238a 0%, #0436b0 38%, #0546cf 70%);
+    }
+    .cta-card::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        aspect-ratio: 1739 / 686;
+        background: url(../images/cta-bg.jpg) center / 100% 100% no-repeat;
+        -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 28%);
+        mask-image: linear-gradient(90deg, transparent 0%, #000 28%);
+        pointer-events: none;
+    }
+    .cta-card-text { padding-left: 5cqw; max-width: 60cqw; }
+    .cta-card h2 {
+        font-size: clamp(1.6rem, 3.5cqw, 2.8rem);
+        margin-bottom: clamp(8px, 1.1cqw, 14px);
+    }
+    .cta-card p {
+        font-size: clamp(0.9rem, 1.5cqw, 1.12rem);
+        max-width: 52cqw;
+        text-wrap: balance;
+        margin-bottom: clamp(16px, 2.2cqw, 28px);
+    }
+    .cta-card-btn {
+        gap: clamp(8px, 0.9cqw, 12px);
+        padding: clamp(11px, 1.15cqw, 15px) clamp(22px, 2.4cqw, 32px);
+        font-size: clamp(0.9rem, 1.45cqw, 1.08rem);
+    }
+}
+/* mobile: a bit slimmer too */
+@media (max-width: 767px) {
+    .cta-card {
+        padding: 28px 22px calc(min(52vw, 240px) - 6px);
+    }
+    .cta-card::after { height: min(52vw, 240px); }
+}
+>>>>>>> 64668a9 (changes)
