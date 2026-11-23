@@ -2728,7 +2728,7 @@ summary:focus-visible {
     border-radius: clamp(24px, 4vw, 40px);
     overflow: hidden;
     background: #0a3fc4 url(../images/cta-bg.jpg) center / cover no-repeat;
-    box-shadow: 0 24px 60px -20px rgba(11, 79, 200, 0.45);
+    box-shadow: none;
 }
 .cta-card-text { position: relative; z-index: 2; padding-left: 6.2cqw; max-width: 64cqw; }
 .cta-card h2 {
@@ -2779,8 +2779,8 @@ summary:focus-visible {
         position: absolute;
         left: 0;
         right: 0;
-        bottom: 0;
-        height: min(62vw, 300px);
+        bottom: -10px;
+        height: calc(min(62vw, 300px) + 10px);
         background: url(../images/cta-bg-mobile.jpg) 100% 50% / cover no-repeat;
         -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 40%);
         mask-image: linear-gradient(to bottom, transparent 0%, #000 40%);
@@ -2806,7 +2806,7 @@ summary:focus-visible {
         content: "";
         position: absolute;
         top: 0;
-        bottom: 0;
+        bottom: -10px;
         right: 0;
         aspect-ratio: 1739 / 686;
         background: url(../images/cta-bg.jpg) center / 100% 100% no-repeat;
@@ -2836,5 +2836,5 @@ summary:focus-visible {
     .cta-card {
         padding: 28px 22px calc(min(52vw, 240px) - 6px);
     }
-    .cta-card::after { height: min(52vw, 240px); }
+    .cta-card::after { height: calc(min(52vw, 240px) + 10px); }
 }
